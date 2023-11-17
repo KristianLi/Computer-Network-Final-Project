@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # computer-network-graduation-project
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -27,3 +28,7 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+# Computer-Network-Graduation-Project
+Xiamen University (XMU) Computer Networking Course Capstone Project
+>>>>>>> 8fda7a5d882fa54ed1ee9054a47d0fd8b0a151c6
