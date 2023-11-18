@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>全国空气吸收剂量率发布系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+body{
+	padding:0px; margin:0px;
+	font-family: "WenQuanYi Micro Hei",sans-serif;
+	background-color: #eee;
+}
+.top{
+	background:#0e5aae;color:white;padding:10px;
+}
+.bottom{background:#ccc;padding:10px;font-size:0.8em;}
+.bottom div{line-height:2em;text-align:center;}
+.toptitle{
+	font-size:2em;font-weight:bold;font-family: "黑体";
+	text-shadow: 2px 2px 1px #000;
+}
+.pagetitle{font-size:1.5em;font-weight:bold;margin:10px;}
+.pagetext{font-size:1em;margin:10px;}
+.etitle{font-size:1em;}
+ul{list-style-type: none;padding:0px;}
+.datali{border-bottom:1px dotted #ccc;padding:10px 20px;line-height:1.5em;}
+.datali:hover{background:#ffc;}
+
+
+.divval{padding-top:10px;padding-left:30px;}
+
+
+a{text-decoration:none}
+
+hr {margin: 5px 0;border: 0;border-top: 1px solid #eeeeee;border-bottom: 1px solid #ffffff;}
+
+.label {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+}
+
+.label {
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+          
+  background-color: #333333;        
+}
+
+
+
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 6px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 1em;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+
+.btn:first-child {
+  *margin-left: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  *background-color: #2f96b4;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+
+.main{
+	 background-color: #fff;
+	 padding:5px 5px;
+}
+
+.leftmenu{
+	display:none;
+	float:left;
+	width:200px;
+}
+
+.mobilemenu{
+	display: block;
+}
+
+@media (max-width: 767px) {
+	.mobilemenu{
+		 display: block !important;
+	}
+	.leftmenu{
+		 display: none !important;
+	}
+	.main{
+		margin-left:0px !important;
+	}
+}
+
+@media (min-width: 768px){
+	.mobilemenu{
+		 display: none !important;
+	}
+	
+	.leftmenu{
+		 display: block !important;
+	}
+	.main{
+		margin-left:200px !important;
+	}
+	
+	.btn{
+		display: block !important;
+		margin:10px 10px !important;
+	}
+}
+</style>
+	
+  	  
+</head>
+
+<body>
+<div class="top">
+	 <div class="toptitle">空气吸收剂量率</div>
+	 <div class="etitle">National Radiation Environmental Data Evaluation System</div>
+</div>	
+<div class="mobilemenu" style="padding:5px;text-align:right">
+		<a class="btn btn-info" href="listtype0M.html">环境质量监测点</a>
+		<a class="btn " href="listtype1M.html">核电厂监测点</a>
+		<a class="btn " href="PubInfo0M.html">系统说明</a>
+</div>
+
+
+<div class="leftmenu">
+		<a class="btn btn-info" href="listtype0M.html">环境质量监测点</a>
+		<a class="btn " href="listtype1M.html">核电厂监测点</a>
+		<a class="btn " href="PubInfo0M.html">系统说明</a>
+</div>
+
+<div class="main">
+
+			<div class="pagetitle">环境质量监测点</div>
+			<div class="pagetext">省会城市空气吸收剂量率 监测值</div>
+	<hr/>
+		
+	<ul class="dataul">
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_86M.html">
+				    北京 (北京万柳中路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">91 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_87M.html">
+				    天津 (南开复康路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">70 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_88M.html">
+				    河北 (石家庄槐岭路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">60 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_89M.html">
+				    山西 (太原长治路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">87 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_85M.html">
+				    内蒙 (内蒙古环境监测中心站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">105 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_84M.html">
+				    辽宁 (沈阳市东陵站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">70 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_83M.html">
+				    吉林 (长春青年路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">70 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_62M.html">
+				    黑龙江 (哈尔滨南直路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">71 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_94M.html">
+				    上海 (普陀沪太路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">66 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_92M.html">
+				    江苏 (南京新城科技园站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">58 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_93M.html">
+				    浙江 (杭州三义村站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">85 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_95M.html">
+				    安徽 (合肥怀宁路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">74 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_97M.html">
+				    福建 (福州市福飞北路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">109 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_96M.html">
+				    江西 (南昌洪都北大道站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">69 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_91M.html">
+				    山东 (济南经十路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">67 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_90M.html">
+				    河南 (郑州大王庄站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">74 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_99M.html">
+				    湖北 (武汉市公正路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">77 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_98M.html">
+				    湖南 (长沙万家丽中路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">66 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-17</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_100M.html">
+				    广东 (广州大道站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">102 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_101M.html">
+				    广西 (广西辐射站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">78 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_102M.html">
+				    海南 (海口红旗镇站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">62 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_104M.html">
+				    重庆 (大礼堂站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">76 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_103M.html">
+				    四川 (成都熊猫基地站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">71 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_105M.html">
+				    贵州 (贵阳青云路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">92 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_106M.html">
+				    云南 (昆明环城西路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">84 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_107M.html">
+				    西藏 (拉萨东嘎镇站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">193 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_108M.html">
+				    陕西 (西安北郊污水处理厂站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">74 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_109M.html">
+				    甘肃 (兰州市东岗站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">94 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_110M.html">
+				    青海 (西宁纳家山站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">117 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_112M.html">
+				    宁夏 (银川市环保局西夏分局站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">84 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+		    <li class="datali">
+		    	<div class="divname">
+				    <a data-ajax="false" href="listsation0_111M.html">
+				    新疆 (乌鲁木齐北京中路站)
+				    </a>
+		    	</div>
+		    	<div class="divval">
+					<span class="label">71 nGy/h</span>
+					&nbsp;&nbsp;<span class="showtime">2023-11-15</span>
+			  	</div>
+		    </li>
+	</ul>
+</div>
+
+
+﻿
+
+<div class="bottom">
+		<div>技术支持单位：生态环境部辐射环境监测技术中心 地址：浙江省杭州市文一路306号 邮编：310012 </div>
+        <div>浙ICP 备08006282号</div>
+</div>
+
+</body>
+</html>

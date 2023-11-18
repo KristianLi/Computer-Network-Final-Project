@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-hk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>实时香港辐射水平｜香港天文台(HKO)｜辐射监测</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" 实时香港辐射水平">
+    <meta name="description" content="实时香港辐射水平">
+    <meta name="recordId" content="2018123100000036456">
+    <meta name="lang" content="sc">
+	<meta property="fb:app_id" content="468280339992518" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="实时香港辐射水平" />
+	<meta property="og:description" content="最新资讯 天文台举办空中辐射监测及核应急准备工作坊 (于2019年12月6日， 本地时间18时00分 (UTC + 8) 更新) 香港环境伽马辐射水平(每小时更新一次)" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="https://www.hko.gov.hk/sc/radiation/monitoring/index.html" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="314" />
+
+    <!-- Bootstrap -->
+    <link id="styleSheet0" href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet1" href="/css/bsplus.css" rel="stylesheet" media="all" type="text/css">
+    <link id="styleSheet2" href="/css/default.css" rel="stylesheet" media="screen" type="text/css">
+    <link id="styleSheet3" href="/css/layout.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/flexslider.css" rel="stylesheet" media="all" type="text/css">
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" media="all" type="text/css">
+    <style type="text/css">
+		
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+	
+	<script type="text/javascript" src="/js/moment.js"></script>
+	<script type="text/javascript" src="/js/vue.min.js"></script>
+	<script type="text/javascript" src="/js/vue-router.js"></script>
+	<script type="text/javascript" src="/js/vue-extend.js"></script>
+	<script type="text/javascript" src="/js/tmp.js"></script>
+	<script type="text/javascript" src="/js/jquery.rwdImageMaps.min.js"></script>
+
+    <script type="text/javascript">
+		
+var menu_id = '1313';
+var section_id = '2018010100000011438';
+
+                
+// enforce a page to show from the top during user refreshes a page
+(function() {
+  // IE11 and under use beforeunload event, the rest uses unload event
+  var unloadEvent = (window.navigator.userAgent.match(/(MSIE|Trident)/)) ? 'beforeunload' : 'unload';
+  $(window).on(unloadEvent, function() {
+    $(window).scrollTop(0);
+  });
+})();
+
+$(function() {
+  // settings for information box - START
+  // show message box (true | false)
+  var showMessageBox = false;
+  // message ordering
+  var messageOrdering = [ 2, 3, 1 ];
+  // settings for information box - END
+
+  Page.setLanguage(lang);
+
+  Alerts.init({
+    showMessageBox: showMessageBox,
+    messageOrdering: messageOrdering
+  });
+
+  Map.init();
+
+  TimeSeries.init();
+
+  RMN.buildStationNames();
+
+  RMN.getData();
+
+  $('#mapLegendToggle').on('click', function() {
+    $(this).toggleClass('collapsed');
+  });
+
+  function scrollToTop(elementId) {
+    var coveredElementHeight = $('.headerTool').height();
+    var targetElement = $('#' + elementId);
+    var elementTop = targetElement.offset().top;
+    var adjustedTop = elementTop - (targetElement.height() / 2) - coveredElementHeight;
+    $('html, body').animate({ scrollTop: adjustedTop }, 2000, 'swing');
+  }
+
+  $(".c-station-name").on('click', function(e) {
+    var targetID = $(e.target).attr('href').substring(1);
+    scrollToTop(targetID);
+    return false;
+  });
+
+  $(".c-station-dose").on('click', function(e) {
+    var targetID = $(e.currentTarget).attr('href').substring(1);
+    scrollToTop(targetID);
+    return false;
+  });
+
+  $('.js-Url-With-Page').on('click', function(e) {
+    e.preventDefault();
+    window.open($(e.target).attr('href'), "_blank");
+  });
+});
+
+	</script>
+</head>
+<body id="page_bg">
+<div id="skipwrapper">
+    <a id="top" title="page top"></a>
+    <a id="skiptocontent" href="#mainContentSkip" class="access">跳至主要內容</a>
+</div>
+<div id="wrap">
+    <div id="header" class="headerArea">
+        <div class="container">
+            <div class="headerTool">
+				<script type="text/javascript">createHeader();</script>
+            </div>
+        </div>
+    </div>
+    <div class="bodyArea">
+        <div class="container">
+            <div class="contentArea">
+                <a id="mainContentSkip"></a>
+                <div class="mainHeader"></div>
+                <div class="breadcrumb"></div>
+				<script type="text/javascript">pageTop();</script>
+				<div id="mainContent" class="mainContent">
+                <!--Begin Content-->
+                <h1>实时香港辐射水平</h1>
+                <div class="border_blank">
+                    <link href="files/radiation-monitoring.css" rel="stylesheet" media="all" type="text/css" /> <link href="files/map.css" rel="stylesheet" media="all" type="text/css" /> <link href="files/ol.css" rel="stylesheet" media="all" type="text/css" />
+<div class="rmap"><!-- emergency announcement -->
+<div id="emergencyAnnouncement" style="display: none;">
+<div class="alert alert-notice">
+<h2 class="c-alert-title">最新资讯</h2>
+<div>
+<ul><!-- template
+          <li>
+            <a href="{{URL}}" target="_blank">{{Link Title}}</a>
+            <span class="c-alert-time">(于{{YYYY}}年{{MM}}月{{DD}}日， 本地时间{{hour}}时{{mm}}分 (UTC + 8) 更新)</span>
+          </li>
+          -->
+<li><a href="https://www.hko.gov.hk/tc/hkonews/workshop-on-aerial-radiation-monitoring.htm" target="_blank" rel="noopener">天文台举办空中辐射监测及核应急准备工作坊</a> <span class="c-alert-time">(于2019年12月6日， 本地时间18时00分 (UTC + 8) 更新)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Gamma radiation level -->
+<div>
+<h2 class="">香港环境伽马辐射水平<br />(每<span id="mapDataFrequency"></span>小时更新一次)</h2>
+<div class="c-map-container">
+<div class="c-map" id="radiationMap"></div>
+<!-- legend -->
+<div class="c-map-legend" id="mapLegend"></div>
+<div class="c-map-pointer" id="northPointer"></div>
+<!-- station info -->
+<div class="c-map-overlay" id="stn_name_pc"></div>
+<div class="c-map-overlay" id="stn_val_pc"></div>
+<div class="c-map-overlay" id="stn_name_kp"></div>
+<div class="c-map-overlay" id="stn_val_kp"></div>
+<div class="c-map-overlay" id="stn_name_tmt"></div>
+<div class="c-map-overlay" id="stn_val_tmt"></div>
+<div class="c-map-overlay" id="stn_name_kt"></div>
+<div class="c-map-overlay" id="stn_val_kt"></div>
+<div class="c-map-overlay" id="stn_name_swh"></div>
+<div class="c-map-overlay" id="stn_val_swh"></div>
+<div class="c-map-overlay" id="stn_name_tm"></div>
+<div class="c-map-overlay" id="stn_val_tm"></div>
+<div class="c-map-overlay" id="stn_name_ko"></div>
+<div class="c-map-overlay" id="stn_val_ko"></div>
+<div class="c-map-overlay" id="stn_name_ynf"></div>
+<div class="c-map-overlay" id="stn_val_ynf"></div>
+<div class="c-map-overlay" id="stn_name_stk"></div>
+<div class="c-map-overlay" id="stn_val_stk"></div>
+<div class="c-map-overlay" id="stn_name_cd"></div>
+<div class="c-map-overlay" id="stn_val_cd"></div>
+<div class="c-map-overlay" id="stn_name_tbt"></div>
+<div class="c-map-overlay" id="stn_val_tbt"></div>
+<div class="c-map-overlay" id="stn_name_gfs"></div>
+<div class="c-map-overlay" id="stn_val_gfs"></div>
+<!-- other controls --> <!--
+      <div class="c-map-controls">
+          <span class="c-map-control-item">
+              <label for="boundaryLayerSwitch"><input id="boundaryLayerSwitch" type="checkbox" name="boundaryLayerSwitch" /> 香港边界</label>
+          </span>
+
+          <span class="c-map-control-item">
+              <label for="districtsLayerSwitch"><input id="districtsLayerSwitch" type="checkbox" name="districtsLayerSwitch" /> 18区</label>
+          </span>
+
+          <span class="c-map-control-item hidden">
+              <label for="populationLayerSwitch"><input id="populationLayerSwitch" type="checkbox" name="populationLayerSwitch" /> Population</label>
+          </span>
+      </div>
+      --> <!--
+      <div class="c-map-controls">
+          <span class="c-map-control-item">
+              <label for="switchBoundaryMDDS"><input id="switchBoundaryMDDS" type="checkbox" name="switchBoundaryMDDS" /> 香港边界 (MDDS)</label>
+          </span>
+
+          <span class="c-map-control-item">
+              <label for="switch4DistrictsMDDS"><input id="switch4DistrictsMDDS" type="checkbox" name="switch4DistrictsMDDS" /> 4区 (MDDS)</label>
+          </span>
+
+          <span class="c-map-control-item">
+              <label for="switch9DistrictsMDDS"><input id="switch9DistrictsMDDS" type="checkbox" name="switch9DistrictsMDDS" /> 9区 (MDDS)</label>
+          </span>
+
+          <span class="c-map-control-item">
+              <label for="switch18DistrictsMDDS"><input id="switch18DistrictsMDDS" type="checkbox" name="switch18DistrictsMDDS" /> 18区 (MDDS)</label>
+          </span>
+
+          <span class="c-map-control-item hidden">
+              <label for="populationLayerSwitch"><input id="populationLayerSwitch" type="checkbox" name="populationLayerSwitch" /> Population</label>
+          </span>
+      </div>
+      --></div>
+</div>
+<div class="print-page-break-before"></div>
+<!-- dose rate (time series) -->
+<div class="section-collapse" style="margin: 1em 0;"><!--
+      <button type="button" id="toggleDoseRate" class="jsToggleButton btn btn-default btn-full-width" data-toggle="collapse" data-target="#doseRateContent" aria-expanded="false" aria-controls="doseRateContent"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>剂量率时间序列</button>
+      <div id="doseRateContent" class="jsToggleContent collapse">
+      -->
+<div id="seriesGraph">
+<div class="c-charts" id="ts_pc"></div>
+<div class="c-charts" id="ts_tm"></div>
+<div class="print-page-break-before"></div>
+<div class="c-charts" id="ts_ko"></div>
+<div class="c-charts" id="ts_ynf"></div>
+<div class="print-page-break-before"></div>
+<div class="c-charts" id="ts_tmt"></div>
+<div class="c-charts" id="ts_stk"></div>
+<div class="print-page-break-before"></div>
+<div class="c-charts" id="ts_kt"></div>
+<div class="c-charts" id="ts_swh"></div>
+<div class="print-page-break-before"></div>
+<div class="c-charts" id="ts_kp"></div>
+<div class="c-charts" id="ts_tbt"></div>
+<div class="print-page-break-before"></div>
+<div class="c-charts" id="ts_cd"></div>
+<div class="c-charts" id="ts_gfs"></div>
+<div class="print-page-break-before"></div>
+</div>
+<div>
+<p class="c-iso"><span class="c-iso-icon"><img src="../../../tc/radiation/monitoring/images/ISO-9001.png" alt="ISO 9001" title="ISO 9001" /></span> <span class="c-iso-text">天文台的环境伽马辐射水平测量服务在二零一五年十月获得国际标准化组织 ISO9001:2008 认证。而该服务更于二零一八年八月获得国际标准化组织 ISO9001:2015 认证。</span></p>
+</div>
+<div>
+<h3 class="c-remark-title">备注：</h3>
+<ol>
+<li>根据过去在香港各地区所录得的数据显示，本港的每小时平均环境伽马辐射剂量率可以在每小时 0.06 至 0.3 微希沃特这范围内波动。(1 微希沃特 = 百万分之一希沃特 = 千分之一毫希沃特)</li>
+<li>辐射水平在时间上的变化，一般由降雨、风和气压等气象因素所引致。</li>
+<li>辐射水平之地区差异，一般由各地区之岩石及土壤所含有不同的放射性物质所引致。</li>
+<li>此乃临时数据，只经过有限度的数据验证。</li>
+</ol>
+</div>
+<!--
+      </div>
+    --></div>
+<!--<h2 class="">想知道更多？</h2>--> <!-- Understanding radiation --> <!--<div class="panel-group accordion" id="rem-understanding-radiation" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="landingControlUnderstandingRadiation">
+        <h3 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#rem-understanding-radiation" href="#landingUnderstandingRadiation" aria-expanded="false" aria-controls="landingUnderstandingRadiation" class="collapsed">认识辐射</a>
+        </h3>
+      </div>
+      <div id="landingUnderstandingRadiation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="landingControlUnderstandingRadiation">
+        <div class="panel-body">
+          <ul class="list-group l-only-one">
+            <li class="list-group-item"><a href="landing_understanding_radiation.html">认识辐射</a></li>
+            <li class="list-group-item"><a href="accident_fukushima.html">福岛事故 (2011)</a></li>
+            <li class="list-group-item"><a href="publications.html">刊物</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>--> <!-- Radiation monitoring, assessment and protection --> <!--<div class="panel-group accordion" id="rem-environment-monitoring" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="landingControlEnvironmentMonitoring">
+          <h3 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#rem-environment-monitoring" href="#landingEnvironmentMonitoring" aria-expanded="false" aria-controls="landingEnvironmentMonitoring" class="collapsed">辐射监测、评价及防护</a>
+          </h3>
+      </div>
+      <div id="landingEnvironmentMonitoring" class="panel-collapse collapse" role="tabpanel" aria-labelledby="landingControlEnvironmentMonitoring">
+        <div class="panel-body">
+          <ul class="list-group l-only-one">
+            <li class="list-group-item"><a href="landing_ermp.html">环境辐射监测计划</a></li>
+            <li class="list-group-item"><a href="landing_emergency_monitoring.html">应急辐射监测及评价</a></li>
+            <li class="list-group-item"><a href="landing_radiation_protection.html">辐射防护</a></li>
+            <li class="list-group-item"><a href="landing_radiation_and_health.html">辐射与健康</a></li>
+            <li class="list-group-item"><a href="https://kids.weather.gov.hk/tc/virtual-tour/RadExhibitionHall/index.html">香港天文台网上虚拟展览厅 - 香港的环境辐射监测展览</a></li>
+            <li class="list-group-item"><a href="bulletins.html">香港环境伽马辐射水平月报</a></li>
+            <li class="list-group-item"><a href="../../../sc/publica/pubrm.htm" target="_blank" title="在新视窗开启链结">香港环境辐射监测技术报告 <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>--> <!-- contingency plan --> <!--<div class="panel-group accordion" id="rem-contingency-plan" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="landingControlContingencyPlan">
+        <h3 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#rem-contingency-plan" href="#landingContingencyPlan" aria-expanded="false" aria-controls="landingContingencyPlan" class="collapsed">大亚湾应变计划</a>
+        </h3>
+      </div>
+      <div id="landingContingencyPlan" class="panel-collapse collapse" role="tabpanel" aria-labelledby="landingControlContingencyPlan">
+        <div class="panel-body">
+          <ul class="list-group l-only-one">
+            <li class="list-group-item"><a href="landing_dbcp.html">大亚湾应变计划</a></li>
+            <li class="list-group-item"><a href="landing_power_generation.html">核能发电</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>--></div>
+<!-- loader -->
+<div id="loader" class="c-page-loader"></div>
+<!-- templates START -->
+<script type="text/template" id="tplEmergencyMessage">
+  <div class="alert alert-notice">
+    <h2 class="c-alert-title">最新资讯</h2>
+    <div>
+      <p><a href="{{url}}" target="_blank">{{title}}</a></p>
+      <p class="c-alert-time">于{{date}} {{time}}更新 (UTC + 8)</p>
+    </div>
+  </div>
+</script>
+<script type="text/template" id="tplStationNameOverlay">
+  <div class="c-station">
+    <a href="#ts_{{stationCode}}" class="c-station-name">{{name}}</a>
+  </div>
+</script>
+<script type="text/template" id="tplStationValOverlay">
+  <div class="c-station">
+    <a href="#ts_{{stationCode}}" class="c-station-dose"><span class="c-station-dose-value {{colors}}">{{dose}}</span></a>
+  </div>
+</script>
+<script type="text/template" id="tplStationDoseValue">
+  <span class="c-station-dose-value {{colors}}">{{dose}}</span>
+</script>
+<script type="text/template" id="tplMapLegendOverlay">
+  <div class="c-map-legend">
+    <button role="button" id="mapLegendToggle" data-toggle="collapse" data-target="#mapLegendContent" aria-expanded="false" aria-controls="mapLegendContent" class="c-map-legend-toggle collapsed"><span class="glyphicon glyphicon-chevron-up" title="Expand content"></span><span class="glyphicon glyphicon-chevron-down" title="Collapse content"></span></button>
+
+    <p class="c-map-legend-title c-map-legend-icon">伽马辐射水平</p>
+    <p>(于<span id="rmnLegendDate"></span> <span id="rmnLegendTime"></span>更新) (UTC + 8)</p>
+    <p>单位: 微希沃特/小时 (µSv/h)</p>
+
+    <div id="mapLegendContent" aria-labelledby="mapLegendToggle" class="collapse">
+      <p><a href="http://www.weather.gov.hk/radiation/rmn_textonly_uc.htm" target="_blank" alt="剂量率记录" title="剂量率记录">剂量率记录</a></p>
+      <table id="colorLegendEmergency" class="c-legend-table">
+        <caption class="hidden">图例(紧急时)</caption>
+        <tbody>
+          <tr>
+            <td><span class="c-map-legend-box c-map-legend-box--safe"></span></td>
+            <td>< 1</td>
+          </tr>
+          <tr>
+            <td><span class="c-map-legend-box c-map-legend-box--OIL3"></span></td>
+            <td>>= 1 和 < 25</td>
+          </tr>
+          <tr>
+            <td><span class="c-map-legend-box c-map-legend-box--OIL2"></span></td>
+            <td>>= 25 和 < 1000</td>
+          </tr>
+          <tr>
+            <td><span class="c-map-legend-box c-map-legend-box--OIL1"></span></td>
+            <td>>= 1000</td>
+          </tr>
+          <tr>
+            <td><span class="c-map-legend-box c-map-legend-box--neutral"></span></td>
+            <td>正在维修 / 暂时没有数据</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <ul>
+                <li><a class="js-Url-With-Page" href="https://www-pub.iaea.org/MTCD/Publications/PDF/EPR-NPP_PPA_web.pdf#page=68" target="_blank" title="在新视窗开启链结">配色方案参考 <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
+                <li><a href="https://www.iaea.org/zh" target="_blank" title="在新视窗开启链结">国际原子能机构 (IAEA) <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="colorLegendNormal" class="c-legend-table">
+          <caption class="hidden">图例(平常时间)</caption>
+          <tbody>
+              <tr>
+                  <td><span class="c-map-legend-box c-map-legend-box--normal-safe"></span></td>
+                  <td>< 0.3</td>
+              </tr>
+              <tr>
+                  <td><span class="c-map-legend-box c-map-legend-box--normal-unsafe"></span></td>
+                  <td>>= 0.3</td>
+              </tr>
+              <tr>
+                  <td><span class="c-map-legend-box c-map-legend-box--neutral"></span></td>
+                  <td>正在维修 / 暂时没有数据</td>
+              </tr>
+          </tbody>
+      </table>
+      <p>辐射水平受自然天气变化影响，一般在 0.06 至 0.3 µSv/h 范围内波动。</p>
+    </div>
+  </div>
+</script>
+<script type="text/template" id="tplNorthPointer">
+  <div class="c-north-pointer">
+    <span class="c-north-pointer-text">北</span>
+    <span class="glyphicon glyphicon-arrow-up"></span>
+  </div>
+</script>
+<!-- templates END --> <!-- libraries START --> <!--<script type="text/javascript" src="files/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="files/ol.js"></script>
+<script type="text/javascript" src="files/echarts.js"></script>
+<!-- libraries END --> <!-- independant modules START -->
+<script type="text/javascript" src="files/module-config.js"></script>
+<script type="text/javascript" src="files/module-page.js"></script>
+<script type="text/javascript" src="files/module-content.js"></script>
+<!-- independant modules END --> <!-- common dependent modules START -->
+<script type="text/javascript" src="files/module-tools.js"></script>
+<!-- common dependent modules END --> <!-- dependant modules START -->
+<script type="text/javascript" src="files/module-rmn.js"></script>
+<script type="text/javascript" src="files/module-map.js"></script>
+<script type="text/javascript" src="files/module-time-series.js"></script>
+<script type="text/javascript" src="files/module-alerts.js"></script>
+<!-- dependant modules END -->
+<script>var last_revision_date = '2022年6月30日';</script>
+                </div>
+				<!--End Content-->
+                </div>
+            </div>
+            <script type="text/javascript">pageBottom();</script>
+        </div>
+    </div>
+    <div id="footer" class="footerArea">
+        <div class="container"> 
+			<script type="text/javascript">createFooter();</script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
