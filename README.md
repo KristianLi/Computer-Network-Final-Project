@@ -1,4 +1,4 @@
-# Computer-Network-Graduation-Project
+# Computer-Network-Final-Project
 
 Xiamen University (XMU) Computer Networking Course Capstone Project
 
