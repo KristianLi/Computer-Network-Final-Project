@@ -1,5 +1,5 @@
 # Target webset
-[1]香港天文台实时辐射水平监测: <https://www.hko.gov.hk/tc/radiation/monitoring/index.html>
+[1]香港天文台实时辐射水平监测: <https://www.hko.gov.hk/sc/radiation/monitoring/index.html>
 
 [2]全国辐射环境自动监测数据发布系统: <https://data.rmtc.org.cn/gis/listtype0M.html>
 
