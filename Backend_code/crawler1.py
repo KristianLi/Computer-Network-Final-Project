@@ -22,7 +22,7 @@ for index, name in enumerate(station_names):
     radiation_data[station] = dose
 
 # 将数据存入JSON文件
-with open("radiation_data.json", "w", encoding="utf-8") as file:
+with open("radiation_data2.json", "w", encoding="utf-8") as file:
     json.dump(radiation_data, file, ensure_ascii=False, indent=4)
 
-print("数据已成功存入 'radiation_data.json' 文件中。")
+print("数据已成功存入 'radiation_data2.json' 文件中。")

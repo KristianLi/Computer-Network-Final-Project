@@ -1,6 +1,5 @@
 <script setup>
-import RadiationTable from "@/components/RadiationTable.vue";
-</script>
+import RadiatonTable from "@/components/RadiatonTable.vue";</script>
 
 <template>
   <header>
@@ -8,7 +7,7 @@ import RadiationTable from "@/components/RadiationTable.vue";
   </header>
 
   <main>
-    <RadiationTable />
+    <RadiatonTable />
   </main>
 </template>
 
