@@ -1,0 +1,157 @@
+[
+    {
+        "Area": "北京 (北京万柳中路站)",
+        "Radiation_Data": "92 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "天津 (南开复康路站)",
+        "Radiation_Data": "70 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "河北 (石家庄槐岭路站)",
+        "Radiation_Data": "61 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "山西 (太原长治路站)",
+        "Radiation_Data": "89 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "内蒙 (内蒙古环境监测中心站)",
+        "Radiation_Data": "107 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "辽宁 (沈阳市东陵站)",
+        "Radiation_Data": "70 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "吉林 (长春青年路站)",
+        "Radiation_Data": "73 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "黑龙江 (哈尔滨南直路站)",
+        "Radiation_Data": "72 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "上海 (普陀沪太路站)",
+        "Radiation_Data": "69 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "江苏 (南京新城科技园站)",
+        "Radiation_Data": "60 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "浙江 (杭州三义村站)",
+        "Radiation_Data": "89 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "安徽 (合肥怀宁路站)",
+        "Radiation_Data": "75 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "福建 (福州市福飞北路站)",
+        "Radiation_Data": "113 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "江西 (南昌洪都北大道站)",
+        "Radiation_Data": "75 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "山东 (济南经十路站)",
+        "Radiation_Data": "69 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "河南 (郑州大王庄站)",
+        "Radiation_Data": "75 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "湖北 (武汉市公正路站)",
+        "Radiation_Data": "80 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "湖南 (长沙万家丽中路站)",
+        "Radiation_Data": "68 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "广东 (广州大道站)",
+        "Radiation_Data": "106 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "广西 (广西辐射站)",
+        "Radiation_Data": "84 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "海南 (海口红旗镇站)",
+        "Radiation_Data": "73 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "重庆 (大礼堂站)",
+        "Radiation_Data": "76 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "四川 (成都熊猫基地站)",
+        "Radiation_Data": "72 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "贵州 (贵阳青云路站)",
+        "Radiation_Data": "80 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "云南 (昆明环城西路站)",
+        "Radiation_Data": "85 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "西藏 (拉萨东嘎镇站)",
+        "Radiation_Data": "192 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "陕西 (西安北郊污水处理厂站)",
+        "Radiation_Data": "74 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "甘肃 (兰州市东岗站)",
+        "Radiation_Data": "95 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "青海 (西宁纳家山站)",
+        "Radiation_Data": "118 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "宁夏 (银川市环保局西夏分局站)",
+        "Radiation_Data": "86 nGy/h",
+        "Time": "2023-12-07"
+    },
+    {
+        "Area": "新疆 (乌鲁木齐北京中路站)",
+        "Radiation_Data": "74 nGy/h",
+        "Time": "2023-12-07"
+    }
+]
