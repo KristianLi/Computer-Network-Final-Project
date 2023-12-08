@@ -7,9 +7,7 @@ import RadiatonTable from "@/components/RadiatonTable.vue";</script>
   </header>
 
   <main>
-    <button @click="RadiatonTable.methods.leti_decrease()">--</button>
     <RadiatonTable />
-    <button @click="RadiatonTable.methods.leti_increase()">++</button>
   </main>
 </template>
 

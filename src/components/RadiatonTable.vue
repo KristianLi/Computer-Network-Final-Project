@@ -2,6 +2,11 @@
   <div>
     <canvas ref="chartCanvas"></canvas>
   </div>
+  <div class="center-content">
+    <button @click="leti_decrease">--</button>
+    <span>{{ currentDate }}</span>
+    <button @click="leti_increase">++</button>
+  </div>
 </template>
 
 <script>
@@ -15,7 +20,8 @@ export default {
       j:0,
       k:0,
       radiationData: [],
-      currentDate:''
+      currentDate:'',
+      chart: null // 用于保存图表实例的引用
     };
   },
   created() {
@@ -27,9 +33,13 @@ export default {
   methods: {
     leti_increase(){
       this.i++;
+      this.getCurrentDate();
+      this.fetchData();
     },
     leti_decrease(){
       this.i--;
+      this.getCurrentDate();
+      this.fetchData();
     },
     getCurrentDate() {
       const date = new Date();
@@ -96,11 +106,17 @@ export default {
     renderChart() {
       const ctx = this.$refs.chartCanvas.getContext('2d');
 
-      // 提取地区和辐射数据
-      const labels = this.radiationData.map(data => data.Area);
-      const dataValues = this.radiationData.map(data => parseFloat(data.Radiation_Data));
+      // 如果已经存在一个图表实例，则销毁它
+      if (this.chart) {
+        this.chart.destroy();
+      }
 
-      new Chart(ctx, {
+      // 提取地区和辐射数据
+      let labels = this.radiationData.map(data => data.Area);
+      let dataValues = this.radiationData.map(data => parseFloat(data.Radiation_Data));
+
+      // 创建一个新的图表实例，并保存其引用
+      this.chart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: labels,
@@ -131,5 +147,11 @@ export default {
 canvas {
   width: 100%;
   height: 400px; /* 调整图表高度 */
+}
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* 按钮和日期文本之间的间距 */
 }
 </style>
