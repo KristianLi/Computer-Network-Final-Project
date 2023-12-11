@@ -1,5 +1,7 @@
 <script setup>
-import RadiatonTable from "@/components/RadiatonTable.vue";</script>
+import RadiatonTable from "@/components/RadiatonTable.vue";
+import Chinamap from "@/components/chinamap.vue";
+</script>
 
 <template>
   <header>
@@ -7,7 +9,12 @@ import RadiatonTable from "@/components/RadiatonTable.vue";</script>
   </header>
 
   <main>
-    <RadiatonTable />
+    <div class="absolute-position">
+      <Chinamap />
+    </div>
+    <div>
+      <RadiatonTable />
+    </div>
   </main>
 </template>
 
@@ -19,6 +26,16 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+.absolute-position {
+  position: relative; /* 为了让子元素绝对定位相对于此元素 */
+}
+.ChinaMap {
+  position: absolute; /* 相对于父元素进行定位 */
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 1024px) {
