@@ -3,25 +3,27 @@
     <canvas ref="chartCanvas"></canvas>
   </div>
   <div class="center-content">
-    <button @click="leti_decrease">--</button>
+    <button @click="leti_decrease" :disabled="isButtonHidden">--</button>
     <span>{{ currentDate }}</span>
-    <button @click="leti_increase">++</button>
+    <button @click="leti_increase" :disabled="isButtonHidden2">++</button>
   </div>
 </template>
 
 <script>
 import Chart from 'chart.js/auto';
 import axios from 'axios';
-import GetCurrentDate from './getCurrentDate.vue';
 export default {
   data() {
     return {
       i:0,
       j:0,
       k:0,
+      c:0,
       radiationData: [],
       currentDate:'',
-      chart: null // 用于保存图表实例的引用
+      chart: null, // 用于保存图表实例的引用
+      isButtonHidden: false, // 控制按钮显示和隐藏的状态
+      isButtonHidden2: true,
     };
   },
   created() {
@@ -31,13 +33,31 @@ export default {
     this.fetchData();
   },
   methods: {
-    leti_increase(){
+    leti_increase() {
+      // 隐藏按钮并延迟 2 秒后显示
+      this.isButtonHidden = true;
+      this.isButtonHidden2 = true;
+      setTimeout(() => {
+        this.isButtonHidden = false;
+        if(this.c>0)this.isButtonHidden2 = false;
+      }, 1000);
+
       this.i++;
+      this.c--;
       this.getCurrentDate();
       this.fetchData();
     },
-    leti_decrease(){
+    leti_decrease() {
+      // 隐藏按钮并延迟 2 秒后显示
+      this.isButtonHidden = true;
+      this.isButtonHidden2 = true;
+      setTimeout(() => {
+        if(this.c<14)this.isButtonHidden=false;
+        if(this.c>0)this.isButtonHidden2 = false;
+      }, 1000);
+
       this.i--;
+      this.c++;
       this.getCurrentDate();
       this.fetchData();
     },
@@ -51,7 +71,7 @@ export default {
         switch ((x2-1)%12){
           case 1:this.i+=31;break;
           case 2:{
-            if(x3%4==0&&x3%100!=0||x3%400==0)this.i+=29;
+            if(x3%4===0&&x3%100!==0||x3%400===0)this.i+=29;
             else this.i+=28;
           }break;
           case 3:this.i+=31;break;
@@ -67,16 +87,16 @@ export default {
           default:break;
         }
       }
-      if(x2+this.j==2 && x1+this.i>28){
-        if((x3+k)%4==0&&(x3+k)%100!=0||(x3+k)%400==0)this.i-=29;
+      if(x2+this.j===2 && x1+this.i>28){
+        if((x3+this.k)%4===0&&(x3+this.k)%100!==0||(x3+this.k)%400===0)this.i-=29;
         else this.i-=28;
         this.j++;
       }
-      if(x2+this.j==4||x2+this.j==6||x2+this.j==9||x2+this.j==11 && x1+this.i>30){
+      if(x2+this.j===4||x2+this.j===6||x2+this.j===9||x2+this.j===11 && x1+this.i>30){
         this.i-=30;
         this.j++;
       }
-      if(x2+this.j==1||x2+this.j==3||x2+this.j==5||x2+this.j==7||x2+this.j==8||x2+this.j==10||x2+this.j==12 && x1+this.i>31){
+      if(x2+this.j===1||x2+this.j===3||x2+this.j===5||x2+this.j===7||x2+this.j===8||x2+this.j===10||x2+this.j===12 && x1+this.i>31){
         this.i-=31;
         this.j++;
       }
@@ -84,7 +104,7 @@ export default {
         this.j-=12;
         this.k++;
       }
-      else if (x2+this.j==0) {
+      else if (x2+this.j===0) {
        this.j+=12;
        this.k--;
       }
@@ -110,10 +130,9 @@ export default {
       if (this.chart) {
         this.chart.destroy();
       }
-
       // 提取地区和辐射数据
       let labels = this.radiationData.map(data => data.Area);
-      let dataValues = this.radiationData.map(data => parseFloat(data.Radiation_Data));
+      let dataValues = this.radiationData.map(data => parseInt(data.Radiation_Data));
 
       // 创建一个新的图表实例，并保存其引用
       this.chart = new Chart(ctx, {

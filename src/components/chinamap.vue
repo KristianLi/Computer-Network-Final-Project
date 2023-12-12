@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     getMapData() {
-      axios.get('http://localhost:3000/mapdatacm', {
+      axios.get('http://localhost:8888/mapdatacm', {
         // 参数
         params: {
           year: this.date.year,
