@@ -1,6 +1,7 @@
 <script setup>
 import RadiatonTable from "@/components/RadiatonTable.vue";
 import Chinamap from "@/components/chinamap.vue";
+import analysis from "@/components/analysis.vue";
 </script>
 
 <template>
@@ -14,6 +15,10 @@ import Chinamap from "@/components/chinamap.vue";
     </div>
     <div>
       <RadiatonTable />
+    </div>
+
+    <div>
+      <analysis />
     </div>
   </main>
 </template>
