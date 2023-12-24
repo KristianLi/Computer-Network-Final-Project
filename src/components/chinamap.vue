@@ -12,25 +12,33 @@ export default {
   data() {
     return {
       MapDataList: [],
+      currentDate:'',
     };
   },
   created() {
-
+    this.getMapData();
   },
   mounted() {
     this.setMapData();
   },
   methods: {
     getMapData() {
-      axios.get('http://localhost:8888/mapdatacm', {
-        // 参数
-        params: {
-          year: this.date.year,
-          month: this.date.month,
-          day: this.date.day
+      let date = new Date();
+      let x3 = date.getFullYear();
+      let x2= date.getMonth() + 1;
+      let x1 = date.getDate();
+      let year = String(x3).padStart(2, '0');
+      let month = String(x2).padStart(2, '0');
+      let day = String(x1).padStart(2, '0');
+      this.currentDate = `${year}-${month}-${day}`;
+      let path = `/Data/${this.currentDate}/re_data.json`
+      axios.get(path ).then(response => {
+        console.log(response);
+        for (let i = 0; i < response.data.length; i++) {
+          response.data[i].value = parseInt(response.data[i].value.split(" ")[0]);
         }
-      }).then(response => {
         this.MapDataList = response.data;
+        console.log(this.MapDataList);
         // 请求完成后，渲染地图
         this.setMapData();
       }).catch(error => {
