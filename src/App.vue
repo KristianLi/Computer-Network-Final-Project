@@ -1,3 +1,4 @@
+
 <script setup>
 import RadiatonTable from "@/components/RadiatonTable.vue";
 import Chinamap from "@/components/chinamap.vue";
@@ -10,7 +11,7 @@ import analysis from "@/components/analysis.vue";
   </header>
 
   <main>
-    <div class="absolute-position">
+    <div class="absolute-position" >
       <Chinamap />
     </div>
     <div>
@@ -24,14 +25,13 @@ import analysis from "@/components/analysis.vue";
 </template>
 
 <style scoped>
-<<<<<<< HEAD
-=======
+
 main{
-      background-image: url("../../public/background6.jpg");
-      background-repeat: no-repeat center;
-      background-size: cover;
+   background-image: url("../../public/background6.jpg");
+  background-repeat: no-repeat center;
+    background-size: cover;
 }
->>>>>>> 5fe5ef1 (first commit)
+
 header {
   line-height: 1.5;
 }
@@ -42,6 +42,8 @@ header {
 }
 .absolute-position {
   position: relative; /* 为了让子元素绝对定位相对于此元素 */
+  /* background-image: url("../../public/background1.jpg"); /* */
+
 }
 .ChinaMap {
   position: absolute; /* 相对于父元素进行定位 */
@@ -69,3 +71,5 @@ header {
   }
 }
 </style>
+
+
