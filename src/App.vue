@@ -27,7 +27,7 @@ import analysis from "@/components/analysis.vue";
 <style scoped>
 
 main{
-   background-image: url("../../public/background6.jpg");
+   background-image: url("../public/background6.jpg");
   background-repeat: no-repeat center;
     background-size: cover;
 }
