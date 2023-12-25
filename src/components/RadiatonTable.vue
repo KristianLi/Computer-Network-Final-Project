@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div>
     <canvas ref="chartCanvas"></canvas>
@@ -5,6 +6,16 @@
   <div class="center-content">
     <button @click="leti_decrease" :disabled="isButtonHidden">--</button>
     <span>{{ currentDate }}</span>
+=======
+
+<template>
+  <div>
+    <canvas ref="chartCanvas" ></canvas>
+  </div>
+  <div class="center-content">
+    <button @click="leti_decrease" :disabled="isButtonHidden">--</button>
+    <span id="dateshow">{{ currentDate }}</span>
+>>>>>>> 5fe5ef1 (first commit)
     <button @click="leti_increase" :disabled="isButtonHidden2">++</button>
   </div>
 </template>
@@ -142,17 +153,44 @@ export default {
           datasets: [{
             label: 'Radiation Data',
             data: dataValues,
+<<<<<<< HEAD
             backgroundColor: 'rgba(54, 162, 235, 0.6)',
+=======
+            backgroundColor: 'rgba(54, 162, 235, 1)',
+>>>>>>> 5fe5ef1 (first commit)
             borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1
           }]
         },
+<<<<<<< HEAD
         options: {
           responsive: true,
           maintainAspectRatio: false,
           scales: {
             y: {
               beginAtZero: true
+=======
+          options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              grid: {
+            color: 'rgba(255, 255, 255, 1)' // 设置Y轴网格线的颜色，这里是半透明红色
+         },
+          ticks: {
+          color: 'rgba(255, 255, 255, 1)' // 设置Y轴刻度标签的颜色，这里是半透明红色
+         }
+        },
+            y: {
+              beginAtZero: true,
+              grid: {
+            color: 'rgba(255, 255, 255, 1)' // 设置Y轴网格线的颜色，这里是半透明红色
+          },
+          ticks: {
+        color: 'rgba(255, 255, 255, 1)' // 设置Y轴刻度标签的颜色，这里是半透明红色
+         }
+>>>>>>> 5fe5ef1 (first commit)
             }
           }
         }
@@ -173,4 +211,14 @@ canvas {
   align-items: center;
   gap: 10px; /* 按钮和日期文本之间的间距 */
 }
+<<<<<<< HEAD
 </style>
+=======
+#dateshow{
+   color: aliceblue;
+}
+
+</style>
+
+
+>>>>>>> 5fe5ef1 (first commit)
