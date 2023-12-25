@@ -1,15 +1,9 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <div class="response-content">
-      <!-- 显示 JSON 文件中的响应内容 -->
-      {{ jsonResponse }}
-=======
     <div class="box">
       <p>
         {{ jsonResponse }}
       </p>
->>>>>>> 5fe5ef1 (first commit)
     </div>
   </div>
 </template>
@@ -52,11 +46,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< HEAD
-.response-content {
-  white-space: pre-wrap; /* 保留换行符和空格 */
-}
-=======
 
 
 
@@ -110,5 +99,4 @@ p{
 }
 
 
->>>>>>> 5fe5ef1 (first commit)
 </style>
