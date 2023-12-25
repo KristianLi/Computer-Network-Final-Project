@@ -1,0 +1,3666 @@
+./
+├── Backend_code
+│   ├── DealWithData.py
+│   ├── GPT.py
+│   ├── MakeWhole.py
+│   ├── README.md
+│   ├── ana1.py
+│   ├── crawler1.py
+│   ├── crawler2.py
+│   └── get_full_html.py
+├── Data
+│   ├── 2023-12-10
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-11
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-12
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-13
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-14
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-15
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-16
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-17
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-18
+│   │   ├── analysis.json
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-19
+│   │   ├── analysis.json
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-20
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-21
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-22
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-23
+│   │   ├── analysis.json
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-24
+│   │   ├── analysis.json
+│   │   ├── radiation_data2.json
+│   │   └── re_data.json
+│   ├── 2023-12-25
+│   │   ├── analysis.json
+│   │   ├── radiation_data2.json
+│   │   ├── re_data.json
+│   │   └── whole.json
+│   └── 2023-12-26
+│       └── radiation_data2.json
+├── LICENSE
+├── README.md
+├── china.json
+├── dist
+│   ├── assets
+│   │   ├── index-0d8d4199.js
+│   │   └── index-20cd37f7.css
+│   ├── favicon.ico
+│   └── index.html
+├── index.html
+├── node_modules
+│   ├── @babel
+│   │   └── parser
+│   │       ├── CHANGELOG.md
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── bin
+│   │       │   └── babel-parser.js
+│   │       ├── index.cjs
+│   │       ├── lib
+│   │       │   ├── index.js
+│   │       │   └── index.js.map
+│   │       ├── package.json
+│   │       └── typings
+│   │           └── babel-parser.d.ts
+│   ├── @esbuild
+│   │   └── darwin-arm64
+│   │       ├── README.md
+│   │       ├── bin
+│   │       │   ├── esbuild
+│   │       │   └── esbuild 2
+│   │       └── package.json
+│   ├── @jridgewell
+│   │   └── sourcemap-codec
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── dist
+│   │       │   ├── sourcemap-codec.mjs
+│   │       │   ├── sourcemap-codec.mjs.map
+│   │       │   ├── sourcemap-codec.umd.js
+│   │       │   ├── sourcemap-codec.umd.js.map
+│   │       │   └── types
+│   │       │       └── sourcemap-codec.d.ts
+│   │       └── package.json
+│   ├── @kurkle
+│   │   └── color
+│   │       ├── LICENSE.md
+│   │       ├── README.md
+│   │       ├── dist
+│   │       │   ├── color.cjs
+│   │       │   ├── color.d.ts
+│   │       │   ├── color.esm.js
+│   │       │   ├── color.min.js
+│   │       │   └── color.min.js.map
+│   │       └── package.json
+│   ├── @vitejs
+│   │   └── plugin-vue
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── dist
+│   │       │   ├── index.cjs
+│   │       │   ├── index.d.cts
+│   │       │   ├── index.d.mts
+│   │       │   ├── index.d.ts
+│   │       │   └── index.mjs
+│   │       └── package.json
+│   ├── @vue
+│   │   ├── compiler-core
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── compiler-core.cjs.js
+│   │   │   │   ├── compiler-core.cjs.prod.js
+│   │   │   │   ├── compiler-core.d.ts
+│   │   │   │   └── compiler-core.esm-bundler.js
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── compiler-dom
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── compiler-dom.cjs.js
+│   │   │   │   ├── compiler-dom.cjs.prod.js
+│   │   │   │   ├── compiler-dom.d.ts
+│   │   │   │   ├── compiler-dom.esm-browser.js
+│   │   │   │   ├── compiler-dom.esm-browser.prod.js
+│   │   │   │   ├── compiler-dom.esm-bundler.js
+│   │   │   │   ├── compiler-dom.global.js
+│   │   │   │   └── compiler-dom.global.prod.js
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── compiler-sfc
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── compiler-sfc.cjs.js
+│   │   │   │   ├── compiler-sfc.d.ts
+│   │   │   │   └── compiler-sfc.esm-browser.js
+│   │   │   └── package.json
+│   │   ├── compiler-ssr
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── compiler-ssr.cjs.js
+│   │   │   │   └── compiler-ssr.d.ts
+│   │   │   └── package.json
+│   │   ├── devtools-api
+│   │   │   ├── lib
+│   │   │   │   ├── cjs
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── api.js
+│   │   │   │   │   │   ├── app.js
+│   │   │   │   │   │   ├── component.js
+│   │   │   │   │   │   ├── context.js
+│   │   │   │   │   │   ├── hooks.js
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   └── util.js
+│   │   │   │   │   ├── const.js
+│   │   │   │   │   ├── env.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   ├── plugin.js
+│   │   │   │   │   ├── proxy.js
+│   │   │   │   │   └── time.js
+│   │   │   │   └── esm
+│   │   │   │       ├── api
+│   │   │   │       │   ├── api.d.ts
+│   │   │   │       │   ├── api.js
+│   │   │   │       │   ├── app.d.ts
+│   │   │   │       │   ├── app.js
+│   │   │   │       │   ├── component.d.ts
+│   │   │   │       │   ├── component.js
+│   │   │   │       │   ├── context.d.ts
+│   │   │   │       │   ├── context.js
+│   │   │   │       │   ├── hooks.d.ts
+│   │   │   │       │   ├── hooks.js
+│   │   │   │       │   ├── index.d.ts
+│   │   │   │       │   ├── index.js
+│   │   │   │       │   ├── util.d.ts
+│   │   │   │       │   └── util.js
+│   │   │   │       ├── const.d.ts
+│   │   │   │       ├── const.js
+│   │   │   │       ├── env.d.ts
+│   │   │   │       ├── env.js
+│   │   │   │       ├── index.d.ts
+│   │   │   │       ├── index.js
+│   │   │   │       ├── plugin.d.ts
+│   │   │   │       ├── plugin.js
+│   │   │   │       ├── proxy.d.ts
+│   │   │   │       ├── proxy.js
+│   │   │   │       ├── time.d.ts
+│   │   │   │       └── time.js
+│   │   │   └── package.json
+│   │   ├── reactivity
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── reactivity.cjs.js
+│   │   │   │   ├── reactivity.cjs.prod.js
+│   │   │   │   ├── reactivity.d.ts
+│   │   │   │   ├── reactivity.esm-browser.js
+│   │   │   │   ├── reactivity.esm-browser.prod.js
+│   │   │   │   ├── reactivity.esm-bundler.js
+│   │   │   │   ├── reactivity.global.js
+│   │   │   │   └── reactivity.global.prod.js
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── reactivity-transform
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── reactivity-transform.cjs.js
+│   │   │   │   └── reactivity-transform.d.ts
+│   │   │   └── package.json
+│   │   ├── runtime-core
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── runtime-core.cjs.js
+│   │   │   │   ├── runtime-core.cjs.prod.js
+│   │   │   │   ├── runtime-core.d.ts
+│   │   │   │   └── runtime-core.esm-bundler.js
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── runtime-dom
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── runtime-dom.cjs.js
+│   │   │   │   ├── runtime-dom.cjs.prod.js
+│   │   │   │   ├── runtime-dom.d.ts
+│   │   │   │   ├── runtime-dom.esm-browser.js
+│   │   │   │   ├── runtime-dom.esm-browser.prod.js
+│   │   │   │   ├── runtime-dom.esm-bundler.js
+│   │   │   │   ├── runtime-dom.global.js
+│   │   │   │   └── runtime-dom.global.prod.js
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── server-renderer
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── server-renderer.cjs.js
+│   │   │   │   ├── server-renderer.cjs.prod.js
+│   │   │   │   ├── server-renderer.d.ts
+│   │   │   │   ├── server-renderer.esm-browser.js
+│   │   │   │   ├── server-renderer.esm-browser.prod.js
+│   │   │   │   └── server-renderer.esm-bundler.js
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   └── shared
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── dist
+│   │       │   ├── shared.cjs.js
+│   │       │   ├── shared.cjs.prod.js
+│   │       │   ├── shared.d.ts
+│   │       │   └── shared.esm-bundler.js
+│   │       ├── index.js
+│   │       └── package.json
+│   ├── asynckit
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── bench.js
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── abort.js
+│   │   │   ├── async.js
+│   │   │   ├── defer.js
+│   │   │   ├── iterate.js
+│   │   │   ├── readable_asynckit.js
+│   │   │   ├── readable_parallel.js
+│   │   │   ├── readable_serial.js
+│   │   │   ├── readable_serial_ordered.js
+│   │   │   ├── state.js
+│   │   │   ├── streamify.js
+│   │   │   └── terminator.js
+│   │   ├── package.json
+│   │   ├── parallel.js
+│   │   ├── serial.js
+│   │   ├── serialOrdered.js
+│   │   └── stream.js
+│   ├── axios
+│   │   ├── CHANGELOG.md
+│   │   ├── LICENSE
+│   │   ├── MIGRATION_GUIDE.md
+│   │   ├── README.md
+│   │   ├── SECURITY.md
+│   │   ├── dist
+│   │   │   ├── axios.js
+│   │   │   ├── axios.js.map
+│   │   │   ├── axios.min.js
+│   │   │   ├── axios.min.js.map
+│   │   │   ├── browser
+│   │   │   │   ├── axios.cjs
+│   │   │   │   └── axios.cjs.map
+│   │   │   ├── esm
+│   │   │   │   ├── axios.js
+│   │   │   │   ├── axios.js.map
+│   │   │   │   ├── axios.min.js
+│   │   │   │   └── axios.min.js.map
+│   │   │   └── node
+│   │   │       ├── axios.cjs
+│   │   │       └── axios.cjs.map
+│   │   ├── index.d.cts
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── adapters
+│   │   │   │   ├── README.md
+│   │   │   │   ├── adapters.js
+│   │   │   │   ├── http.js
+│   │   │   │   └── xhr.js
+│   │   │   ├── axios.js
+│   │   │   ├── cancel
+│   │   │   │   ├── CancelToken.js
+│   │   │   │   ├── CanceledError.js
+│   │   │   │   └── isCancel.js
+│   │   │   ├── core
+│   │   │   │   ├── Axios.js
+│   │   │   │   ├── AxiosError.js
+│   │   │   │   ├── AxiosHeaders.js
+│   │   │   │   ├── InterceptorManager.js
+│   │   │   │   ├── README.md
+│   │   │   │   ├── buildFullPath.js
+│   │   │   │   ├── dispatchRequest.js
+│   │   │   │   ├── mergeConfig.js
+│   │   │   │   ├── settle.js
+│   │   │   │   └── transformData.js
+│   │   │   ├── defaults
+│   │   │   │   ├── index.js
+│   │   │   │   └── transitional.js
+│   │   │   ├── env
+│   │   │   │   ├── README.md
+│   │   │   │   ├── classes
+│   │   │   │   │   └── FormData.js
+│   │   │   │   └── data.js
+│   │   │   ├── helpers
+│   │   │   │   ├── AxiosTransformStream.js
+│   │   │   │   ├── AxiosURLSearchParams.js
+│   │   │   │   ├── HttpStatusCode.js
+│   │   │   │   ├── README.md
+│   │   │   │   ├── ZlibHeaderTransformStream.js
+│   │   │   │   ├── bind.js
+│   │   │   │   ├── buildURL.js
+│   │   │   │   ├── callbackify.js
+│   │   │   │   ├── combineURLs.js
+│   │   │   │   ├── cookies.js
+│   │   │   │   ├── deprecatedMethod.js
+│   │   │   │   ├── formDataToJSON.js
+│   │   │   │   ├── formDataToStream.js
+│   │   │   │   ├── fromDataURI.js
+│   │   │   │   ├── isAbsoluteURL.js
+│   │   │   │   ├── isAxiosError.js
+│   │   │   │   ├── isURLSameOrigin.js
+│   │   │   │   ├── null.js
+│   │   │   │   ├── parseHeaders.js
+│   │   │   │   ├── parseProtocol.js
+│   │   │   │   ├── readBlob.js
+│   │   │   │   ├── speedometer.js
+│   │   │   │   ├── spread.js
+│   │   │   │   ├── throttle.js
+│   │   │   │   ├── toFormData.js
+│   │   │   │   ├── toURLEncodedForm.js
+│   │   │   │   └── validator.js
+│   │   │   ├── platform
+│   │   │   │   ├── browser
+│   │   │   │   │   ├── classes
+│   │   │   │   │   │   ├── Blob.js
+│   │   │   │   │   │   ├── FormData.js
+│   │   │   │   │   │   └── URLSearchParams.js
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── common
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── index.js
+│   │   │   │   └── node
+│   │   │   │       ├── classes
+│   │   │   │       │   ├── FormData.js
+│   │   │   │       │   └── URLSearchParams.js
+│   │   │   │       └── index.js
+│   │   │   └── utils.js
+│   │   └── package.json
+│   ├── chart.js
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── auto
+│   │   │   ├── auto.cjs
+│   │   │   ├── auto.d.ts
+│   │   │   ├── auto.js
+│   │   │   └── package.json
+│   │   ├── dist
+│   │   │   ├── chart.cjs
+│   │   │   ├── chart.cjs.map
+│   │   │   ├── chart.js
+│   │   │   ├── chart.js.map
+│   │   │   ├── chart.umd.js
+│   │   │   ├── chart.umd.js.map
+│   │   │   ├── chunks
+│   │   │   │   ├── helpers.segment.cjs
+│   │   │   │   ├── helpers.segment.cjs.map
+│   │   │   │   ├── helpers.segment.js
+│   │   │   │   └── helpers.segment.js.map
+│   │   │   ├── controllers
+│   │   │   │   ├── controller.bar.d.ts
+│   │   │   │   ├── controller.bubble.d.ts
+│   │   │   │   ├── controller.doughnut.d.ts
+│   │   │   │   ├── controller.line.d.ts
+│   │   │   │   ├── controller.pie.d.ts
+│   │   │   │   ├── controller.polarArea.d.ts
+│   │   │   │   ├── controller.radar.d.ts
+│   │   │   │   ├── controller.scatter.d.ts
+│   │   │   │   └── index.d.ts
+│   │   │   ├── core
+│   │   │   │   ├── core.adapters.d.ts
+│   │   │   │   ├── core.animation.d.ts
+│   │   │   │   ├── core.animations.d.ts
+│   │   │   │   ├── core.animations.defaults.d.ts
+│   │   │   │   ├── core.animator.d.ts
+│   │   │   │   ├── core.config.d.ts
+│   │   │   │   ├── core.controller.d.ts
+│   │   │   │   ├── core.datasetController.d.ts
+│   │   │   │   ├── core.defaults.d.ts
+│   │   │   │   ├── core.element.d.ts
+│   │   │   │   ├── core.interaction.d.ts
+│   │   │   │   ├── core.layouts.d.ts
+│   │   │   │   ├── core.layouts.defaults.d.ts
+│   │   │   │   ├── core.plugins.d.ts
+│   │   │   │   ├── core.registry.d.ts
+│   │   │   │   ├── core.scale.autoskip.d.ts
+│   │   │   │   ├── core.scale.d.ts
+│   │   │   │   ├── core.scale.defaults.d.ts
+│   │   │   │   ├── core.ticks.d.ts
+│   │   │   │   ├── core.typedRegistry.d.ts
+│   │   │   │   └── index.d.ts
+│   │   │   ├── elements
+│   │   │   │   ├── element.arc.d.ts
+│   │   │   │   ├── element.bar.d.ts
+│   │   │   │   ├── element.line.d.ts
+│   │   │   │   ├── element.point.d.ts
+│   │   │   │   └── index.d.ts
+│   │   │   ├── helpers
+│   │   │   │   ├── helpers.canvas.d.ts
+│   │   │   │   ├── helpers.collection.d.ts
+│   │   │   │   ├── helpers.color.d.ts
+│   │   │   │   ├── helpers.config.d.ts
+│   │   │   │   ├── helpers.config.types.d.ts
+│   │   │   │   ├── helpers.core.d.ts
+│   │   │   │   ├── helpers.curve.d.ts
+│   │   │   │   ├── helpers.dom.d.ts
+│   │   │   │   ├── helpers.easing.d.ts
+│   │   │   │   ├── helpers.extras.d.ts
+│   │   │   │   ├── helpers.interpolation.d.ts
+│   │   │   │   ├── helpers.intl.d.ts
+│   │   │   │   ├── helpers.math.d.ts
+│   │   │   │   ├── helpers.options.d.ts
+│   │   │   │   ├── helpers.rtl.d.ts
+│   │   │   │   ├── helpers.segment.d.ts
+│   │   │   │   └── index.d.ts
+│   │   │   ├── helpers.cjs
+│   │   │   ├── helpers.cjs.map
+│   │   │   ├── helpers.js
+│   │   │   ├── helpers.js.map
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.umd.d.ts
+│   │   │   ├── platform
+│   │   │   │   ├── index.d.ts
+│   │   │   │   ├── platform.base.d.ts
+│   │   │   │   ├── platform.basic.d.ts
+│   │   │   │   └── platform.dom.d.ts
+│   │   │   ├── plugins
+│   │   │   │   ├── index.d.ts
+│   │   │   │   ├── plugin.colors.d.ts
+│   │   │   │   ├── plugin.decimation.d.ts
+│   │   │   │   ├── plugin.filler
+│   │   │   │   │   ├── filler.drawing.d.ts
+│   │   │   │   │   ├── filler.helper.d.ts
+│   │   │   │   │   ├── filler.options.d.ts
+│   │   │   │   │   ├── filler.segment.d.ts
+│   │   │   │   │   ├── filler.target.d.ts
+│   │   │   │   │   ├── filler.target.stack.d.ts
+│   │   │   │   │   ├── index.d.ts
+│   │   │   │   │   └── simpleArc.d.ts
+│   │   │   │   ├── plugin.legend.d.ts
+│   │   │   │   ├── plugin.subtitle.d.ts
+│   │   │   │   ├── plugin.title.d.ts
+│   │   │   │   └── plugin.tooltip.d.ts
+│   │   │   ├── scales
+│   │   │   │   ├── index.d.ts
+│   │   │   │   ├── scale.category.d.ts
+│   │   │   │   ├── scale.linear.d.ts
+│   │   │   │   ├── scale.linearbase.d.ts
+│   │   │   │   ├── scale.logarithmic.d.ts
+│   │   │   │   ├── scale.radialLinear.d.ts
+│   │   │   │   ├── scale.time.d.ts
+│   │   │   │   └── scale.timeseries.d.ts
+│   │   │   ├── types
+│   │   │   │   ├── animation.d.ts
+│   │   │   │   ├── basic.d.ts
+│   │   │   │   ├── color.d.ts
+│   │   │   │   ├── geometric.d.ts
+│   │   │   │   ├── index.d.ts
+│   │   │   │   ├── layout.d.ts
+│   │   │   │   └── utils.d.ts
+│   │   │   └── types.d.ts
+│   │   ├── helpers
+│   │   │   ├── helpers.cjs
+│   │   │   ├── helpers.d.ts
+│   │   │   ├── helpers.js
+│   │   │   └── package.json
+│   │   └── package.json
+│   ├── combined-stream
+│   │   ├── License
+│   │   ├── Readme.md
+│   │   ├── lib
+│   │   │   └── combined_stream.js
+│   │   ├── package.json
+│   │   └── yarn.lock
+│   ├── csstype
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── index.d.ts
+│   │   ├── index.js.flow
+│   │   └── package.json
+│   ├── delayed-stream
+│   │   ├── License
+│   │   ├── Makefile
+│   │   ├── Readme.md
+│   │   ├── lib
+│   │   │   └── delayed_stream.js
+│   │   └── package.json
+│   ├── echarts
+│   │   ├── KEYS
+│   │   ├── LICENSE
+│   │   ├── NOTICE
+│   │   ├── README.md
+│   │   ├── asset
+│   │   │   └── logo.png
+│   │   ├── build
+│   │   │   ├── addHeader.js
+│   │   │   ├── build-i18n.js
+│   │   │   ├── build.js
+│   │   │   ├── config.js
+│   │   │   ├── dev-fast.js
+│   │   │   ├── nightly
+│   │   │   │   ├── post.js
+│   │   │   │   └── prepare.js
+│   │   │   ├── pre-publish.js
+│   │   │   ├── preamble.js
+│   │   │   ├── source-release
+│   │   │   │   ├── prepareReleaseMaterials.js
+│   │   │   │   └── template
+│   │   │   │       ├── announce-release.tpl
+│   │   │   │       ├── vote-release.tpl
+│   │   │   │       └── vote-result.tpl
+│   │   │   ├── template
+│   │   │   │   ├── charts.d.ts
+│   │   │   │   ├── charts.js
+│   │   │   │   ├── components.d.ts
+│   │   │   │   ├── components.js
+│   │   │   │   ├── core.d.ts
+│   │   │   │   ├── core.js
+│   │   │   │   ├── features.d.ts
+│   │   │   │   ├── features.js
+│   │   │   │   ├── option.d.ts
+│   │   │   │   ├── renderers.d.ts
+│   │   │   │   └── renderers.js
+│   │   │   ├── testDts.js
+│   │   │   └── transform-dev.js
+│   │   ├── charts.d.ts
+│   │   ├── charts.js
+│   │   ├── components.d.ts
+│   │   ├── components.js
+│   │   ├── core.d.ts
+│   │   ├── core.js
+│   │   ├── dist
+│   │   │   ├── echarts.common.js
+│   │   │   ├── echarts.common.js.map
+│   │   │   ├── echarts.common.min.js
+│   │   │   ├── echarts.esm.js
+│   │   │   ├── echarts.esm.js.map
+│   │   │   ├── echarts.esm.min.js
+│   │   │   ├── echarts.js
+│   │   │   ├── echarts.js.map
+│   │   │   ├── echarts.min.js
+│   │   │   ├── echarts.simple.js
+│   │   │   ├── echarts.simple.js.map
+│   │   │   ├── echarts.simple.min.js
+│   │   │   └── extension
+│   │   │       ├── bmap.js
+│   │   │       ├── bmap.js.map
+│   │   │       ├── bmap.min.js
+│   │   │       ├── dataTool.js
+│   │   │       ├── dataTool.js.map
+│   │   │       └── dataTool.min.js
+│   │   ├── extension
+│   │   │   ├── bmap
+│   │   │   │   ├── BMapCoordSys.js
+│   │   │   │   ├── BMapModel.js
+│   │   │   │   ├── BMapView.js
+│   │   │   │   └── bmap.js
+│   │   │   └── dataTool
+│   │   │       ├── gexf.js
+│   │   │       ├── index.js
+│   │   │       └── prepareBoxplotData.js
+│   │   ├── extension-src
+│   │   │   ├── bmap
+│   │   │   │   ├── BMapCoordSys.ts
+│   │   │   │   ├── BMapModel.ts
+│   │   │   │   ├── BMapView.ts
+│   │   │   │   ├── README.md
+│   │   │   │   └── bmap.ts
+│   │   │   └── dataTool
+│   │   │       ├── gexf.ts
+│   │   │       ├── index.ts
+│   │   │       └── prepareBoxplotData.ts
+│   │   ├── features.d.ts
+│   │   ├── features.js
+│   │   ├── i18n
+│   │   │   ├── langCS-obj.js
+│   │   │   ├── langCS.js
+│   │   │   ├── langDE-obj.js
+│   │   │   ├── langDE.js
+│   │   │   ├── langEN-obj.js
+│   │   │   ├── langEN.js
+│   │   │   ├── langES-obj.js
+│   │   │   ├── langES.js
+│   │   │   ├── langFI-obj.js
+│   │   │   ├── langFI.js
+│   │   │   ├── langFR-obj.js
+│   │   │   ├── langFR.js
+│   │   │   ├── langHU-obj.js
+│   │   │   ├── langHU.js
+│   │   │   ├── langIT-obj.js
+│   │   │   ├── langIT.js
+│   │   │   ├── langJA-obj.js
+│   │   │   ├── langJA.js
+│   │   │   ├── langKO-obj.js
+│   │   │   ├── langKO.js
+│   │   │   ├── langPL-obj.js
+│   │   │   ├── langPL.js
+│   │   │   ├── langPT-br-obj.js
+│   │   │   ├── langPT-br.js
+│   │   │   ├── langRO-obj.js
+│   │   │   ├── langRO.js
+│   │   │   ├── langRU-obj.js
+│   │   │   ├── langRU.js
+│   │   │   ├── langSI-obj.js
+│   │   │   ├── langSI.js
+│   │   │   ├── langTH-obj.js
+│   │   │   ├── langTH.js
+│   │   │   ├── langTR-obj.js
+│   │   │   ├── langTR.js
+│   │   │   ├── langUK-obj.js
+│   │   │   ├── langUK.js
+│   │   │   ├── langVI-obj.js
+│   │   │   ├── langVI.js
+│   │   │   ├── langZH-obj.js
+│   │   │   └── langZH.js
+│   │   ├── index.blank.js
+│   │   ├── index.common.js
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── index.simple.js
+│   │   ├── lib
+│   │   │   ├── action
+│   │   │   │   └── roamHelper.js
+│   │   │   ├── animation
+│   │   │   │   ├── basicTransition.js
+│   │   │   │   ├── customGraphicKeyframeAnimation.js
+│   │   │   │   ├── customGraphicTransition.js
+│   │   │   │   ├── morphTransitionHelper.js
+│   │   │   │   └── universalTransition.js
+│   │   │   ├── chart
+│   │   │   │   ├── bar
+│   │   │   │   │   ├── BarSeries.js
+│   │   │   │   │   ├── BarView.js
+│   │   │   │   │   ├── BaseBarSeries.js
+│   │   │   │   │   ├── PictorialBarSeries.js
+│   │   │   │   │   ├── PictorialBarView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── installPictorialBar.js
+│   │   │   │   ├── bar.js
+│   │   │   │   ├── boxplot
+│   │   │   │   │   ├── BoxplotSeries.js
+│   │   │   │   │   ├── BoxplotView.js
+│   │   │   │   │   ├── boxplotLayout.js
+│   │   │   │   │   ├── boxplotTransform.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── prepareBoxplotData.js
+│   │   │   │   ├── boxplot.js
+│   │   │   │   ├── candlestick
+│   │   │   │   │   ├── CandlestickSeries.js
+│   │   │   │   │   ├── CandlestickView.js
+│   │   │   │   │   ├── candlestickLayout.js
+│   │   │   │   │   ├── candlestickVisual.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── preprocessor.js
+│   │   │   │   ├── candlestick.js
+│   │   │   │   ├── custom
+│   │   │   │   │   ├── CustomSeries.js
+│   │   │   │   │   ├── CustomView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── custom.js
+│   │   │   │   ├── effectScatter
+│   │   │   │   │   ├── EffectScatterSeries.js
+│   │   │   │   │   ├── EffectScatterView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── effectScatter.js
+│   │   │   │   ├── funnel
+│   │   │   │   │   ├── FunnelSeries.js
+│   │   │   │   │   ├── FunnelView.js
+│   │   │   │   │   ├── funnelLayout.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── funnel.js
+│   │   │   │   ├── gauge
+│   │   │   │   │   ├── GaugeSeries.js
+│   │   │   │   │   ├── GaugeView.js
+│   │   │   │   │   ├── PointerPath.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── gauge.js
+│   │   │   │   ├── graph
+│   │   │   │   │   ├── GraphSeries.js
+│   │   │   │   │   ├── GraphView.js
+│   │   │   │   │   ├── adjustEdge.js
+│   │   │   │   │   ├── categoryFilter.js
+│   │   │   │   │   ├── categoryVisual.js
+│   │   │   │   │   ├── circularLayout.js
+│   │   │   │   │   ├── circularLayoutHelper.js
+│   │   │   │   │   ├── createView.js
+│   │   │   │   │   ├── edgeVisual.js
+│   │   │   │   │   ├── forceHelper.js
+│   │   │   │   │   ├── forceLayout.js
+│   │   │   │   │   ├── graphHelper.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── simpleLayout.js
+│   │   │   │   │   └── simpleLayoutHelper.js
+│   │   │   │   ├── graph.js
+│   │   │   │   ├── heatmap
+│   │   │   │   │   ├── HeatmapLayer.js
+│   │   │   │   │   ├── HeatmapSeries.js
+│   │   │   │   │   ├── HeatmapView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── heatmap.js
+│   │   │   │   ├── helper
+│   │   │   │   │   ├── EffectLine.js
+│   │   │   │   │   ├── EffectPolyline.js
+│   │   │   │   │   ├── EffectSymbol.js
+│   │   │   │   │   ├── LargeLineDraw.js
+│   │   │   │   │   ├── LargeSymbolDraw.js
+│   │   │   │   │   ├── Line.js
+│   │   │   │   │   ├── LineDraw.js
+│   │   │   │   │   ├── LinePath.js
+│   │   │   │   │   ├── Polyline.js
+│   │   │   │   │   ├── Symbol.js
+│   │   │   │   │   ├── SymbolDraw.js
+│   │   │   │   │   ├── createClipPathFromCoordSys.js
+│   │   │   │   │   ├── createGraphFromNodeEdge.js
+│   │   │   │   │   ├── createRenderPlanner.js
+│   │   │   │   │   ├── createSeriesData.js
+│   │   │   │   │   ├── createSeriesDataSimply.js
+│   │   │   │   │   ├── enableAriaDecalForTree.js
+│   │   │   │   │   ├── labelHelper.js
+│   │   │   │   │   ├── multipleGraphEdgeHelper.js
+│   │   │   │   │   ├── sectorHelper.js
+│   │   │   │   │   ├── treeHelper.js
+│   │   │   │   │   └── whiskerBoxCommon.js
+│   │   │   │   ├── line
+│   │   │   │   │   ├── LineSeries.js
+│   │   │   │   │   ├── LineView.js
+│   │   │   │   │   ├── helper.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── lineAnimationDiff.js
+│   │   │   │   │   └── poly.js
+│   │   │   │   ├── line.js
+│   │   │   │   ├── lines
+│   │   │   │   │   ├── LinesSeries.js
+│   │   │   │   │   ├── LinesView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── linesLayout.js
+│   │   │   │   │   └── linesVisual.js
+│   │   │   │   ├── lines.js
+│   │   │   │   ├── map
+│   │   │   │   │   ├── MapSeries.js
+│   │   │   │   │   ├── MapView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── mapDataStatistic.js
+│   │   │   │   │   └── mapSymbolLayout.js
+│   │   │   │   ├── map.js
+│   │   │   │   ├── parallel
+│   │   │   │   │   ├── ParallelSeries.js
+│   │   │   │   │   ├── ParallelView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── parallelVisual.js
+│   │   │   │   ├── parallel.js
+│   │   │   │   ├── pictorialBar.js
+│   │   │   │   ├── pie
+│   │   │   │   │   ├── PieSeries.js
+│   │   │   │   │   ├── PieView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── labelLayout.js
+│   │   │   │   │   └── pieLayout.js
+│   │   │   │   ├── pie.js
+│   │   │   │   ├── radar
+│   │   │   │   │   ├── RadarSeries.js
+│   │   │   │   │   ├── RadarView.js
+│   │   │   │   │   ├── backwardCompat.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── radarLayout.js
+│   │   │   │   ├── radar.js
+│   │   │   │   ├── sankey
+│   │   │   │   │   ├── SankeySeries.js
+│   │   │   │   │   ├── SankeyView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── sankeyLayout.js
+│   │   │   │   │   └── sankeyVisual.js
+│   │   │   │   ├── sankey.js
+│   │   │   │   ├── scatter
+│   │   │   │   │   ├── ScatterSeries.js
+│   │   │   │   │   ├── ScatterView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── scatter.js
+│   │   │   │   ├── sunburst
+│   │   │   │   │   ├── SunburstPiece.js
+│   │   │   │   │   ├── SunburstSeries.js
+│   │   │   │   │   ├── SunburstView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── sunburstAction.js
+│   │   │   │   │   ├── sunburstLayout.js
+│   │   │   │   │   └── sunburstVisual.js
+│   │   │   │   ├── sunburst.js
+│   │   │   │   ├── themeRiver
+│   │   │   │   │   ├── ThemeRiverSeries.js
+│   │   │   │   │   ├── ThemeRiverView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── themeRiverLayout.js
+│   │   │   │   ├── themeRiver.js
+│   │   │   │   ├── tree
+│   │   │   │   │   ├── TreeSeries.js
+│   │   │   │   │   ├── TreeView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── layoutHelper.js
+│   │   │   │   │   ├── traversalHelper.js
+│   │   │   │   │   ├── treeAction.js
+│   │   │   │   │   ├── treeLayout.js
+│   │   │   │   │   └── treeVisual.js
+│   │   │   │   ├── tree.js
+│   │   │   │   ├── treemap
+│   │   │   │   │   ├── Breadcrumb.js
+│   │   │   │   │   ├── TreemapSeries.js
+│   │   │   │   │   ├── TreemapView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── treemapAction.js
+│   │   │   │   │   ├── treemapLayout.js
+│   │   │   │   │   └── treemapVisual.js
+│   │   │   │   └── treemap.js
+│   │   │   ├── component
+│   │   │   │   ├── aria
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── preprocessor.js
+│   │   │   │   ├── aria.js
+│   │   │   │   ├── axis
+│   │   │   │   │   ├── AngleAxisView.js
+│   │   │   │   │   ├── AxisBuilder.js
+│   │   │   │   │   ├── AxisView.js
+│   │   │   │   │   ├── CartesianAxisView.js
+│   │   │   │   │   ├── ParallelAxisView.js
+│   │   │   │   │   ├── RadiusAxisView.js
+│   │   │   │   │   ├── SingleAxisView.js
+│   │   │   │   │   ├── axisSplitHelper.js
+│   │   │   │   │   └── parallelAxisAction.js
+│   │   │   │   ├── axisPointer
+│   │   │   │   │   ├── AxisPointer.js
+│   │   │   │   │   ├── AxisPointerModel.js
+│   │   │   │   │   ├── AxisPointerView.js
+│   │   │   │   │   ├── BaseAxisPointer.js
+│   │   │   │   │   ├── CartesianAxisPointer.js
+│   │   │   │   │   ├── PolarAxisPointer.js
+│   │   │   │   │   ├── SingleAxisPointer.js
+│   │   │   │   │   ├── axisTrigger.js
+│   │   │   │   │   ├── findPointFromSeries.js
+│   │   │   │   │   ├── globalListener.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── modelHelper.js
+│   │   │   │   │   └── viewHelper.js
+│   │   │   │   ├── axisPointer.js
+│   │   │   │   ├── brush
+│   │   │   │   │   ├── BrushModel.js
+│   │   │   │   │   ├── BrushView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── preprocessor.js
+│   │   │   │   │   ├── selector.js
+│   │   │   │   │   └── visualEncoding.js
+│   │   │   │   ├── brush.js
+│   │   │   │   ├── calendar
+│   │   │   │   │   ├── CalendarView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── calendar.js
+│   │   │   │   ├── dataZoom
+│   │   │   │   │   ├── AxisProxy.js
+│   │   │   │   │   ├── DataZoomModel.js
+│   │   │   │   │   ├── DataZoomView.js
+│   │   │   │   │   ├── InsideZoomModel.js
+│   │   │   │   │   ├── InsideZoomView.js
+│   │   │   │   │   ├── SelectZoomModel.js
+│   │   │   │   │   ├── SelectZoomView.js
+│   │   │   │   │   ├── SliderZoomModel.js
+│   │   │   │   │   ├── SliderZoomView.js
+│   │   │   │   │   ├── dataZoomAction.js
+│   │   │   │   │   ├── dataZoomProcessor.js
+│   │   │   │   │   ├── helper.js
+│   │   │   │   │   ├── history.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── installCommon.js
+│   │   │   │   │   ├── installDataZoomInside.js
+│   │   │   │   │   ├── installDataZoomSelect.js
+│   │   │   │   │   ├── installDataZoomSlider.js
+│   │   │   │   │   └── roams.js
+│   │   │   │   ├── dataZoom.js
+│   │   │   │   ├── dataZoomInside.js
+│   │   │   │   ├── dataZoomSelect.js
+│   │   │   │   ├── dataZoomSlider.js
+│   │   │   │   ├── dataset
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── dataset.js
+│   │   │   │   ├── geo
+│   │   │   │   │   ├── GeoView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── geo.js
+│   │   │   │   ├── graphic
+│   │   │   │   │   ├── GraphicModel.js
+│   │   │   │   │   ├── GraphicView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── graphic.js
+│   │   │   │   ├── grid
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── installSimple.js
+│   │   │   │   ├── grid.js
+│   │   │   │   ├── gridSimple.js
+│   │   │   │   ├── helper
+│   │   │   │   │   ├── BrushController.js
+│   │   │   │   │   ├── BrushTargetManager.js
+│   │   │   │   │   ├── MapDraw.js
+│   │   │   │   │   ├── RoamController.js
+│   │   │   │   │   ├── brushHelper.js
+│   │   │   │   │   ├── cursorHelper.js
+│   │   │   │   │   ├── interactionMutex.js
+│   │   │   │   │   ├── listComponent.js
+│   │   │   │   │   ├── roamHelper.js
+│   │   │   │   │   └── sliderMove.js
+│   │   │   │   ├── legend
+│   │   │   │   │   ├── LegendModel.js
+│   │   │   │   │   ├── LegendView.js
+│   │   │   │   │   ├── ScrollableLegendModel.js
+│   │   │   │   │   ├── ScrollableLegendView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── installLegendPlain.js
+│   │   │   │   │   ├── installLegendScroll.js
+│   │   │   │   │   ├── legendAction.js
+│   │   │   │   │   ├── legendFilter.js
+│   │   │   │   │   └── scrollableLegendAction.js
+│   │   │   │   ├── legend.js
+│   │   │   │   ├── legendPlain.js
+│   │   │   │   ├── legendScroll.js
+│   │   │   │   ├── markArea.js
+│   │   │   │   ├── markLine.js
+│   │   │   │   ├── markPoint.js
+│   │   │   │   ├── marker
+│   │   │   │   │   ├── MarkAreaModel.js
+│   │   │   │   │   ├── MarkAreaView.js
+│   │   │   │   │   ├── MarkLineModel.js
+│   │   │   │   │   ├── MarkLineView.js
+│   │   │   │   │   ├── MarkPointModel.js
+│   │   │   │   │   ├── MarkPointView.js
+│   │   │   │   │   ├── MarkerModel.js
+│   │   │   │   │   ├── MarkerView.js
+│   │   │   │   │   ├── checkMarkerInSeries.js
+│   │   │   │   │   ├── installMarkArea.js
+│   │   │   │   │   ├── installMarkLine.js
+│   │   │   │   │   ├── installMarkPoint.js
+│   │   │   │   │   └── markerHelper.js
+│   │   │   │   ├── parallel
+│   │   │   │   │   ├── ParallelView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── parallel.js
+│   │   │   │   ├── polar
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── polar.js
+│   │   │   │   ├── radar
+│   │   │   │   │   ├── RadarView.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── radar.js
+│   │   │   │   ├── singleAxis
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── singleAxis.js
+│   │   │   │   ├── timeline
+│   │   │   │   │   ├── SliderTimelineModel.js
+│   │   │   │   │   ├── SliderTimelineView.js
+│   │   │   │   │   ├── TimelineAxis.js
+│   │   │   │   │   ├── TimelineModel.js
+│   │   │   │   │   ├── TimelineView.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── preprocessor.js
+│   │   │   │   │   └── timelineAction.js
+│   │   │   │   ├── timeline.js
+│   │   │   │   ├── title
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── title.js
+│   │   │   │   ├── toolbox
+│   │   │   │   │   ├── ToolboxModel.js
+│   │   │   │   │   ├── ToolboxView.js
+│   │   │   │   │   ├── feature
+│   │   │   │   │   │   ├── Brush.js
+│   │   │   │   │   │   ├── DataView.js
+│   │   │   │   │   │   ├── DataZoom.js
+│   │   │   │   │   │   ├── MagicType.js
+│   │   │   │   │   │   ├── Restore.js
+│   │   │   │   │   │   └── SaveAsImage.js
+│   │   │   │   │   ├── featureManager.js
+│   │   │   │   │   └── install.js
+│   │   │   │   ├── toolbox.js
+│   │   │   │   ├── tooltip
+│   │   │   │   │   ├── TooltipHTMLContent.js
+│   │   │   │   │   ├── TooltipModel.js
+│   │   │   │   │   ├── TooltipRichContent.js
+│   │   │   │   │   ├── TooltipView.js
+│   │   │   │   │   ├── helper.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── seriesFormatTooltip.js
+│   │   │   │   │   └── tooltipMarkup.js
+│   │   │   │   ├── tooltip.js
+│   │   │   │   ├── transform
+│   │   │   │   │   ├── filterTransform.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   └── sortTransform.js
+│   │   │   │   ├── transform.js
+│   │   │   │   ├── visualMap
+│   │   │   │   │   ├── ContinuousModel.js
+│   │   │   │   │   ├── ContinuousView.js
+│   │   │   │   │   ├── PiecewiseModel.js
+│   │   │   │   │   ├── PiecewiseView.js
+│   │   │   │   │   ├── VisualMapModel.js
+│   │   │   │   │   ├── VisualMapView.js
+│   │   │   │   │   ├── helper.js
+│   │   │   │   │   ├── install.js
+│   │   │   │   │   ├── installCommon.js
+│   │   │   │   │   ├── installVisualMapContinuous.js
+│   │   │   │   │   ├── installVisualMapPiecewise.js
+│   │   │   │   │   ├── preprocessor.js
+│   │   │   │   │   ├── typeDefaulter.js
+│   │   │   │   │   ├── visualEncoding.js
+│   │   │   │   │   └── visualMapAction.js
+│   │   │   │   ├── visualMap.js
+│   │   │   │   ├── visualMapContinuous.js
+│   │   │   │   └── visualMapPiecewise.js
+│   │   │   ├── coord
+│   │   │   │   ├── Axis.js
+│   │   │   │   ├── AxisBaseModel.js
+│   │   │   │   ├── CoordinateSystem.js
+│   │   │   │   ├── View.js
+│   │   │   │   ├── axisAlignTicks.js
+│   │   │   │   ├── axisCommonTypes.js
+│   │   │   │   ├── axisDefault.js
+│   │   │   │   ├── axisHelper.js
+│   │   │   │   ├── axisModelCommonMixin.js
+│   │   │   │   ├── axisModelCreator.js
+│   │   │   │   ├── axisTickLabelBuilder.js
+│   │   │   │   ├── calendar
+│   │   │   │   │   ├── Calendar.js
+│   │   │   │   │   ├── CalendarModel.js
+│   │   │   │   │   └── prepareCustom.js
+│   │   │   │   ├── cartesian
+│   │   │   │   │   ├── Axis2D.js
+│   │   │   │   │   ├── AxisModel.js
+│   │   │   │   │   ├── Cartesian.js
+│   │   │   │   │   ├── Cartesian2D.js
+│   │   │   │   │   ├── Grid.js
+│   │   │   │   │   ├── GridModel.js
+│   │   │   │   │   ├── cartesianAxisHelper.js
+│   │   │   │   │   ├── defaultAxisExtentFromData.js
+│   │   │   │   │   └── prepareCustom.js
+│   │   │   │   ├── geo
+│   │   │   │   │   ├── Geo.js
+│   │   │   │   │   ├── GeoJSONResource.js
+│   │   │   │   │   ├── GeoModel.js
+│   │   │   │   │   ├── GeoSVGResource.js
+│   │   │   │   │   ├── Region.js
+│   │   │   │   │   ├── fix
+│   │   │   │   │   │   ├── diaoyuIsland.js
+│   │   │   │   │   │   ├── geoCoord.js
+│   │   │   │   │   │   ├── nanhai.js
+│   │   │   │   │   │   └── textCoord.js
+│   │   │   │   │   ├── geoCreator.js
+│   │   │   │   │   ├── geoSourceManager.js
+│   │   │   │   │   ├── geoTypes.js
+│   │   │   │   │   ├── parseGeoJson.js
+│   │   │   │   │   └── prepareCustom.js
+│   │   │   │   ├── parallel
+│   │   │   │   │   ├── AxisModel.js
+│   │   │   │   │   ├── Parallel.js
+│   │   │   │   │   ├── ParallelAxis.js
+│   │   │   │   │   ├── ParallelModel.js
+│   │   │   │   │   ├── parallelCreator.js
+│   │   │   │   │   └── parallelPreprocessor.js
+│   │   │   │   ├── polar
+│   │   │   │   │   ├── AngleAxis.js
+│   │   │   │   │   ├── AxisModel.js
+│   │   │   │   │   ├── Polar.js
+│   │   │   │   │   ├── PolarModel.js
+│   │   │   │   │   ├── RadiusAxis.js
+│   │   │   │   │   ├── polarCreator.js
+│   │   │   │   │   └── prepareCustom.js
+│   │   │   │   ├── radar
+│   │   │   │   │   ├── IndicatorAxis.js
+│   │   │   │   │   ├── Radar.js
+│   │   │   │   │   └── RadarModel.js
+│   │   │   │   ├── scaleRawExtentInfo.js
+│   │   │   │   └── single
+│   │   │   │       ├── AxisModel.js
+│   │   │   │       ├── Single.js
+│   │   │   │       ├── SingleAxis.js
+│   │   │   │       ├── prepareCustom.js
+│   │   │   │       ├── singleAxisHelper.js
+│   │   │   │       └── singleCreator.js
+│   │   │   ├── core
+│   │   │   │   ├── CoordinateSystem.js
+│   │   │   │   ├── ExtensionAPI.js
+│   │   │   │   ├── Scheduler.js
+│   │   │   │   ├── echarts.js
+│   │   │   │   ├── impl.js
+│   │   │   │   ├── lifecycle.js
+│   │   │   │   ├── locale.js
+│   │   │   │   └── task.js
+│   │   │   ├── data
+│   │   │   │   ├── DataDiffer.js
+│   │   │   │   ├── DataStore.js
+│   │   │   │   ├── Graph.js
+│   │   │   │   ├── OrdinalMeta.js
+│   │   │   │   ├── SeriesData.js
+│   │   │   │   ├── SeriesDimensionDefine.js
+│   │   │   │   ├── Source.js
+│   │   │   │   ├── Tree.js
+│   │   │   │   └── helper
+│   │   │   │       ├── SeriesDataSchema.js
+│   │   │   │       ├── createDimensions.js
+│   │   │   │       ├── dataProvider.js
+│   │   │   │       ├── dataStackHelper.js
+│   │   │   │       ├── dataValueHelper.js
+│   │   │   │       ├── dimensionHelper.js
+│   │   │   │       ├── linkList.js
+│   │   │   │       ├── linkSeriesData.js
+│   │   │   │       ├── sourceHelper.js
+│   │   │   │       ├── sourceManager.js
+│   │   │   │       └── transform.js
+│   │   │   ├── echarts.js
+│   │   │   ├── export
+│   │   │   │   ├── all.js
+│   │   │   │   ├── api
+│   │   │   │   │   ├── format.js
+│   │   │   │   │   ├── graphic.js
+│   │   │   │   │   ├── helper.js
+│   │   │   │   │   ├── number.js
+│   │   │   │   │   ├── time.js
+│   │   │   │   │   └── util.js
+│   │   │   │   ├── api.js
+│   │   │   │   ├── charts.js
+│   │   │   │   ├── components.js
+│   │   │   │   ├── core.js
+│   │   │   │   ├── features.js
+│   │   │   │   ├── option.js
+│   │   │   │   └── renderers.js
+│   │   │   ├── extension.js
+│   │   │   ├── i18n
+│   │   │   │   ├── langCS.js
+│   │   │   │   ├── langDE.js
+│   │   │   │   ├── langEN.js
+│   │   │   │   ├── langES.js
+│   │   │   │   ├── langFI.js
+│   │   │   │   ├── langFR.js
+│   │   │   │   ├── langHU.js
+│   │   │   │   ├── langIT.js
+│   │   │   │   ├── langJA.js
+│   │   │   │   ├── langKO.js
+│   │   │   │   ├── langPL.js
+│   │   │   │   ├── langPT-br.js
+│   │   │   │   ├── langRO.js
+│   │   │   │   ├── langRU.js
+│   │   │   │   ├── langSI.js
+│   │   │   │   ├── langTH.js
+│   │   │   │   ├── langTR.js
+│   │   │   │   ├── langUK.js
+│   │   │   │   ├── langVI.js
+│   │   │   │   └── langZH.js
+│   │   │   ├── label
+│   │   │   │   ├── LabelManager.js
+│   │   │   │   ├── installLabelLayout.js
+│   │   │   │   ├── labelGuideHelper.js
+│   │   │   │   ├── labelLayoutHelper.js
+│   │   │   │   ├── labelStyle.js
+│   │   │   │   └── sectorLabel.js
+│   │   │   ├── layout
+│   │   │   │   ├── barGrid.js
+│   │   │   │   ├── barPolar.js
+│   │   │   │   └── points.js
+│   │   │   ├── legacy
+│   │   │   │   ├── dataSelectAction.js
+│   │   │   │   └── getTextRect.js
+│   │   │   ├── loading
+│   │   │   │   └── default.js
+│   │   │   ├── model
+│   │   │   │   ├── Component.js
+│   │   │   │   ├── Global.js
+│   │   │   │   ├── Model.js
+│   │   │   │   ├── OptionManager.js
+│   │   │   │   ├── Series.js
+│   │   │   │   ├── globalDefault.js
+│   │   │   │   ├── internalComponentCreator.js
+│   │   │   │   ├── mixin
+│   │   │   │   │   ├── areaStyle.js
+│   │   │   │   │   ├── dataFormat.js
+│   │   │   │   │   ├── itemStyle.js
+│   │   │   │   │   ├── lineStyle.js
+│   │   │   │   │   ├── makeStyleMapper.js
+│   │   │   │   │   ├── palette.js
+│   │   │   │   │   └── textStyle.js
+│   │   │   │   └── referHelper.js
+│   │   │   ├── preprocessor
+│   │   │   │   ├── backwardCompat.js
+│   │   │   │   └── helper
+│   │   │   │       └── compatStyle.js
+│   │   │   ├── processor
+│   │   │   │   ├── dataFilter.js
+│   │   │   │   ├── dataSample.js
+│   │   │   │   ├── dataStack.js
+│   │   │   │   └── negativeDataFilter.js
+│   │   │   ├── renderer
+│   │   │   │   ├── installCanvasRenderer.js
+│   │   │   │   └── installSVGRenderer.js
+│   │   │   ├── scale
+│   │   │   │   ├── Interval.js
+│   │   │   │   ├── Log.js
+│   │   │   │   ├── Ordinal.js
+│   │   │   │   ├── Scale.js
+│   │   │   │   ├── Time.js
+│   │   │   │   └── helper.js
+│   │   │   ├── theme
+│   │   │   │   ├── dark.js
+│   │   │   │   └── light.js
+│   │   │   ├── util
+│   │   │   │   ├── ECEventProcessor.js
+│   │   │   │   ├── KDTree.js
+│   │   │   │   ├── animation.js
+│   │   │   │   ├── clazz.js
+│   │   │   │   ├── component.js
+│   │   │   │   ├── conditionalExpression.js
+│   │   │   │   ├── decal.js
+│   │   │   │   ├── event.js
+│   │   │   │   ├── format.js
+│   │   │   │   ├── graphic.js
+│   │   │   │   ├── innerStore.js
+│   │   │   │   ├── layout.js
+│   │   │   │   ├── log.js
+│   │   │   │   ├── model.js
+│   │   │   │   ├── number.js
+│   │   │   │   ├── quickSelect.js
+│   │   │   │   ├── shape
+│   │   │   │   │   └── sausage.js
+│   │   │   │   ├── states.js
+│   │   │   │   ├── styleCompat.js
+│   │   │   │   ├── symbol.js
+│   │   │   │   ├── throttle.js
+│   │   │   │   ├── time.js
+│   │   │   │   ├── types.js
+│   │   │   │   └── vendor.js
+│   │   │   ├── view
+│   │   │   │   ├── Chart.js
+│   │   │   │   └── Component.js
+│   │   │   └── visual
+│   │   │       ├── LegendVisualProvider.js
+│   │   │       ├── VisualMapping.js
+│   │   │       ├── aria.js
+│   │   │       ├── commonVisualTypes.js
+│   │   │       ├── decal.js
+│   │   │       ├── helper.js
+│   │   │       ├── style.js
+│   │   │       ├── symbol.js
+│   │   │       ├── visualDefault.js
+│   │   │       └── visualSolution.js
+│   │   ├── licenses
+│   │   │   └── LICENSE-d3
+│   │   ├── package.json
+│   │   ├── renderers.d.ts
+│   │   ├── renderers.js
+│   │   ├── theme
+│   │   │   ├── azul.js
+│   │   │   ├── bee-inspired.js
+│   │   │   ├── blue.js
+│   │   │   ├── caravan.js
+│   │   │   ├── carp.js
+│   │   │   ├── cool.js
+│   │   │   ├── dark-blue.js
+│   │   │   ├── dark-bold.js
+│   │   │   ├── dark-digerati.js
+│   │   │   ├── dark-fresh-cut.js
+│   │   │   ├── dark-mushroom.js
+│   │   │   ├── dark.js
+│   │   │   ├── eduardo.js
+│   │   │   ├── forest.js
+│   │   │   ├── fresh-cut.js
+│   │   │   ├── fruit.js
+│   │   │   ├── gray.js
+│   │   │   ├── green.js
+│   │   │   ├── helianthus.js
+│   │   │   ├── infographic.js
+│   │   │   ├── inspired.js
+│   │   │   ├── jazz.js
+│   │   │   ├── london.js
+│   │   │   ├── macarons.js
+│   │   │   ├── macarons2.js
+│   │   │   ├── mint.js
+│   │   │   ├── red-velvet.js
+│   │   │   ├── red.js
+│   │   │   ├── roma.js
+│   │   │   ├── royal.js
+│   │   │   ├── sakura.js
+│   │   │   ├── shine.js
+│   │   │   ├── tech-blue.js
+│   │   │   └── vintage.js
+│   │   ├── tsconfig.json
+│   │   └── types
+│   │       ├── dist
+│   │       │   ├── charts.d.ts
+│   │       │   ├── components.d.ts
+│   │       │   ├── core.d.ts
+│   │       │   ├── echarts.d.ts
+│   │       │   ├── features.d.ts
+│   │       │   ├── option.d.ts
+│   │       │   ├── renderers.d.ts
+│   │       │   └── shared.d.ts
+│   │       └── src
+│   │           ├── action
+│   │           │   └── roamHelper.d.ts
+│   │           ├── animation
+│   │           │   ├── basicTransition.d.ts
+│   │           │   ├── customGraphicKeyframeAnimation.d.ts
+│   │           │   ├── customGraphicTransition.d.ts
+│   │           │   ├── morphTransitionHelper.d.ts
+│   │           │   └── universalTransition.d.ts
+│   │           ├── chart
+│   │           │   ├── bar
+│   │           │   │   ├── BarSeries.d.ts
+│   │           │   │   ├── BarView.d.ts
+│   │           │   │   ├── BaseBarSeries.d.ts
+│   │           │   │   ├── PictorialBarSeries.d.ts
+│   │           │   │   ├── PictorialBarView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── installPictorialBar.d.ts
+│   │           │   ├── bar.d.ts
+│   │           │   ├── boxplot
+│   │           │   │   ├── BoxplotSeries.d.ts
+│   │           │   │   ├── BoxplotView.d.ts
+│   │           │   │   ├── boxplotLayout.d.ts
+│   │           │   │   ├── boxplotTransform.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── prepareBoxplotData.d.ts
+│   │           │   ├── boxplot.d.ts
+│   │           │   ├── candlestick
+│   │           │   │   ├── CandlestickSeries.d.ts
+│   │           │   │   ├── CandlestickView.d.ts
+│   │           │   │   ├── candlestickLayout.d.ts
+│   │           │   │   ├── candlestickVisual.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── preprocessor.d.ts
+│   │           │   ├── candlestick.d.ts
+│   │           │   ├── custom
+│   │           │   │   ├── CustomSeries.d.ts
+│   │           │   │   ├── CustomView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── custom.d.ts
+│   │           │   ├── effectScatter
+│   │           │   │   ├── EffectScatterSeries.d.ts
+│   │           │   │   ├── EffectScatterView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── effectScatter.d.ts
+│   │           │   ├── funnel
+│   │           │   │   ├── FunnelSeries.d.ts
+│   │           │   │   ├── FunnelView.d.ts
+│   │           │   │   ├── funnelLayout.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── funnel.d.ts
+│   │           │   ├── gauge
+│   │           │   │   ├── GaugeSeries.d.ts
+│   │           │   │   ├── GaugeView.d.ts
+│   │           │   │   ├── PointerPath.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── gauge.d.ts
+│   │           │   ├── graph
+│   │           │   │   ├── GraphSeries.d.ts
+│   │           │   │   ├── GraphView.d.ts
+│   │           │   │   ├── adjustEdge.d.ts
+│   │           │   │   ├── categoryFilter.d.ts
+│   │           │   │   ├── categoryVisual.d.ts
+│   │           │   │   ├── circularLayout.d.ts
+│   │           │   │   ├── circularLayoutHelper.d.ts
+│   │           │   │   ├── createView.d.ts
+│   │           │   │   ├── edgeVisual.d.ts
+│   │           │   │   ├── forceHelper.d.ts
+│   │           │   │   ├── forceLayout.d.ts
+│   │           │   │   ├── graphHelper.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── simpleLayout.d.ts
+│   │           │   │   └── simpleLayoutHelper.d.ts
+│   │           │   ├── graph.d.ts
+│   │           │   ├── heatmap
+│   │           │   │   ├── HeatmapLayer.d.ts
+│   │           │   │   ├── HeatmapSeries.d.ts
+│   │           │   │   ├── HeatmapView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── heatmap.d.ts
+│   │           │   ├── helper
+│   │           │   │   ├── EffectLine.d.ts
+│   │           │   │   ├── EffectPolyline.d.ts
+│   │           │   │   ├── EffectSymbol.d.ts
+│   │           │   │   ├── LargeLineDraw.d.ts
+│   │           │   │   ├── LargeSymbolDraw.d.ts
+│   │           │   │   ├── Line.d.ts
+│   │           │   │   ├── LineDraw.d.ts
+│   │           │   │   ├── LinePath.d.ts
+│   │           │   │   ├── Polyline.d.ts
+│   │           │   │   ├── Symbol.d.ts
+│   │           │   │   ├── SymbolDraw.d.ts
+│   │           │   │   ├── createClipPathFromCoordSys.d.ts
+│   │           │   │   ├── createGraphFromNodeEdge.d.ts
+│   │           │   │   ├── createRenderPlanner.d.ts
+│   │           │   │   ├── createSeriesData.d.ts
+│   │           │   │   ├── createSeriesDataSimply.d.ts
+│   │           │   │   ├── enableAriaDecalForTree.d.ts
+│   │           │   │   ├── labelHelper.d.ts
+│   │           │   │   ├── multipleGraphEdgeHelper.d.ts
+│   │           │   │   ├── sectorHelper.d.ts
+│   │           │   │   ├── treeHelper.d.ts
+│   │           │   │   └── whiskerBoxCommon.d.ts
+│   │           │   ├── line
+│   │           │   │   ├── LineSeries.d.ts
+│   │           │   │   ├── LineView.d.ts
+│   │           │   │   ├── helper.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── lineAnimationDiff.d.ts
+│   │           │   │   └── poly.d.ts
+│   │           │   ├── line.d.ts
+│   │           │   ├── lines
+│   │           │   │   ├── LinesSeries.d.ts
+│   │           │   │   ├── LinesView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── linesLayout.d.ts
+│   │           │   │   └── linesVisual.d.ts
+│   │           │   ├── lines.d.ts
+│   │           │   ├── map
+│   │           │   │   ├── MapSeries.d.ts
+│   │           │   │   ├── MapView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── mapDataStatistic.d.ts
+│   │           │   │   └── mapSymbolLayout.d.ts
+│   │           │   ├── map.d.ts
+│   │           │   ├── parallel
+│   │           │   │   ├── ParallelSeries.d.ts
+│   │           │   │   ├── ParallelView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── parallelVisual.d.ts
+│   │           │   ├── parallel.d.ts
+│   │           │   ├── pictorialBar.d.ts
+│   │           │   ├── pie
+│   │           │   │   ├── PieSeries.d.ts
+│   │           │   │   ├── PieView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── labelLayout.d.ts
+│   │           │   │   └── pieLayout.d.ts
+│   │           │   ├── pie.d.ts
+│   │           │   ├── radar
+│   │           │   │   ├── RadarSeries.d.ts
+│   │           │   │   ├── RadarView.d.ts
+│   │           │   │   ├── backwardCompat.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── radarLayout.d.ts
+│   │           │   ├── radar.d.ts
+│   │           │   ├── sankey
+│   │           │   │   ├── SankeySeries.d.ts
+│   │           │   │   ├── SankeyView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── sankeyLayout.d.ts
+│   │           │   │   └── sankeyVisual.d.ts
+│   │           │   ├── sankey.d.ts
+│   │           │   ├── scatter
+│   │           │   │   ├── ScatterSeries.d.ts
+│   │           │   │   ├── ScatterView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── scatter.d.ts
+│   │           │   ├── sunburst
+│   │           │   │   ├── SunburstPiece.d.ts
+│   │           │   │   ├── SunburstSeries.d.ts
+│   │           │   │   ├── SunburstView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── sunburstAction.d.ts
+│   │           │   │   ├── sunburstLayout.d.ts
+│   │           │   │   └── sunburstVisual.d.ts
+│   │           │   ├── sunburst.d.ts
+│   │           │   ├── themeRiver
+│   │           │   │   ├── ThemeRiverSeries.d.ts
+│   │           │   │   ├── ThemeRiverView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── themeRiverLayout.d.ts
+│   │           │   ├── themeRiver.d.ts
+│   │           │   ├── tree
+│   │           │   │   ├── TreeSeries.d.ts
+│   │           │   │   ├── TreeView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── layoutHelper.d.ts
+│   │           │   │   ├── traversalHelper.d.ts
+│   │           │   │   ├── treeAction.d.ts
+│   │           │   │   ├── treeLayout.d.ts
+│   │           │   │   └── treeVisual.d.ts
+│   │           │   ├── tree.d.ts
+│   │           │   ├── treemap
+│   │           │   │   ├── Breadcrumb.d.ts
+│   │           │   │   ├── TreemapSeries.d.ts
+│   │           │   │   ├── TreemapView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── treemapAction.d.ts
+│   │           │   │   ├── treemapLayout.d.ts
+│   │           │   │   └── treemapVisual.d.ts
+│   │           │   └── treemap.d.ts
+│   │           ├── component
+│   │           │   ├── aria
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── preprocessor.d.ts
+│   │           │   ├── aria.d.ts
+│   │           │   ├── axis
+│   │           │   │   ├── AngleAxisView.d.ts
+│   │           │   │   ├── AxisBuilder.d.ts
+│   │           │   │   ├── AxisView.d.ts
+│   │           │   │   ├── CartesianAxisView.d.ts
+│   │           │   │   ├── ParallelAxisView.d.ts
+│   │           │   │   ├── RadiusAxisView.d.ts
+│   │           │   │   ├── SingleAxisView.d.ts
+│   │           │   │   ├── axisSplitHelper.d.ts
+│   │           │   │   └── parallelAxisAction.d.ts
+│   │           │   ├── axisPointer
+│   │           │   │   ├── AxisPointer.d.ts
+│   │           │   │   ├── AxisPointerModel.d.ts
+│   │           │   │   ├── AxisPointerView.d.ts
+│   │           │   │   ├── BaseAxisPointer.d.ts
+│   │           │   │   ├── CartesianAxisPointer.d.ts
+│   │           │   │   ├── PolarAxisPointer.d.ts
+│   │           │   │   ├── SingleAxisPointer.d.ts
+│   │           │   │   ├── axisTrigger.d.ts
+│   │           │   │   ├── findPointFromSeries.d.ts
+│   │           │   │   ├── globalListener.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── modelHelper.d.ts
+│   │           │   │   └── viewHelper.d.ts
+│   │           │   ├── axisPointer.d.ts
+│   │           │   ├── brush
+│   │           │   │   ├── BrushModel.d.ts
+│   │           │   │   ├── BrushView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── preprocessor.d.ts
+│   │           │   │   ├── selector.d.ts
+│   │           │   │   └── visualEncoding.d.ts
+│   │           │   ├── brush.d.ts
+│   │           │   ├── calendar
+│   │           │   │   ├── CalendarView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── calendar.d.ts
+│   │           │   ├── dataZoom
+│   │           │   │   ├── AxisProxy.d.ts
+│   │           │   │   ├── DataZoomModel.d.ts
+│   │           │   │   ├── DataZoomView.d.ts
+│   │           │   │   ├── InsideZoomModel.d.ts
+│   │           │   │   ├── InsideZoomView.d.ts
+│   │           │   │   ├── SelectZoomModel.d.ts
+│   │           │   │   ├── SelectZoomView.d.ts
+│   │           │   │   ├── SliderZoomModel.d.ts
+│   │           │   │   ├── SliderZoomView.d.ts
+│   │           │   │   ├── dataZoomAction.d.ts
+│   │           │   │   ├── dataZoomProcessor.d.ts
+│   │           │   │   ├── helper.d.ts
+│   │           │   │   ├── history.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── installCommon.d.ts
+│   │           │   │   ├── installDataZoomInside.d.ts
+│   │           │   │   ├── installDataZoomSelect.d.ts
+│   │           │   │   ├── installDataZoomSlider.d.ts
+│   │           │   │   └── roams.d.ts
+│   │           │   ├── dataZoom.d.ts
+│   │           │   ├── dataZoomInside.d.ts
+│   │           │   ├── dataZoomSelect.d.ts
+│   │           │   ├── dataZoomSlider.d.ts
+│   │           │   ├── dataset
+│   │           │   │   └── install.d.ts
+│   │           │   ├── dataset.d.ts
+│   │           │   ├── geo
+│   │           │   │   ├── GeoView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── geo.d.ts
+│   │           │   ├── graphic
+│   │           │   │   ├── GraphicModel.d.ts
+│   │           │   │   ├── GraphicView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── graphic.d.ts
+│   │           │   ├── grid
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── installSimple.d.ts
+│   │           │   ├── grid.d.ts
+│   │           │   ├── gridSimple.d.ts
+│   │           │   ├── helper
+│   │           │   │   ├── BrushController.d.ts
+│   │           │   │   ├── BrushTargetManager.d.ts
+│   │           │   │   ├── MapDraw.d.ts
+│   │           │   │   ├── RoamController.d.ts
+│   │           │   │   ├── brushHelper.d.ts
+│   │           │   │   ├── cursorHelper.d.ts
+│   │           │   │   ├── interactionMutex.d.ts
+│   │           │   │   ├── listComponent.d.ts
+│   │           │   │   ├── roamHelper.d.ts
+│   │           │   │   └── sliderMove.d.ts
+│   │           │   ├── legend
+│   │           │   │   ├── LegendModel.d.ts
+│   │           │   │   ├── LegendView.d.ts
+│   │           │   │   ├── ScrollableLegendModel.d.ts
+│   │           │   │   ├── ScrollableLegendView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── installLegendPlain.d.ts
+│   │           │   │   ├── installLegendScroll.d.ts
+│   │           │   │   ├── legendAction.d.ts
+│   │           │   │   ├── legendFilter.d.ts
+│   │           │   │   └── scrollableLegendAction.d.ts
+│   │           │   ├── legend.d.ts
+│   │           │   ├── legendPlain.d.ts
+│   │           │   ├── legendScroll.d.ts
+│   │           │   ├── markArea.d.ts
+│   │           │   ├── markLine.d.ts
+│   │           │   ├── markPoint.d.ts
+│   │           │   ├── marker
+│   │           │   │   ├── MarkAreaModel.d.ts
+│   │           │   │   ├── MarkAreaView.d.ts
+│   │           │   │   ├── MarkLineModel.d.ts
+│   │           │   │   ├── MarkLineView.d.ts
+│   │           │   │   ├── MarkPointModel.d.ts
+│   │           │   │   ├── MarkPointView.d.ts
+│   │           │   │   ├── MarkerModel.d.ts
+│   │           │   │   ├── MarkerView.d.ts
+│   │           │   │   ├── checkMarkerInSeries.d.ts
+│   │           │   │   ├── installMarkArea.d.ts
+│   │           │   │   ├── installMarkLine.d.ts
+│   │           │   │   ├── installMarkPoint.d.ts
+│   │           │   │   └── markerHelper.d.ts
+│   │           │   ├── parallel
+│   │           │   │   ├── ParallelView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── parallel.d.ts
+│   │           │   ├── polar
+│   │           │   │   └── install.d.ts
+│   │           │   ├── polar.d.ts
+│   │           │   ├── radar
+│   │           │   │   ├── RadarView.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── radar.d.ts
+│   │           │   ├── singleAxis
+│   │           │   │   └── install.d.ts
+│   │           │   ├── singleAxis.d.ts
+│   │           │   ├── timeline
+│   │           │   │   ├── SliderTimelineModel.d.ts
+│   │           │   │   ├── SliderTimelineView.d.ts
+│   │           │   │   ├── TimelineAxis.d.ts
+│   │           │   │   ├── TimelineModel.d.ts
+│   │           │   │   ├── TimelineView.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── preprocessor.d.ts
+│   │           │   │   └── timelineAction.d.ts
+│   │           │   ├── timeline.d.ts
+│   │           │   ├── title
+│   │           │   │   └── install.d.ts
+│   │           │   ├── title.d.ts
+│   │           │   ├── toolbox
+│   │           │   │   ├── ToolboxModel.d.ts
+│   │           │   │   ├── ToolboxView.d.ts
+│   │           │   │   ├── feature
+│   │           │   │   │   ├── Brush.d.ts
+│   │           │   │   │   ├── DataView.d.ts
+│   │           │   │   │   ├── DataZoom.d.ts
+│   │           │   │   │   ├── MagicType.d.ts
+│   │           │   │   │   ├── Restore.d.ts
+│   │           │   │   │   └── SaveAsImage.d.ts
+│   │           │   │   ├── featureManager.d.ts
+│   │           │   │   └── install.d.ts
+│   │           │   ├── toolbox.d.ts
+│   │           │   ├── tooltip
+│   │           │   │   ├── TooltipHTMLContent.d.ts
+│   │           │   │   ├── TooltipModel.d.ts
+│   │           │   │   ├── TooltipRichContent.d.ts
+│   │           │   │   ├── TooltipView.d.ts
+│   │           │   │   ├── helper.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── seriesFormatTooltip.d.ts
+│   │           │   │   └── tooltipMarkup.d.ts
+│   │           │   ├── tooltip.d.ts
+│   │           │   ├── transform
+│   │           │   │   ├── filterTransform.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   └── sortTransform.d.ts
+│   │           │   ├── transform.d.ts
+│   │           │   ├── visualMap
+│   │           │   │   ├── ContinuousModel.d.ts
+│   │           │   │   ├── ContinuousView.d.ts
+│   │           │   │   ├── PiecewiseModel.d.ts
+│   │           │   │   ├── PiecewiseView.d.ts
+│   │           │   │   ├── VisualMapModel.d.ts
+│   │           │   │   ├── VisualMapView.d.ts
+│   │           │   │   ├── helper.d.ts
+│   │           │   │   ├── install.d.ts
+│   │           │   │   ├── installCommon.d.ts
+│   │           │   │   ├── installVisualMapContinuous.d.ts
+│   │           │   │   ├── installVisualMapPiecewise.d.ts
+│   │           │   │   ├── preprocessor.d.ts
+│   │           │   │   ├── typeDefaulter.d.ts
+│   │           │   │   ├── visualEncoding.d.ts
+│   │           │   │   └── visualMapAction.d.ts
+│   │           │   ├── visualMap.d.ts
+│   │           │   ├── visualMapContinuous.d.ts
+│   │           │   └── visualMapPiecewise.d.ts
+│   │           ├── coord
+│   │           │   ├── Axis.d.ts
+│   │           │   ├── AxisBaseModel.d.ts
+│   │           │   ├── CoordinateSystem.d.ts
+│   │           │   ├── View.d.ts
+│   │           │   ├── axisAlignTicks.d.ts
+│   │           │   ├── axisCommonTypes.d.ts
+│   │           │   ├── axisDefault.d.ts
+│   │           │   ├── axisHelper.d.ts
+│   │           │   ├── axisModelCommonMixin.d.ts
+│   │           │   ├── axisModelCreator.d.ts
+│   │           │   ├── axisTickLabelBuilder.d.ts
+│   │           │   ├── calendar
+│   │           │   │   ├── Calendar.d.ts
+│   │           │   │   ├── CalendarModel.d.ts
+│   │           │   │   └── prepareCustom.d.ts
+│   │           │   ├── cartesian
+│   │           │   │   ├── Axis2D.d.ts
+│   │           │   │   ├── AxisModel.d.ts
+│   │           │   │   ├── Cartesian.d.ts
+│   │           │   │   ├── Cartesian2D.d.ts
+│   │           │   │   ├── Grid.d.ts
+│   │           │   │   ├── GridModel.d.ts
+│   │           │   │   ├── cartesianAxisHelper.d.ts
+│   │           │   │   ├── defaultAxisExtentFromData.d.ts
+│   │           │   │   └── prepareCustom.d.ts
+│   │           │   ├── geo
+│   │           │   │   ├── Geo.d.ts
+│   │           │   │   ├── GeoJSONResource.d.ts
+│   │           │   │   ├── GeoModel.d.ts
+│   │           │   │   ├── GeoSVGResource.d.ts
+│   │           │   │   ├── Region.d.ts
+│   │           │   │   ├── fix
+│   │           │   │   │   ├── diaoyuIsland.d.ts
+│   │           │   │   │   ├── geoCoord.d.ts
+│   │           │   │   │   ├── nanhai.d.ts
+│   │           │   │   │   └── textCoord.d.ts
+│   │           │   │   ├── geoCreator.d.ts
+│   │           │   │   ├── geoSourceManager.d.ts
+│   │           │   │   ├── geoTypes.d.ts
+│   │           │   │   ├── parseGeoJson.d.ts
+│   │           │   │   └── prepareCustom.d.ts
+│   │           │   ├── parallel
+│   │           │   │   ├── AxisModel.d.ts
+│   │           │   │   ├── Parallel.d.ts
+│   │           │   │   ├── ParallelAxis.d.ts
+│   │           │   │   ├── ParallelModel.d.ts
+│   │           │   │   ├── parallelCreator.d.ts
+│   │           │   │   └── parallelPreprocessor.d.ts
+│   │           │   ├── polar
+│   │           │   │   ├── AngleAxis.d.ts
+│   │           │   │   ├── AxisModel.d.ts
+│   │           │   │   ├── Polar.d.ts
+│   │           │   │   ├── PolarModel.d.ts
+│   │           │   │   ├── RadiusAxis.d.ts
+│   │           │   │   ├── polarCreator.d.ts
+│   │           │   │   └── prepareCustom.d.ts
+│   │           │   ├── radar
+│   │           │   │   ├── IndicatorAxis.d.ts
+│   │           │   │   ├── Radar.d.ts
+│   │           │   │   └── RadarModel.d.ts
+│   │           │   ├── scaleRawExtentInfo.d.ts
+│   │           │   └── single
+│   │           │       ├── AxisModel.d.ts
+│   │           │       ├── Single.d.ts
+│   │           │       ├── SingleAxis.d.ts
+│   │           │       ├── prepareCustom.d.ts
+│   │           │       ├── singleAxisHelper.d.ts
+│   │           │       └── singleCreator.d.ts
+│   │           ├── core
+│   │           │   ├── CoordinateSystem.d.ts
+│   │           │   ├── ExtensionAPI.d.ts
+│   │           │   ├── Scheduler.d.ts
+│   │           │   ├── echarts.d.ts
+│   │           │   ├── impl.d.ts
+│   │           │   ├── lifecycle.d.ts
+│   │           │   ├── locale.d.ts
+│   │           │   └── task.d.ts
+│   │           ├── data
+│   │           │   ├── DataDiffer.d.ts
+│   │           │   ├── DataStore.d.ts
+│   │           │   ├── Graph.d.ts
+│   │           │   ├── OrdinalMeta.d.ts
+│   │           │   ├── SeriesData.d.ts
+│   │           │   ├── SeriesDimensionDefine.d.ts
+│   │           │   ├── Source.d.ts
+│   │           │   ├── Tree.d.ts
+│   │           │   └── helper
+│   │           │       ├── SeriesDataSchema.d.ts
+│   │           │       ├── createDimensions.d.ts
+│   │           │       ├── dataProvider.d.ts
+│   │           │       ├── dataStackHelper.d.ts
+│   │           │       ├── dataValueHelper.d.ts
+│   │           │       ├── dimensionHelper.d.ts
+│   │           │       ├── linkList.d.ts
+│   │           │       ├── linkSeriesData.d.ts
+│   │           │       ├── sourceHelper.d.ts
+│   │           │       ├── sourceManager.d.ts
+│   │           │       └── transform.d.ts
+│   │           ├── echarts.all.d.ts
+│   │           ├── echarts.blank.d.ts
+│   │           ├── echarts.common.d.ts
+│   │           ├── echarts.d.ts
+│   │           ├── echarts.simple.d.ts
+│   │           ├── export
+│   │           │   ├── all.d.ts
+│   │           │   ├── api
+│   │           │   │   ├── format.d.ts
+│   │           │   │   ├── graphic.d.ts
+│   │           │   │   ├── helper.d.ts
+│   │           │   │   ├── number.d.ts
+│   │           │   │   ├── time.d.ts
+│   │           │   │   └── util.d.ts
+│   │           │   ├── api.d.ts
+│   │           │   ├── charts.d.ts
+│   │           │   ├── components.d.ts
+│   │           │   ├── core.d.ts
+│   │           │   ├── features.d.ts
+│   │           │   ├── option.d.ts
+│   │           │   └── renderers.d.ts
+│   │           ├── extension.d.ts
+│   │           ├── i18n
+│   │           │   ├── langCS.d.ts
+│   │           │   ├── langDE.d.ts
+│   │           │   ├── langEN.d.ts
+│   │           │   ├── langES.d.ts
+│   │           │   ├── langFI.d.ts
+│   │           │   ├── langFR.d.ts
+│   │           │   ├── langHU.d.ts
+│   │           │   ├── langIT.d.ts
+│   │           │   ├── langJA.d.ts
+│   │           │   ├── langKO.d.ts
+│   │           │   ├── langPL.d.ts
+│   │           │   ├── langPT-br.d.ts
+│   │           │   ├── langRO.d.ts
+│   │           │   ├── langRU.d.ts
+│   │           │   ├── langSI.d.ts
+│   │           │   ├── langTH.d.ts
+│   │           │   ├── langTR.d.ts
+│   │           │   ├── langUK.d.ts
+│   │           │   ├── langVI.d.ts
+│   │           │   └── langZH.d.ts
+│   │           ├── label
+│   │           │   ├── LabelManager.d.ts
+│   │           │   ├── installLabelLayout.d.ts
+│   │           │   ├── labelGuideHelper.d.ts
+│   │           │   ├── labelLayoutHelper.d.ts
+│   │           │   ├── labelStyle.d.ts
+│   │           │   └── sectorLabel.d.ts
+│   │           ├── layout
+│   │           │   ├── barGrid.d.ts
+│   │           │   ├── barPolar.d.ts
+│   │           │   └── points.d.ts
+│   │           ├── legacy
+│   │           │   ├── dataSelectAction.d.ts
+│   │           │   └── getTextRect.d.ts
+│   │           ├── loading
+│   │           │   └── default.d.ts
+│   │           ├── model
+│   │           │   ├── Component.d.ts
+│   │           │   ├── Global.d.ts
+│   │           │   ├── Model.d.ts
+│   │           │   ├── OptionManager.d.ts
+│   │           │   ├── Series.d.ts
+│   │           │   ├── globalDefault.d.ts
+│   │           │   ├── internalComponentCreator.d.ts
+│   │           │   ├── mixin
+│   │           │   │   ├── areaStyle.d.ts
+│   │           │   │   ├── dataFormat.d.ts
+│   │           │   │   ├── itemStyle.d.ts
+│   │           │   │   ├── lineStyle.d.ts
+│   │           │   │   ├── makeStyleMapper.d.ts
+│   │           │   │   ├── palette.d.ts
+│   │           │   │   └── textStyle.d.ts
+│   │           │   └── referHelper.d.ts
+│   │           ├── preprocessor
+│   │           │   ├── backwardCompat.d.ts
+│   │           │   └── helper
+│   │           │       └── compatStyle.d.ts
+│   │           ├── processor
+│   │           │   ├── dataFilter.d.ts
+│   │           │   ├── dataSample.d.ts
+│   │           │   ├── dataStack.d.ts
+│   │           │   └── negativeDataFilter.d.ts
+│   │           ├── renderer
+│   │           │   ├── installCanvasRenderer.d.ts
+│   │           │   └── installSVGRenderer.d.ts
+│   │           ├── scale
+│   │           │   ├── Interval.d.ts
+│   │           │   ├── Log.d.ts
+│   │           │   ├── Ordinal.d.ts
+│   │           │   ├── Scale.d.ts
+│   │           │   ├── Time.d.ts
+│   │           │   └── helper.d.ts
+│   │           ├── theme
+│   │           │   ├── dark.d.ts
+│   │           │   └── light.d.ts
+│   │           ├── util
+│   │           │   ├── ECEventProcessor.d.ts
+│   │           │   ├── KDTree.d.ts
+│   │           │   ├── animation.d.ts
+│   │           │   ├── clazz.d.ts
+│   │           │   ├── component.d.ts
+│   │           │   ├── conditionalExpression.d.ts
+│   │           │   ├── decal.d.ts
+│   │           │   ├── event.d.ts
+│   │           │   ├── format.d.ts
+│   │           │   ├── graphic.d.ts
+│   │           │   ├── innerStore.d.ts
+│   │           │   ├── layout.d.ts
+│   │           │   ├── log.d.ts
+│   │           │   ├── model.d.ts
+│   │           │   ├── number.d.ts
+│   │           │   ├── quickSelect.d.ts
+│   │           │   ├── shape
+│   │           │   │   └── sausage.d.ts
+│   │           │   ├── states.d.ts
+│   │           │   ├── styleCompat.d.ts
+│   │           │   ├── symbol.d.ts
+│   │           │   ├── throttle.d.ts
+│   │           │   ├── time.d.ts
+│   │           │   ├── types.d.ts
+│   │           │   └── vendor.d.ts
+│   │           ├── view
+│   │           │   ├── Chart.d.ts
+│   │           │   └── Component.d.ts
+│   │           └── visual
+│   │               ├── LegendVisualProvider.d.ts
+│   │               ├── VisualMapping.d.ts
+│   │               ├── aria.d.ts
+│   │               ├── commonVisualTypes.d.ts
+│   │               ├── decal.d.ts
+│   │               ├── helper.d.ts
+│   │               ├── style.d.ts
+│   │               ├── symbol.d.ts
+│   │               ├── visualDefault.d.ts
+│   │               └── visualSolution.d.ts
+│   ├── esbuild
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── bin
+│   │   │   └── esbuild
+│   │   ├── install.js
+│   │   ├── lib
+│   │   │   ├── main.d.ts
+│   │   │   └── main.js
+│   │   └── package.json
+│   ├── estree-walker
+│   │   ├── CHANGELOG.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── esm
+│   │   │   │   ├── estree-walker.js
+│   │   │   │   └── package.json
+│   │   │   └── umd
+│   │   │       └── estree-walker.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── async.js
+│   │   │   ├── index.js
+│   │   │   ├── package.json
+│   │   │   ├── sync.js
+│   │   │   └── walker.js
+│   │   └── types
+│   │       ├── async.d.ts
+│   │       ├── index.d.ts
+│   │       ├── sync.d.ts
+│   │       ├── tsconfig.tsbuildinfo
+│   │       └── walker.d.ts
+│   ├── follow-redirects
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── debug.js
+│   │   ├── http.js
+│   │   ├── https.js
+│   │   ├── index.js
+│   │   └── package.json
+│   ├── form-data
+│   │   ├── License
+│   │   ├── README.md.bak
+│   │   ├── Readme.md
+│   │   ├── index.d.ts
+│   │   ├── lib
+│   │   │   ├── browser.js
+│   │   │   ├── form_data.js
+│   │   │   └── populate.js
+│   │   └── package.json
+│   ├── fsevents
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── fsevents.d.ts
+│   │   ├── fsevents.js
+│   │   ├── fsevents.node
+│   │   └── package.json
+│   ├── magic-string
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── magic-string.cjs.d.ts
+│   │   │   ├── magic-string.cjs.js
+│   │   │   ├── magic-string.cjs.js.map
+│   │   │   ├── magic-string.es.d.mts
+│   │   │   ├── magic-string.es.mjs
+│   │   │   ├── magic-string.es.mjs.map
+│   │   │   ├── magic-string.umd.js
+│   │   │   └── magic-string.umd.js.map
+│   │   └── package.json
+│   ├── mime-db
+│   │   ├── HISTORY.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── db.json
+│   │   ├── index.js
+│   │   └── package.json
+│   ├── mime-types
+│   │   ├── HISTORY.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── index.js
+│   │   └── package.json
+│   ├── nanoid
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── async
+│   │   │   ├── index.browser.cjs
+│   │   │   ├── index.browser.js
+│   │   │   ├── index.cjs
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── index.native.js
+│   │   │   └── package.json
+│   │   ├── bin
+│   │   │   └── nanoid.cjs
+│   │   ├── index.browser.cjs
+│   │   ├── index.browser.js
+│   │   ├── index.cjs
+│   │   ├── index.d.cts
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── nanoid.js
+│   │   ├── non-secure
+│   │   │   ├── index.cjs
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── package.json
+│   │   └── url-alphabet
+│   │       ├── index.cjs
+│   │       ├── index.js
+│   │       └── package.json
+│   ├── picocolors
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── picocolors.browser.js
+│   │   ├── picocolors.d.ts
+│   │   ├── picocolors.js
+│   │   └── types.ts
+│   ├── postcss
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── lib
+│   │   │   ├── at-rule.d.ts
+│   │   │   ├── at-rule.js
+│   │   │   ├── comment.d.ts
+│   │   │   ├── comment.js
+│   │   │   ├── container.d.ts
+│   │   │   ├── container.js
+│   │   │   ├── css-syntax-error.d.ts
+│   │   │   ├── css-syntax-error.js
+│   │   │   ├── declaration.d.ts
+│   │   │   ├── declaration.js
+│   │   │   ├── document.d.ts
+│   │   │   ├── document.js
+│   │   │   ├── fromJSON.d.ts
+│   │   │   ├── fromJSON.js
+│   │   │   ├── input.d.ts
+│   │   │   ├── input.js
+│   │   │   ├── lazy-result.d.ts
+│   │   │   ├── lazy-result.js
+│   │   │   ├── list.d.ts
+│   │   │   ├── list.js
+│   │   │   ├── map-generator.js
+│   │   │   ├── no-work-result.d.ts
+│   │   │   ├── no-work-result.js
+│   │   │   ├── node.d.ts
+│   │   │   ├── node.js
+│   │   │   ├── parse.d.ts
+│   │   │   ├── parse.js
+│   │   │   ├── parser.js
+│   │   │   ├── postcss.d.mts
+│   │   │   ├── postcss.d.ts
+│   │   │   ├── postcss.js
+│   │   │   ├── postcss.mjs
+│   │   │   ├── previous-map.d.ts
+│   │   │   ├── previous-map.js
+│   │   │   ├── processor.d.ts
+│   │   │   ├── processor.js
+│   │   │   ├── result.d.ts
+│   │   │   ├── result.js
+│   │   │   ├── root.d.ts
+│   │   │   ├── root.js
+│   │   │   ├── rule.d.ts
+│   │   │   ├── rule.js
+│   │   │   ├── stringifier.d.ts
+│   │   │   ├── stringifier.js
+│   │   │   ├── stringify.d.ts
+│   │   │   ├── stringify.js
+│   │   │   ├── symbols.js
+│   │   │   ├── terminal-highlight.js
+│   │   │   ├── tokenize.js
+│   │   │   ├── warn-once.js
+│   │   │   ├── warning.d.ts
+│   │   │   └── warning.js
+│   │   └── package.json
+│   ├── proxy-from-env
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── index.js
+│   │   ├── package.json
+│   │   └── test.js
+│   ├── rollup
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── bin
+│   │   │   │   └── rollup
+│   │   │   ├── es
+│   │   │   │   ├── getLogFilter.js
+│   │   │   │   ├── package.json
+│   │   │   │   ├── rollup.js
+│   │   │   │   └── shared
+│   │   │   │       ├── node-entry.js
+│   │   │   │       └── watch.js
+│   │   │   ├── getLogFilter.d.ts
+│   │   │   ├── getLogFilter.js
+│   │   │   ├── loadConfigFile.d.ts
+│   │   │   ├── loadConfigFile.js
+│   │   │   ├── rollup.d.ts
+│   │   │   ├── rollup.js
+│   │   │   └── shared
+│   │   │       ├── fsevents-importer.js
+│   │   │       ├── index.js
+│   │   │       ├── loadConfigFile.js
+│   │   │       ├── rollup.js
+│   │   │       ├── watch-cli.js
+│   │   │       ├── watch-proxy.js
+│   │   │       └── watch.js
+│   │   └── package.json
+│   ├── source-map-js
+│   │   ├── CHANGELOG.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── lib
+│   │   │   ├── array-set.js
+│   │   │   ├── base64-vlq.js
+│   │   │   ├── base64.js
+│   │   │   ├── binary-search.js
+│   │   │   ├── mapping-list.js
+│   │   │   ├── quick-sort.js
+│   │   │   ├── source-map-consumer.js
+│   │   │   ├── source-map-generator.js
+│   │   │   ├── source-node.js
+│   │   │   └── util.js
+│   │   ├── package.json
+│   │   ├── source-map.d.ts
+│   │   └── source-map.js
+│   ├── tslib
+│   │   ├── CopyrightNotice.txt
+│   │   ├── LICENSE.txt
+│   │   ├── README.md
+│   │   ├── modules
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── package.json
+│   │   ├── tslib.d.ts
+│   │   ├── tslib.es6.html
+│   │   ├── tslib.es6.js
+│   │   ├── tslib.html
+│   │   └── tslib.js
+│   ├── vite
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── bin
+│   │   │   ├── openChrome.applescript
+│   │   │   └── vite.js
+│   │   ├── client.d.ts
+│   │   ├── dist
+│   │   │   ├── client
+│   │   │   │   ├── client.mjs
+│   │   │   │   ├── client.mjs.map
+│   │   │   │   ├── env.mjs
+│   │   │   │   └── env.mjs.map
+│   │   │   ├── node
+│   │   │   │   ├── chunks
+│   │   │   │   │   ├── dep-98d4beff.js
+│   │   │   │   │   ├── dep-bb8a8339.js
+│   │   │   │   │   ├── dep-c423598f.js
+│   │   │   │   │   ├── dep-e4a495ce.js
+│   │   │   │   │   └── dep-f0c7dae0.js
+│   │   │   │   ├── cli.js
+│   │   │   │   ├── constants.js
+│   │   │   │   ├── index.d.ts
+│   │   │   │   └── index.js
+│   │   │   └── node-cjs
+│   │   │       └── publicUtils.cjs
+│   │   ├── index.cjs
+│   │   ├── package.json
+│   │   └── types
+│   │       ├── customEvent.d.ts
+│   │       ├── hmrPayload.d.ts
+│   │       ├── hot.d.ts
+│   │       ├── importGlob.d.ts
+│   │       ├── importMeta.d.ts
+│   │       ├── metadata.d.ts
+│   │       └── package.json
+│   ├── vue
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── compiler-sfc
+│   │   │   ├── index.browser.js
+│   │   │   ├── index.browser.mjs
+│   │   │   ├── index.d.mts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── index.mjs
+│   │   │   ├── package.json
+│   │   │   └── register-ts.js
+│   │   ├── dist
+│   │   │   ├── vue.cjs.js
+│   │   │   ├── vue.cjs.prod.js
+│   │   │   ├── vue.d.mts
+│   │   │   ├── vue.d.ts
+│   │   │   ├── vue.esm-browser.js
+│   │   │   ├── vue.esm-browser.prod.js
+│   │   │   ├── vue.esm-bundler.js
+│   │   │   ├── vue.global.js
+│   │   │   ├── vue.global.prod.js
+│   │   │   ├── vue.runtime.esm-browser.js
+│   │   │   ├── vue.runtime.esm-browser.prod.js
+│   │   │   ├── vue.runtime.esm-bundler.js
+│   │   │   ├── vue.runtime.global.js
+│   │   │   └── vue.runtime.global.prod.js
+│   │   ├── index.js
+│   │   ├── index.mjs
+│   │   ├── jsx-runtime
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── index.mjs
+│   │   │   └── package.json
+│   │   ├── jsx.d.ts
+│   │   ├── macros-global.d.ts
+│   │   ├── macros.d.ts
+│   │   ├── package.json
+│   │   ├── ref-macros.d.ts
+│   │   └── server-renderer
+│   │       ├── index.d.mts
+│   │       ├── index.d.ts
+│   │       ├── index.js
+│   │       ├── index.mjs
+│   │       └── package.json
+│   ├── vue-router
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── vue-router.cjs
+│   │   │   ├── vue-router.cjs.js
+│   │   │   ├── vue-router.cjs.prod.js
+│   │   │   ├── vue-router.d.ts
+│   │   │   ├── vue-router.esm-browser.js
+│   │   │   ├── vue-router.esm-bundler.js
+│   │   │   ├── vue-router.global.js
+│   │   │   ├── vue-router.global.prod.js
+│   │   │   ├── vue-router.mjs
+│   │   │   ├── vue-router.node.mjs
+│   │   │   └── vue-router.prod.cjs
+│   │   ├── index.js
+│   │   ├── package.json
+│   │   └── vetur
+│   │       ├── attributes.json
+│   │       └── tags.json
+│   └── zrender
+│       ├── LICENSE
+│       ├── README.md
+│       ├── build
+│       │   ├── build.js
+│       │   ├── prepareNightly.js
+│       │   ├── prepublish.js
+│       │   ├── processLib.js
+│       │   ├── progress.js
+│       │   └── transformImport.js
+│       ├── dist
+│       │   ├── zrender.js
+│       │   ├── zrender.js.map
+│       │   └── zrender.min.js
+│       ├── index.d.ts
+│       ├── index.js
+│       ├── index.ts
+│       ├── lib
+│       │   ├── Element.d.ts
+│       │   ├── Element.js
+│       │   ├── Handler.d.ts
+│       │   ├── Handler.js
+│       │   ├── PainterBase.d.ts
+│       │   ├── PainterBase.js
+│       │   ├── Storage.d.ts
+│       │   ├── Storage.js
+│       │   ├── all.d.ts
+│       │   ├── all.js
+│       │   ├── animation
+│       │   │   ├── Animation.d.ts
+│       │   │   ├── Animation.js
+│       │   │   ├── Animator.d.ts
+│       │   │   ├── Animator.js
+│       │   │   ├── Clip.d.ts
+│       │   │   ├── Clip.js
+│       │   │   ├── cubicEasing.d.ts
+│       │   │   ├── cubicEasing.js
+│       │   │   ├── easing.d.ts
+│       │   │   ├── easing.js
+│       │   │   ├── requestAnimationFrame.d.ts
+│       │   │   └── requestAnimationFrame.js
+│       │   ├── canvas
+│       │   │   ├── Layer.d.ts
+│       │   │   ├── Layer.js
+│       │   │   ├── Painter.d.ts
+│       │   │   ├── Painter.js
+│       │   │   ├── canvas.d.ts
+│       │   │   ├── canvas.js
+│       │   │   ├── dashStyle.d.ts
+│       │   │   ├── dashStyle.js
+│       │   │   ├── graphic.d.ts
+│       │   │   ├── graphic.js
+│       │   │   ├── helper.d.ts
+│       │   │   └── helper.js
+│       │   ├── config.d.ts
+│       │   ├── config.js
+│       │   ├── contain
+│       │   │   ├── arc.d.ts
+│       │   │   ├── arc.js
+│       │   │   ├── cubic.d.ts
+│       │   │   ├── cubic.js
+│       │   │   ├── line.d.ts
+│       │   │   ├── line.js
+│       │   │   ├── path.d.ts
+│       │   │   ├── path.js
+│       │   │   ├── polygon.d.ts
+│       │   │   ├── polygon.js
+│       │   │   ├── quadratic.d.ts
+│       │   │   ├── quadratic.js
+│       │   │   ├── text.d.ts
+│       │   │   ├── text.js
+│       │   │   ├── util.d.ts
+│       │   │   ├── util.js
+│       │   │   ├── windingLine.d.ts
+│       │   │   └── windingLine.js
+│       │   ├── core
+│       │   │   ├── BoundingRect.d.ts
+│       │   │   ├── BoundingRect.js
+│       │   │   ├── Eventful.d.ts
+│       │   │   ├── Eventful.js
+│       │   │   ├── GestureMgr.d.ts
+│       │   │   ├── GestureMgr.js
+│       │   │   ├── LRU.d.ts
+│       │   │   ├── LRU.js
+│       │   │   ├── OrientedBoundingRect.d.ts
+│       │   │   ├── OrientedBoundingRect.js
+│       │   │   ├── PathProxy.d.ts
+│       │   │   ├── PathProxy.js
+│       │   │   ├── Point.d.ts
+│       │   │   ├── Point.js
+│       │   │   ├── Transformable.d.ts
+│       │   │   ├── Transformable.js
+│       │   │   ├── WeakMap.d.ts
+│       │   │   ├── WeakMap.js
+│       │   │   ├── arrayDiff.d.ts
+│       │   │   ├── arrayDiff.js
+│       │   │   ├── bbox.d.ts
+│       │   │   ├── bbox.js
+│       │   │   ├── curve.d.ts
+│       │   │   ├── curve.js
+│       │   │   ├── dom.d.ts
+│       │   │   ├── dom.js
+│       │   │   ├── env.d.ts
+│       │   │   ├── env.js
+│       │   │   ├── event.d.ts
+│       │   │   ├── event.js
+│       │   │   ├── fourPointsTransform.d.ts
+│       │   │   ├── fourPointsTransform.js
+│       │   │   ├── matrix.d.ts
+│       │   │   ├── matrix.js
+│       │   │   ├── platform.d.ts
+│       │   │   ├── platform.js
+│       │   │   ├── timsort.d.ts
+│       │   │   ├── timsort.js
+│       │   │   ├── types.d.ts
+│       │   │   ├── types.js
+│       │   │   ├── util.d.ts
+│       │   │   ├── util.js
+│       │   │   ├── vector.d.ts
+│       │   │   └── vector.js
+│       │   ├── debug
+│       │   │   ├── showDebugDirtyRect.d.ts
+│       │   │   └── showDebugDirtyRect.js
+│       │   ├── dom
+│       │   │   ├── HandlerProxy.d.ts
+│       │   │   └── HandlerProxy.js
+│       │   ├── export.d.ts
+│       │   ├── export.js
+│       │   ├── graphic
+│       │   │   ├── CompoundPath.d.ts
+│       │   │   ├── CompoundPath.js
+│       │   │   ├── Displayable.d.ts
+│       │   │   ├── Displayable.js
+│       │   │   ├── Gradient.d.ts
+│       │   │   ├── Gradient.js
+│       │   │   ├── Group.d.ts
+│       │   │   ├── Group.js
+│       │   │   ├── Image.d.ts
+│       │   │   ├── Image.js
+│       │   │   ├── IncrementalDisplayable.d.ts
+│       │   │   ├── IncrementalDisplayable.js
+│       │   │   ├── LinearGradient.d.ts
+│       │   │   ├── LinearGradient.js
+│       │   │   ├── Path.d.ts
+│       │   │   ├── Path.js
+│       │   │   ├── Pattern.d.ts
+│       │   │   ├── Pattern.js
+│       │   │   ├── RadialGradient.d.ts
+│       │   │   ├── RadialGradient.js
+│       │   │   ├── TSpan.d.ts
+│       │   │   ├── TSpan.js
+│       │   │   ├── Text.d.ts
+│       │   │   ├── Text.js
+│       │   │   ├── constants.d.ts
+│       │   │   ├── constants.js
+│       │   │   ├── helper
+│       │   │   │   ├── image.d.ts
+│       │   │   │   ├── image.js
+│       │   │   │   ├── parseText.d.ts
+│       │   │   │   ├── parseText.js
+│       │   │   │   ├── poly.d.ts
+│       │   │   │   ├── poly.js
+│       │   │   │   ├── roundRect.d.ts
+│       │   │   │   ├── roundRect.js
+│       │   │   │   ├── roundSector.d.ts
+│       │   │   │   ├── roundSector.js
+│       │   │   │   ├── smoothBezier.d.ts
+│       │   │   │   ├── smoothBezier.js
+│       │   │   │   ├── smoothSpline.d.ts
+│       │   │   │   ├── smoothSpline.js
+│       │   │   │   ├── subPixelOptimize.d.ts
+│       │   │   │   └── subPixelOptimize.js
+│       │   │   └── shape
+│       │   │       ├── Arc.d.ts
+│       │   │       ├── Arc.js
+│       │   │       ├── BezierCurve.d.ts
+│       │   │       ├── BezierCurve.js
+│       │   │       ├── Circle.d.ts
+│       │   │       ├── Circle.js
+│       │   │       ├── Droplet.d.ts
+│       │   │       ├── Droplet.js
+│       │   │       ├── Ellipse.d.ts
+│       │   │       ├── Ellipse.js
+│       │   │       ├── Heart.d.ts
+│       │   │       ├── Heart.js
+│       │   │       ├── Isogon.d.ts
+│       │   │       ├── Isogon.js
+│       │   │       ├── Line.d.ts
+│       │   │       ├── Line.js
+│       │   │       ├── Polygon.d.ts
+│       │   │       ├── Polygon.js
+│       │   │       ├── Polyline.d.ts
+│       │   │       ├── Polyline.js
+│       │   │       ├── Rect.d.ts
+│       │   │       ├── Rect.js
+│       │   │       ├── Ring.d.ts
+│       │   │       ├── Ring.js
+│       │   │       ├── Rose.d.ts
+│       │   │       ├── Rose.js
+│       │   │       ├── Sector.d.ts
+│       │   │       ├── Sector.js
+│       │   │       ├── Star.d.ts
+│       │   │       ├── Star.js
+│       │   │       ├── Trochoid.d.ts
+│       │   │       └── Trochoid.js
+│       │   ├── mixin
+│       │   │   ├── Draggable.d.ts
+│       │   │   └── Draggable.js
+│       │   ├── svg
+│       │   │   ├── Painter.d.ts
+│       │   │   ├── Painter.js
+│       │   │   ├── SVGPathRebuilder.d.ts
+│       │   │   ├── SVGPathRebuilder.js
+│       │   │   ├── core.d.ts
+│       │   │   ├── core.js
+│       │   │   ├── cssAnimation.d.ts
+│       │   │   ├── cssAnimation.js
+│       │   │   ├── domapi.d.ts
+│       │   │   ├── domapi.js
+│       │   │   ├── graphic.d.ts
+│       │   │   ├── graphic.js
+│       │   │   ├── helper.d.ts
+│       │   │   ├── helper.js
+│       │   │   ├── mapStyleToAttrs.d.ts
+│       │   │   ├── mapStyleToAttrs.js
+│       │   │   ├── patch.d.ts
+│       │   │   ├── patch.js
+│       │   │   ├── svg.d.ts
+│       │   │   └── svg.js
+│       │   ├── svg-legacy
+│       │   │   ├── Painter.d.ts
+│       │   │   ├── Painter.js
+│       │   │   ├── graphic.d.ts
+│       │   │   ├── graphic.js
+│       │   │   ├── helper
+│       │   │   │   ├── ClippathManager.d.ts
+│       │   │   │   ├── ClippathManager.js
+│       │   │   │   ├── Definable.d.ts
+│       │   │   │   ├── Definable.js
+│       │   │   │   ├── GradientManager.d.ts
+│       │   │   │   ├── GradientManager.js
+│       │   │   │   ├── PatternManager.d.ts
+│       │   │   │   ├── PatternManager.js
+│       │   │   │   ├── ShadowManager.d.ts
+│       │   │   │   └── ShadowManager.js
+│       │   │   ├── svg-legacy.d.ts
+│       │   │   └── svg-legacy.js
+│       │   ├── tool
+│       │   │   ├── color.d.ts
+│       │   │   ├── color.js
+│       │   │   ├── convertPath.d.ts
+│       │   │   ├── convertPath.js
+│       │   │   ├── dividePath.d.ts
+│       │   │   ├── dividePath.js
+│       │   │   ├── morphPath.d.ts
+│       │   │   ├── morphPath.js
+│       │   │   ├── parseSVG.d.ts
+│       │   │   ├── parseSVG.js
+│       │   │   ├── parseXML.d.ts
+│       │   │   ├── parseXML.js
+│       │   │   ├── path.d.ts
+│       │   │   ├── path.js
+│       │   │   ├── transformPath.d.ts
+│       │   │   └── transformPath.js
+│       │   ├── zrender.d.ts
+│       │   └── zrender.js
+│       ├── package.json
+│       ├── src
+│       │   ├── Element.ts
+│       │   ├── Handler.ts
+│       │   ├── PainterBase.ts
+│       │   ├── Storage.ts
+│       │   ├── all.ts
+│       │   ├── animation
+│       │   │   ├── Animation.ts
+│       │   │   ├── Animator.ts
+│       │   │   ├── Clip.ts
+│       │   │   ├── cubicEasing.ts
+│       │   │   ├── easing.ts
+│       │   │   └── requestAnimationFrame.ts
+│       │   ├── canvas
+│       │   │   ├── Layer.ts
+│       │   │   ├── Painter.ts
+│       │   │   ├── canvas.ts
+│       │   │   ├── dashStyle.ts
+│       │   │   ├── graphic.ts
+│       │   │   └── helper.ts
+│       │   ├── config.ts
+│       │   ├── contain
+│       │   │   ├── arc.ts
+│       │   │   ├── cubic.ts
+│       │   │   ├── line.ts
+│       │   │   ├── path.ts
+│       │   │   ├── polygon.ts
+│       │   │   ├── quadratic.ts
+│       │   │   ├── text.ts
+│       │   │   ├── util.ts
+│       │   │   └── windingLine.ts
+│       │   ├── core
+│       │   │   ├── BoundingRect.ts
+│       │   │   ├── Eventful.ts
+│       │   │   ├── GestureMgr.ts
+│       │   │   ├── LRU.ts
+│       │   │   ├── OrientedBoundingRect.ts
+│       │   │   ├── PathProxy.ts
+│       │   │   ├── Point.ts
+│       │   │   ├── Transformable.ts
+│       │   │   ├── WeakMap.ts
+│       │   │   ├── arrayDiff.ts
+│       │   │   ├── bbox.ts
+│       │   │   ├── curve.ts
+│       │   │   ├── dom.ts
+│       │   │   ├── env.ts
+│       │   │   ├── event.ts
+│       │   │   ├── fourPointsTransform.ts
+│       │   │   ├── matrix.ts
+│       │   │   ├── platform.ts
+│       │   │   ├── timsort.ts
+│       │   │   ├── types.ts
+│       │   │   ├── util.ts
+│       │   │   └── vector.ts
+│       │   ├── debug
+│       │   │   └── showDebugDirtyRect.ts
+│       │   ├── dom
+│       │   │   └── HandlerProxy.ts
+│       │   ├── export.ts
+│       │   ├── global.d.ts
+│       │   ├── graphic
+│       │   │   ├── CompoundPath.ts
+│       │   │   ├── Displayable.ts
+│       │   │   ├── Gradient.ts
+│       │   │   ├── Group.ts
+│       │   │   ├── Image.ts
+│       │   │   ├── IncrementalDisplayable.ts
+│       │   │   ├── LinearGradient.ts
+│       │   │   ├── Path.ts
+│       │   │   ├── Pattern.ts
+│       │   │   ├── RadialGradient.ts
+│       │   │   ├── TSpan.ts
+│       │   │   ├── Text.ts
+│       │   │   ├── constants.ts
+│       │   │   ├── helper
+│       │   │   │   ├── image.ts
+│       │   │   │   ├── parseText.ts
+│       │   │   │   ├── poly.ts
+│       │   │   │   ├── roundRect.ts
+│       │   │   │   ├── roundSector.ts
+│       │   │   │   ├── smoothBezier.ts
+│       │   │   │   ├── smoothSpline.ts
+│       │   │   │   └── subPixelOptimize.ts
+│       │   │   └── shape
+│       │   │       ├── Arc.ts
+│       │   │       ├── BezierCurve.ts
+│       │   │       ├── Circle.ts
+│       │   │       ├── Droplet.ts
+│       │   │       ├── Ellipse.ts
+│       │   │       ├── Heart.ts
+│       │   │       ├── Isogon.ts
+│       │   │       ├── Line.ts
+│       │   │       ├── Polygon.ts
+│       │   │       ├── Polyline.ts
+│       │   │       ├── Rect.ts
+│       │   │       ├── Ring.ts
+│       │   │       ├── Rose.ts
+│       │   │       ├── Sector.ts
+│       │   │       ├── Star.ts
+│       │   │       └── Trochoid.ts
+│       │   ├── mixin
+│       │   │   └── Draggable.ts
+│       │   ├── svg
+│       │   │   ├── Painter.ts
+│       │   │   ├── SVGPathRebuilder.ts
+│       │   │   ├── core.ts
+│       │   │   ├── cssAnimation.ts
+│       │   │   ├── domapi.ts
+│       │   │   ├── graphic.ts
+│       │   │   ├── helper.ts
+│       │   │   ├── mapStyleToAttrs.ts
+│       │   │   ├── patch.ts
+│       │   │   └── svg.ts
+│       │   ├── svg-legacy
+│       │   │   ├── Painter.ts
+│       │   │   ├── graphic.ts
+│       │   │   ├── helper
+│       │   │   │   ├── ClippathManager.ts
+│       │   │   │   ├── Definable.ts
+│       │   │   │   ├── GradientManager.ts
+│       │   │   │   ├── PatternManager.ts
+│       │   │   │   └── ShadowManager.ts
+│       │   │   └── svg-legacy.ts
+│       │   ├── tool
+│       │   │   ├── color.ts
+│       │   │   ├── convertPath.ts
+│       │   │   ├── dividePath.ts
+│       │   │   ├── morphPath.ts
+│       │   │   ├── parseSVG.ts
+│       │   │   ├── parseXML.ts
+│       │   │   ├── path.ts
+│       │   │   └── transformPath.ts
+│       │   └── zrender.ts
+│       └── tsconfig.json
+├── package-lock.json
+├── package.json
+├── public
+│   ├── background6.jpg
+│   └── favicon.ico
+├── src
+│   ├── App.vue
+│   ├── components
+│   │   ├── HelloWorld.vue
+│   │   ├── RadiatonTable.vue
+│   │   ├── TheWelcome.vue
+│   │   ├── WelcomeItem.vue
+│   │   ├── analysis.vue
+│   │   ├── chinamap.vue
+│   │   └── icons
+│   │       ├── IconCommunity.vue
+│   │       ├── IconDocumentation.vue
+│   │       ├── IconEcosystem.vue
+│   │       ├── IconSupport.vue
+│   │       └── IconTooling.vue
+│   ├── main.js
+│   └── router
+│       └── index.js
+├── target_html
+│   ├── test1.html
+│   └── test2.html
+├── tree.txt
+├── venv
+│   ├── bin
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── activate.nu
+│   │   ├── activate.ps1
+│   │   ├── activate_this.py
+│   │   ├── pip
+│   │   ├── pip-3.8
+│   │   ├── pip3
+│   │   ├── pip3.8
+│   │   ├── python -> /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/Resources/Python.app/Contents/MacOS/Python
+│   │   ├── python3 -> python
+│   │   ├── python3.8 -> python
+│   │   ├── wheel
+│   │   ├── wheel-3.8
+│   │   ├── wheel3
+│   │   └── wheel3.8
+│   ├── lib
+│   │   └── python3.8
+│   │       └── site-packages
+│   │           ├── _distutils_hack
+│   │           │   ├── __init__.py
+│   │           │   └── override.py
+│   │           ├── _virtualenv.pth
+│   │           ├── _virtualenv.py
+│   │           ├── distutils-precedence.pth
+│   │           ├── pip
+│   │           │   ├── __init__.py
+│   │           │   ├── __main__.py
+│   │           │   ├── __pip-runner__.py
+│   │           │   ├── _internal
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── build_env.py
+│   │           │   │   ├── cache.py
+│   │           │   │   ├── cli
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── autocompletion.py
+│   │           │   │   │   ├── base_command.py
+│   │           │   │   │   ├── cmdoptions.py
+│   │           │   │   │   ├── command_context.py
+│   │           │   │   │   ├── main.py
+│   │           │   │   │   ├── main_parser.py
+│   │           │   │   │   ├── parser.py
+│   │           │   │   │   ├── progress_bars.py
+│   │           │   │   │   ├── req_command.py
+│   │           │   │   │   ├── spinners.py
+│   │           │   │   │   └── status_codes.py
+│   │           │   │   ├── commands
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── cache.py
+│   │           │   │   │   ├── check.py
+│   │           │   │   │   ├── completion.py
+│   │           │   │   │   ├── configuration.py
+│   │           │   │   │   ├── debug.py
+│   │           │   │   │   ├── download.py
+│   │           │   │   │   ├── freeze.py
+│   │           │   │   │   ├── hash.py
+│   │           │   │   │   ├── help.py
+│   │           │   │   │   ├── index.py
+│   │           │   │   │   ├── inspect.py
+│   │           │   │   │   ├── install.py
+│   │           │   │   │   ├── list.py
+│   │           │   │   │   ├── search.py
+│   │           │   │   │   ├── show.py
+│   │           │   │   │   ├── uninstall.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── configuration.py
+│   │           │   │   ├── distributions
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── base.py
+│   │           │   │   │   ├── installed.py
+│   │           │   │   │   ├── sdist.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── exceptions.py
+│   │           │   │   ├── index
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── collector.py
+│   │           │   │   │   ├── package_finder.py
+│   │           │   │   │   └── sources.py
+│   │           │   │   ├── locations
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _distutils.py
+│   │           │   │   │   ├── _sysconfig.py
+│   │           │   │   │   └── base.py
+│   │           │   │   ├── main.py
+│   │           │   │   ├── metadata
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _json.py
+│   │           │   │   │   ├── base.py
+│   │           │   │   │   ├── importlib
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── _compat.py
+│   │           │   │   │   │   ├── _dists.py
+│   │           │   │   │   │   └── _envs.py
+│   │           │   │   │   └── pkg_resources.py
+│   │           │   │   ├── models
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── candidate.py
+│   │           │   │   │   ├── direct_url.py
+│   │           │   │   │   ├── format_control.py
+│   │           │   │   │   ├── index.py
+│   │           │   │   │   ├── installation_report.py
+│   │           │   │   │   ├── link.py
+│   │           │   │   │   ├── scheme.py
+│   │           │   │   │   ├── search_scope.py
+│   │           │   │   │   ├── selection_prefs.py
+│   │           │   │   │   ├── target_python.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── network
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── auth.py
+│   │           │   │   │   ├── cache.py
+│   │           │   │   │   ├── download.py
+│   │           │   │   │   ├── lazy_wheel.py
+│   │           │   │   │   ├── session.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── xmlrpc.py
+│   │           │   │   ├── operations
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── build
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── build_tracker.py
+│   │           │   │   │   │   ├── metadata.py
+│   │           │   │   │   │   ├── metadata_editable.py
+│   │           │   │   │   │   ├── metadata_legacy.py
+│   │           │   │   │   │   ├── wheel.py
+│   │           │   │   │   │   ├── wheel_editable.py
+│   │           │   │   │   │   └── wheel_legacy.py
+│   │           │   │   │   ├── check.py
+│   │           │   │   │   ├── freeze.py
+│   │           │   │   │   ├── install
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── editable_legacy.py
+│   │           │   │   │   │   └── wheel.py
+│   │           │   │   │   └── prepare.py
+│   │           │   │   ├── pyproject.py
+│   │           │   │   ├── req
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── constructors.py
+│   │           │   │   │   ├── req_file.py
+│   │           │   │   │   ├── req_install.py
+│   │           │   │   │   ├── req_set.py
+│   │           │   │   │   └── req_uninstall.py
+│   │           │   │   ├── resolution
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── base.py
+│   │           │   │   │   ├── legacy
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   └── resolver.py
+│   │           │   │   │   └── resolvelib
+│   │           │   │   │       ├── __init__.py
+│   │           │   │   │       ├── base.py
+│   │           │   │   │       ├── candidates.py
+│   │           │   │   │       ├── factory.py
+│   │           │   │   │       ├── found_candidates.py
+│   │           │   │   │       ├── provider.py
+│   │           │   │   │       ├── reporter.py
+│   │           │   │   │       ├── requirements.py
+│   │           │   │   │       └── resolver.py
+│   │           │   │   ├── self_outdated_check.py
+│   │           │   │   ├── utils
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _jaraco_text.py
+│   │           │   │   │   ├── _log.py
+│   │           │   │   │   ├── appdirs.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── compatibility_tags.py
+│   │           │   │   │   ├── datetime.py
+│   │           │   │   │   ├── deprecation.py
+│   │           │   │   │   ├── direct_url_helpers.py
+│   │           │   │   │   ├── egg_link.py
+│   │           │   │   │   ├── encoding.py
+│   │           │   │   │   ├── entrypoints.py
+│   │           │   │   │   ├── filesystem.py
+│   │           │   │   │   ├── filetypes.py
+│   │           │   │   │   ├── glibc.py
+│   │           │   │   │   ├── hashes.py
+│   │           │   │   │   ├── inject_securetransport.py
+│   │           │   │   │   ├── logging.py
+│   │           │   │   │   ├── misc.py
+│   │           │   │   │   ├── models.py
+│   │           │   │   │   ├── packaging.py
+│   │           │   │   │   ├── setuptools_build.py
+│   │           │   │   │   ├── subprocess.py
+│   │           │   │   │   ├── temp_dir.py
+│   │           │   │   │   ├── unpacking.py
+│   │           │   │   │   ├── urls.py
+│   │           │   │   │   ├── virtualenv.py
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── vcs
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── bazaar.py
+│   │           │   │   │   ├── git.py
+│   │           │   │   │   ├── mercurial.py
+│   │           │   │   │   ├── subversion.py
+│   │           │   │   │   └── versioncontrol.py
+│   │           │   │   └── wheel_builder.py
+│   │           │   ├── _vendor
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── cachecontrol
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _cmd.py
+│   │           │   │   │   ├── adapter.py
+│   │           │   │   │   ├── cache.py
+│   │           │   │   │   ├── caches
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── file_cache.py
+│   │           │   │   │   │   └── redis_cache.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── controller.py
+│   │           │   │   │   ├── filewrapper.py
+│   │           │   │   │   ├── heuristics.py
+│   │           │   │   │   ├── serialize.py
+│   │           │   │   │   └── wrapper.py
+│   │           │   │   ├── certifi
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── cacert.pem
+│   │           │   │   │   └── core.py
+│   │           │   │   ├── chardet
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── big5freq.py
+│   │           │   │   │   ├── big5prober.py
+│   │           │   │   │   ├── chardistribution.py
+│   │           │   │   │   ├── charsetgroupprober.py
+│   │           │   │   │   ├── charsetprober.py
+│   │           │   │   │   ├── cli
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   └── chardetect.py
+│   │           │   │   │   ├── codingstatemachine.py
+│   │           │   │   │   ├── codingstatemachinedict.py
+│   │           │   │   │   ├── cp949prober.py
+│   │           │   │   │   ├── enums.py
+│   │           │   │   │   ├── escprober.py
+│   │           │   │   │   ├── escsm.py
+│   │           │   │   │   ├── eucjpprober.py
+│   │           │   │   │   ├── euckrfreq.py
+│   │           │   │   │   ├── euckrprober.py
+│   │           │   │   │   ├── euctwfreq.py
+│   │           │   │   │   ├── euctwprober.py
+│   │           │   │   │   ├── gb2312freq.py
+│   │           │   │   │   ├── gb2312prober.py
+│   │           │   │   │   ├── hebrewprober.py
+│   │           │   │   │   ├── jisfreq.py
+│   │           │   │   │   ├── johabfreq.py
+│   │           │   │   │   ├── johabprober.py
+│   │           │   │   │   ├── jpcntx.py
+│   │           │   │   │   ├── langbulgarianmodel.py
+│   │           │   │   │   ├── langgreekmodel.py
+│   │           │   │   │   ├── langhebrewmodel.py
+│   │           │   │   │   ├── langhungarianmodel.py
+│   │           │   │   │   ├── langrussianmodel.py
+│   │           │   │   │   ├── langthaimodel.py
+│   │           │   │   │   ├── langturkishmodel.py
+│   │           │   │   │   ├── latin1prober.py
+│   │           │   │   │   ├── macromanprober.py
+│   │           │   │   │   ├── mbcharsetprober.py
+│   │           │   │   │   ├── mbcsgroupprober.py
+│   │           │   │   │   ├── mbcssm.py
+│   │           │   │   │   ├── metadata
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   └── languages.py
+│   │           │   │   │   ├── resultdict.py
+│   │           │   │   │   ├── sbcharsetprober.py
+│   │           │   │   │   ├── sbcsgroupprober.py
+│   │           │   │   │   ├── sjisprober.py
+│   │           │   │   │   ├── universaldetector.py
+│   │           │   │   │   ├── utf1632prober.py
+│   │           │   │   │   ├── utf8prober.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── colorama
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── ansi.py
+│   │           │   │   │   ├── ansitowin32.py
+│   │           │   │   │   ├── initialise.py
+│   │           │   │   │   ├── tests
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── ansi_test.py
+│   │           │   │   │   │   ├── ansitowin32_test.py
+│   │           │   │   │   │   ├── initialise_test.py
+│   │           │   │   │   │   ├── isatty_test.py
+│   │           │   │   │   │   ├── utils.py
+│   │           │   │   │   │   └── winterm_test.py
+│   │           │   │   │   ├── win32.py
+│   │           │   │   │   └── winterm.py
+│   │           │   │   ├── distlib
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── database.py
+│   │           │   │   │   ├── index.py
+│   │           │   │   │   ├── locators.py
+│   │           │   │   │   ├── manifest.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── metadata.py
+│   │           │   │   │   ├── resources.py
+│   │           │   │   │   ├── scripts.py
+│   │           │   │   │   ├── t32.exe
+│   │           │   │   │   ├── t64-arm.exe
+│   │           │   │   │   ├── t64.exe
+│   │           │   │   │   ├── util.py
+│   │           │   │   │   ├── version.py
+│   │           │   │   │   ├── w32.exe
+│   │           │   │   │   ├── w64-arm.exe
+│   │           │   │   │   ├── w64.exe
+│   │           │   │   │   └── wheel.py
+│   │           │   │   ├── distro
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   └── distro.py
+│   │           │   │   ├── idna
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── codec.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── core.py
+│   │           │   │   │   ├── idnadata.py
+│   │           │   │   │   ├── intranges.py
+│   │           │   │   │   ├── package_data.py
+│   │           │   │   │   └── uts46data.py
+│   │           │   │   ├── msgpack
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── ext.py
+│   │           │   │   │   └── fallback.py
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── __about__.py
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _manylinux.py
+│   │           │   │   │   ├── _musllinux.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── pkg_resources
+│   │           │   │   │   └── __init__.py
+│   │           │   │   ├── platformdirs
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── android.py
+│   │           │   │   │   ├── api.py
+│   │           │   │   │   ├── macos.py
+│   │           │   │   │   ├── unix.py
+│   │           │   │   │   ├── version.py
+│   │           │   │   │   └── windows.py
+│   │           │   │   ├── pygments
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── cmdline.py
+│   │           │   │   │   ├── console.py
+│   │           │   │   │   ├── filter.py
+│   │           │   │   │   ├── filters
+│   │           │   │   │   │   └── __init__.py
+│   │           │   │   │   ├── formatter.py
+│   │           │   │   │   ├── formatters
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── _mapping.py
+│   │           │   │   │   │   ├── bbcode.py
+│   │           │   │   │   │   ├── groff.py
+│   │           │   │   │   │   ├── html.py
+│   │           │   │   │   │   ├── img.py
+│   │           │   │   │   │   ├── irc.py
+│   │           │   │   │   │   ├── latex.py
+│   │           │   │   │   │   ├── other.py
+│   │           │   │   │   │   ├── pangomarkup.py
+│   │           │   │   │   │   ├── rtf.py
+│   │           │   │   │   │   ├── svg.py
+│   │           │   │   │   │   ├── terminal.py
+│   │           │   │   │   │   └── terminal256.py
+│   │           │   │   │   ├── lexer.py
+│   │           │   │   │   ├── lexers
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── _mapping.py
+│   │           │   │   │   │   └── python.py
+│   │           │   │   │   ├── modeline.py
+│   │           │   │   │   ├── plugin.py
+│   │           │   │   │   ├── regexopt.py
+│   │           │   │   │   ├── scanner.py
+│   │           │   │   │   ├── sphinxext.py
+│   │           │   │   │   ├── style.py
+│   │           │   │   │   ├── styles
+│   │           │   │   │   │   └── __init__.py
+│   │           │   │   │   ├── token.py
+│   │           │   │   │   ├── unistring.py
+│   │           │   │   │   └── util.py
+│   │           │   │   ├── pyparsing
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── actions.py
+│   │           │   │   │   ├── common.py
+│   │           │   │   │   ├── core.py
+│   │           │   │   │   ├── diagram
+│   │           │   │   │   │   └── __init__.py
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── helpers.py
+│   │           │   │   │   ├── results.py
+│   │           │   │   │   ├── testing.py
+│   │           │   │   │   ├── unicode.py
+│   │           │   │   │   └── util.py
+│   │           │   │   ├── pyproject_hooks
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _compat.py
+│   │           │   │   │   ├── _impl.py
+│   │           │   │   │   └── _in_process
+│   │           │   │   │       ├── __init__.py
+│   │           │   │   │       └── _in_process.py
+│   │           │   │   ├── requests
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __version__.py
+│   │           │   │   │   ├── _internal_utils.py
+│   │           │   │   │   ├── adapters.py
+│   │           │   │   │   ├── api.py
+│   │           │   │   │   ├── auth.py
+│   │           │   │   │   ├── certs.py
+│   │           │   │   │   ├── compat.py
+│   │           │   │   │   ├── cookies.py
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── help.py
+│   │           │   │   │   ├── hooks.py
+│   │           │   │   │   ├── models.py
+│   │           │   │   │   ├── packages.py
+│   │           │   │   │   ├── sessions.py
+│   │           │   │   │   ├── status_codes.py
+│   │           │   │   │   ├── structures.py
+│   │           │   │   │   └── utils.py
+│   │           │   │   ├── resolvelib
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── compat
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   └── collections_abc.py
+│   │           │   │   │   ├── providers.py
+│   │           │   │   │   ├── reporters.py
+│   │           │   │   │   ├── resolvers.py
+│   │           │   │   │   └── structs.py
+│   │           │   │   ├── rich
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── _cell_widths.py
+│   │           │   │   │   ├── _emoji_codes.py
+│   │           │   │   │   ├── _emoji_replace.py
+│   │           │   │   │   ├── _export_format.py
+│   │           │   │   │   ├── _extension.py
+│   │           │   │   │   ├── _fileno.py
+│   │           │   │   │   ├── _inspect.py
+│   │           │   │   │   ├── _log_render.py
+│   │           │   │   │   ├── _loop.py
+│   │           │   │   │   ├── _null_file.py
+│   │           │   │   │   ├── _palettes.py
+│   │           │   │   │   ├── _pick.py
+│   │           │   │   │   ├── _ratio.py
+│   │           │   │   │   ├── _spinners.py
+│   │           │   │   │   ├── _stack.py
+│   │           │   │   │   ├── _timer.py
+│   │           │   │   │   ├── _win32_console.py
+│   │           │   │   │   ├── _windows.py
+│   │           │   │   │   ├── _windows_renderer.py
+│   │           │   │   │   ├── _wrap.py
+│   │           │   │   │   ├── abc.py
+│   │           │   │   │   ├── align.py
+│   │           │   │   │   ├── ansi.py
+│   │           │   │   │   ├── bar.py
+│   │           │   │   │   ├── box.py
+│   │           │   │   │   ├── cells.py
+│   │           │   │   │   ├── color.py
+│   │           │   │   │   ├── color_triplet.py
+│   │           │   │   │   ├── columns.py
+│   │           │   │   │   ├── console.py
+│   │           │   │   │   ├── constrain.py
+│   │           │   │   │   ├── containers.py
+│   │           │   │   │   ├── control.py
+│   │           │   │   │   ├── default_styles.py
+│   │           │   │   │   ├── diagnose.py
+│   │           │   │   │   ├── emoji.py
+│   │           │   │   │   ├── errors.py
+│   │           │   │   │   ├── file_proxy.py
+│   │           │   │   │   ├── filesize.py
+│   │           │   │   │   ├── highlighter.py
+│   │           │   │   │   ├── json.py
+│   │           │   │   │   ├── jupyter.py
+│   │           │   │   │   ├── layout.py
+│   │           │   │   │   ├── live.py
+│   │           │   │   │   ├── live_render.py
+│   │           │   │   │   ├── logging.py
+│   │           │   │   │   ├── markup.py
+│   │           │   │   │   ├── measure.py
+│   │           │   │   │   ├── padding.py
+│   │           │   │   │   ├── pager.py
+│   │           │   │   │   ├── palette.py
+│   │           │   │   │   ├── panel.py
+│   │           │   │   │   ├── pretty.py
+│   │           │   │   │   ├── progress.py
+│   │           │   │   │   ├── progress_bar.py
+│   │           │   │   │   ├── prompt.py
+│   │           │   │   │   ├── protocol.py
+│   │           │   │   │   ├── region.py
+│   │           │   │   │   ├── repr.py
+│   │           │   │   │   ├── rule.py
+│   │           │   │   │   ├── scope.py
+│   │           │   │   │   ├── screen.py
+│   │           │   │   │   ├── segment.py
+│   │           │   │   │   ├── spinner.py
+│   │           │   │   │   ├── status.py
+│   │           │   │   │   ├── style.py
+│   │           │   │   │   ├── styled.py
+│   │           │   │   │   ├── syntax.py
+│   │           │   │   │   ├── table.py
+│   │           │   │   │   ├── terminal_theme.py
+│   │           │   │   │   ├── text.py
+│   │           │   │   │   ├── theme.py
+│   │           │   │   │   ├── themes.py
+│   │           │   │   │   ├── traceback.py
+│   │           │   │   │   └── tree.py
+│   │           │   │   ├── six.py
+│   │           │   │   ├── tenacity
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _asyncio.py
+│   │           │   │   │   ├── _utils.py
+│   │           │   │   │   ├── after.py
+│   │           │   │   │   ├── before.py
+│   │           │   │   │   ├── before_sleep.py
+│   │           │   │   │   ├── nap.py
+│   │           │   │   │   ├── retry.py
+│   │           │   │   │   ├── stop.py
+│   │           │   │   │   ├── tornadoweb.py
+│   │           │   │   │   └── wait.py
+│   │           │   │   ├── tomli
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _re.py
+│   │           │   │   │   └── _types.py
+│   │           │   │   ├── typing_extensions.py
+│   │           │   │   ├── urllib3
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _collections.py
+│   │           │   │   │   ├── _version.py
+│   │           │   │   │   ├── connection.py
+│   │           │   │   │   ├── connectionpool.py
+│   │           │   │   │   ├── contrib
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── _appengine_environ.py
+│   │           │   │   │   │   ├── _securetransport
+│   │           │   │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   │   ├── bindings.py
+│   │           │   │   │   │   │   └── low_level.py
+│   │           │   │   │   │   ├── appengine.py
+│   │           │   │   │   │   ├── ntlmpool.py
+│   │           │   │   │   │   ├── pyopenssl.py
+│   │           │   │   │   │   ├── securetransport.py
+│   │           │   │   │   │   └── socks.py
+│   │           │   │   │   ├── exceptions.py
+│   │           │   │   │   ├── fields.py
+│   │           │   │   │   ├── filepost.py
+│   │           │   │   │   ├── packages
+│   │           │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   ├── backports
+│   │           │   │   │   │   │   ├── __init__.py
+│   │           │   │   │   │   │   ├── makefile.py
+│   │           │   │   │   │   │   └── weakref_finalize.py
+│   │           │   │   │   │   └── six.py
+│   │           │   │   │   ├── poolmanager.py
+│   │           │   │   │   ├── request.py
+│   │           │   │   │   ├── response.py
+│   │           │   │   │   └── util
+│   │           │   │   │       ├── __init__.py
+│   │           │   │   │       ├── connection.py
+│   │           │   │   │       ├── proxy.py
+│   │           │   │   │       ├── queue.py
+│   │           │   │   │       ├── request.py
+│   │           │   │   │       ├── response.py
+│   │           │   │   │       ├── retry.py
+│   │           │   │   │       ├── ssl_.py
+│   │           │   │   │       ├── ssl_match_hostname.py
+│   │           │   │   │       ├── ssltransport.py
+│   │           │   │   │       ├── timeout.py
+│   │           │   │   │       ├── url.py
+│   │           │   │   │       └── wait.py
+│   │           │   │   ├── vendor.txt
+│   │           │   │   └── webencodings
+│   │           │   │       ├── __init__.py
+│   │           │   │       ├── labels.py
+│   │           │   │       ├── mklabels.py
+│   │           │   │       ├── tests.py
+│   │           │   │       └── x_user_defined.py
+│   │           │   └── py.typed
+│   │           ├── pip-23.2.1.dist-info
+│   │           │   ├── AUTHORS.txt
+│   │           │   ├── INSTALLER
+│   │           │   ├── LICENSE.txt
+│   │           │   ├── METADATA
+│   │           │   ├── RECORD
+│   │           │   ├── WHEEL
+│   │           │   ├── entry_points.txt
+│   │           │   └── top_level.txt
+│   │           ├── pip-23.2.1.virtualenv
+│   │           ├── pkg_resources
+│   │           │   ├── __init__.py
+│   │           │   ├── _vendor
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── importlib_resources
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _adapters.py
+│   │           │   │   │   ├── _common.py
+│   │           │   │   │   ├── _compat.py
+│   │           │   │   │   ├── _itertools.py
+│   │           │   │   │   ├── _legacy.py
+│   │           │   │   │   ├── abc.py
+│   │           │   │   │   ├── readers.py
+│   │           │   │   │   └── simple.py
+│   │           │   │   ├── jaraco
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── context.py
+│   │           │   │   │   ├── functools.py
+│   │           │   │   │   └── text
+│   │           │   │   │       └── __init__.py
+│   │           │   │   ├── more_itertools
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── more.py
+│   │           │   │   │   └── recipes.py
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _elffile.py
+│   │           │   │   │   ├── _manylinux.py
+│   │           │   │   │   ├── _musllinux.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── _tokenizer.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── metadata.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── platformdirs
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── __main__.py
+│   │           │   │   │   ├── android.py
+│   │           │   │   │   ├── api.py
+│   │           │   │   │   ├── macos.py
+│   │           │   │   │   ├── unix.py
+│   │           │   │   │   ├── version.py
+│   │           │   │   │   └── windows.py
+│   │           │   │   ├── typing_extensions.py
+│   │           │   │   └── zipp.py
+│   │           │   └── extern
+│   │           │       └── __init__.py
+│   │           ├── setuptools
+│   │           │   ├── __init__.py
+│   │           │   ├── _core_metadata.py
+│   │           │   ├── _distutils
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── _collections.py
+│   │           │   │   ├── _functools.py
+│   │           │   │   ├── _log.py
+│   │           │   │   ├── _macos_compat.py
+│   │           │   │   ├── _msvccompiler.py
+│   │           │   │   ├── archive_util.py
+│   │           │   │   ├── bcppcompiler.py
+│   │           │   │   ├── ccompiler.py
+│   │           │   │   ├── cmd.py
+│   │           │   │   ├── command
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _framework_compat.py
+│   │           │   │   │   ├── bdist.py
+│   │           │   │   │   ├── bdist_dumb.py
+│   │           │   │   │   ├── bdist_rpm.py
+│   │           │   │   │   ├── build.py
+│   │           │   │   │   ├── build_clib.py
+│   │           │   │   │   ├── build_ext.py
+│   │           │   │   │   ├── build_py.py
+│   │           │   │   │   ├── build_scripts.py
+│   │           │   │   │   ├── check.py
+│   │           │   │   │   ├── clean.py
+│   │           │   │   │   ├── config.py
+│   │           │   │   │   ├── install.py
+│   │           │   │   │   ├── install_data.py
+│   │           │   │   │   ├── install_egg_info.py
+│   │           │   │   │   ├── install_headers.py
+│   │           │   │   │   ├── install_lib.py
+│   │           │   │   │   ├── install_scripts.py
+│   │           │   │   │   ├── py37compat.py
+│   │           │   │   │   ├── register.py
+│   │           │   │   │   ├── sdist.py
+│   │           │   │   │   └── upload.py
+│   │           │   │   ├── config.py
+│   │           │   │   ├── core.py
+│   │           │   │   ├── cygwinccompiler.py
+│   │           │   │   ├── debug.py
+│   │           │   │   ├── dep_util.py
+│   │           │   │   ├── dir_util.py
+│   │           │   │   ├── dist.py
+│   │           │   │   ├── errors.py
+│   │           │   │   ├── extension.py
+│   │           │   │   ├── fancy_getopt.py
+│   │           │   │   ├── file_util.py
+│   │           │   │   ├── filelist.py
+│   │           │   │   ├── log.py
+│   │           │   │   ├── msvc9compiler.py
+│   │           │   │   ├── msvccompiler.py
+│   │           │   │   ├── py38compat.py
+│   │           │   │   ├── py39compat.py
+│   │           │   │   ├── spawn.py
+│   │           │   │   ├── sysconfig.py
+│   │           │   │   ├── text_file.py
+│   │           │   │   ├── unixccompiler.py
+│   │           │   │   ├── util.py
+│   │           │   │   ├── version.py
+│   │           │   │   └── versionpredicate.py
+│   │           │   ├── _entry_points.py
+│   │           │   ├── _imp.py
+│   │           │   ├── _importlib.py
+│   │           │   ├── _itertools.py
+│   │           │   ├── _normalization.py
+│   │           │   ├── _path.py
+│   │           │   ├── _reqs.py
+│   │           │   ├── _vendor
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── importlib_metadata
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _adapters.py
+│   │           │   │   │   ├── _collections.py
+│   │           │   │   │   ├── _compat.py
+│   │           │   │   │   ├── _functools.py
+│   │           │   │   │   ├── _itertools.py
+│   │           │   │   │   ├── _meta.py
+│   │           │   │   │   ├── _py39compat.py
+│   │           │   │   │   └── _text.py
+│   │           │   │   ├── importlib_resources
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _adapters.py
+│   │           │   │   │   ├── _common.py
+│   │           │   │   │   ├── _compat.py
+│   │           │   │   │   ├── _itertools.py
+│   │           │   │   │   ├── _legacy.py
+│   │           │   │   │   ├── abc.py
+│   │           │   │   │   ├── readers.py
+│   │           │   │   │   └── simple.py
+│   │           │   │   ├── jaraco
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── context.py
+│   │           │   │   │   ├── functools.py
+│   │           │   │   │   └── text
+│   │           │   │   │       └── __init__.py
+│   │           │   │   ├── more_itertools
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── more.py
+│   │           │   │   │   └── recipes.py
+│   │           │   │   ├── ordered_set.py
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _elffile.py
+│   │           │   │   │   ├── _manylinux.py
+│   │           │   │   │   ├── _musllinux.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── _tokenizer.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── metadata.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   ├── tomli
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _re.py
+│   │           │   │   │   └── _types.py
+│   │           │   │   ├── typing_extensions.py
+│   │           │   │   └── zipp.py
+│   │           │   ├── archive_util.py
+│   │           │   ├── build_meta.py
+│   │           │   ├── cli-32.exe
+│   │           │   ├── cli-64.exe
+│   │           │   ├── cli-arm64.exe
+│   │           │   ├── cli.exe
+│   │           │   ├── command
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── _requirestxt.py
+│   │           │   │   ├── alias.py
+│   │           │   │   ├── bdist_egg.py
+│   │           │   │   ├── bdist_rpm.py
+│   │           │   │   ├── build.py
+│   │           │   │   ├── build_clib.py
+│   │           │   │   ├── build_ext.py
+│   │           │   │   ├── build_py.py
+│   │           │   │   ├── develop.py
+│   │           │   │   ├── dist_info.py
+│   │           │   │   ├── easy_install.py
+│   │           │   │   ├── editable_wheel.py
+│   │           │   │   ├── egg_info.py
+│   │           │   │   ├── install.py
+│   │           │   │   ├── install_egg_info.py
+│   │           │   │   ├── install_lib.py
+│   │           │   │   ├── install_scripts.py
+│   │           │   │   ├── launcher manifest.xml
+│   │           │   │   ├── register.py
+│   │           │   │   ├── rotate.py
+│   │           │   │   ├── saveopts.py
+│   │           │   │   ├── sdist.py
+│   │           │   │   ├── setopt.py
+│   │           │   │   ├── test.py
+│   │           │   │   ├── upload.py
+│   │           │   │   └── upload_docs.py
+│   │           │   ├── config
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── _apply_pyprojecttoml.py
+│   │           │   │   ├── _validate_pyproject
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── error_reporting.py
+│   │           │   │   │   ├── extra_validations.py
+│   │           │   │   │   ├── fastjsonschema_exceptions.py
+│   │           │   │   │   ├── fastjsonschema_validations.py
+│   │           │   │   │   └── formats.py
+│   │           │   │   ├── expand.py
+│   │           │   │   ├── pyprojecttoml.py
+│   │           │   │   └── setupcfg.py
+│   │           │   ├── dep_util.py
+│   │           │   ├── depends.py
+│   │           │   ├── discovery.py
+│   │           │   ├── dist.py
+│   │           │   ├── errors.py
+│   │           │   ├── extension.py
+│   │           │   ├── extern
+│   │           │   │   └── __init__.py
+│   │           │   ├── glob.py
+│   │           │   ├── gui-32.exe
+│   │           │   ├── gui-64.exe
+│   │           │   ├── gui-arm64.exe
+│   │           │   ├── gui.exe
+│   │           │   ├── installer.py
+│   │           │   ├── launch.py
+│   │           │   ├── logging.py
+│   │           │   ├── monkey.py
+│   │           │   ├── msvc.py
+│   │           │   ├── namespaces.py
+│   │           │   ├── package_index.py
+│   │           │   ├── py312compat.py
+│   │           │   ├── sandbox.py
+│   │           │   ├── script (dev).tmpl
+│   │           │   ├── script.tmpl
+│   │           │   ├── unicode_utils.py
+│   │           │   ├── version.py
+│   │           │   ├── warnings.py
+│   │           │   ├── wheel.py
+│   │           │   └── windows_support.py
+│   │           ├── setuptools-68.2.0.dist-info
+│   │           │   ├── INSTALLER
+│   │           │   ├── LICENSE
+│   │           │   ├── METADATA
+│   │           │   ├── RECORD
+│   │           │   ├── WHEEL
+│   │           │   ├── entry_points.txt
+│   │           │   └── top_level.txt
+│   │           ├── setuptools-68.2.0.virtualenv
+│   │           ├── wheel
+│   │           │   ├── __init__.py
+│   │           │   ├── __main__.py
+│   │           │   ├── _setuptools_logging.py
+│   │           │   ├── bdist_wheel.py
+│   │           │   ├── cli
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── convert.py
+│   │           │   │   ├── pack.py
+│   │           │   │   ├── tags.py
+│   │           │   │   └── unpack.py
+│   │           │   ├── macosx_libfile.py
+│   │           │   ├── metadata.py
+│   │           │   ├── util.py
+│   │           │   ├── vendored
+│   │           │   │   ├── __init__.py
+│   │           │   │   ├── packaging
+│   │           │   │   │   ├── __init__.py
+│   │           │   │   │   ├── _elffile.py
+│   │           │   │   │   ├── _manylinux.py
+│   │           │   │   │   ├── _musllinux.py
+│   │           │   │   │   ├── _parser.py
+│   │           │   │   │   ├── _structures.py
+│   │           │   │   │   ├── _tokenizer.py
+│   │           │   │   │   ├── markers.py
+│   │           │   │   │   ├── requirements.py
+│   │           │   │   │   ├── specifiers.py
+│   │           │   │   │   ├── tags.py
+│   │           │   │   │   ├── utils.py
+│   │           │   │   │   └── version.py
+│   │           │   │   └── vendor.txt
+│   │           │   └── wheelfile.py
+│   │           ├── wheel-0.41.2.dist-info
+│   │           │   ├── INSTALLER
+│   │           │   ├── LICENSE.txt
+│   │           │   ├── METADATA
+│   │           │   ├── RECORD
+│   │           │   ├── WHEEL
+│   │           │   └── entry_points.txt
+│   │           └── wheel-0.41.2.virtualenv
+│   └── pyvenv.cfg
+└── vite.config.js
+
+478 directories, 3186 files
