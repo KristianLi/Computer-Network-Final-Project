@@ -1,8 +1,10 @@
-
 <script setup>
 import RadiatonTable from "@/components/RadiatonTable.vue";
-import Chinamap from "@/components/chinamap.vue";
+import Chinamap from "@/components/Chinamap.vue";
 import analysis from "@/components/analysis.vue";
+import Sidebar from './components/Sidebar.vue';
+
+// 直接使用组件，无需导出
 </script>
 
 <template>
@@ -11,15 +13,9 @@ import analysis from "@/components/analysis.vue";
   </header>
 
   <main>
-    <div class="absolute-position" >
-      <Chinamap />
-    </div>
-    <div>
-      <RadiatonTable />
-    </div>
-
-    <div>
-      <analysis />
+    <Sidebar /> <!-- 侧边栏组件 -->
+    <div class="content">
+      <router-view /> <!-- 路由视图 -->
     </div>
   </main>
 </template>
@@ -28,12 +24,17 @@ import analysis from "@/components/analysis.vue";
 
 main{
    background-image: url("../public/background6.jpg");
-  background-repeat: no-repeat center;
+  background-repeat: no-repeat;
     background-size: cover;
 }
 
 header {
   line-height: 1.5;
+}
+.content {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 1px 16px; /* Some padding */
+  height: 1000px; /* Sample height */
 }
 
 .logo {
