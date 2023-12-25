@@ -1,8 +1,15 @@
 <template>
   <div>
+<<<<<<< HEAD
     <div class="response-content">
       <!-- 显示 JSON 文件中的响应内容 -->
       {{ jsonResponse }}
+=======
+    <div class="box">
+      <p>
+        {{ jsonResponse }}
+      </p>
+>>>>>>> 5fe5ef1 (first commit)
     </div>
   </div>
 </template>
@@ -45,7 +52,63 @@ export default {
 </script>
 
 <style>
+<<<<<<< HEAD
 .response-content {
   white-space: pre-wrap; /* 保留换行符和空格 */
 }
+=======
+
+
+
+.box
+{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  position: relative;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  max-width: 96%;
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+.box:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 125%;
+  background: linear-gradient(315deg,#00ccff,#d400d4);
+  animation: animate 6s linear infinite
+}
+@keyframes animate {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+.box:after{
+  content: '';
+  position: absolute;
+  inset : 6px;
+  background: #0e1538;
+  border-radius: 15px;
+  z-index: 2;
+}
+p{
+  white-space: pre-wrap; /* 保留换行符和空格 */
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  z-index: 4;
+}
+
+
+>>>>>>> 5fe5ef1 (first commit)
 </style>
