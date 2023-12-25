@@ -83,7 +83,10 @@ export default {
             '#91cc75',//浅绿
             '#5470c6',//蓝色
             '#73c0de',//淡蓝
-          ]
+          ],
+          textstyle:{
+          color: '#fff'
+          }
         },
         geo: {
           map: "china", // 表示中国地图

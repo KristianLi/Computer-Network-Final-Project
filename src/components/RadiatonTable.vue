@@ -1,10 +1,11 @@
+
 <template>
   <div>
-    <canvas ref="chartCanvas"></canvas>
+    <canvas ref="chartCanvas" ></canvas>
   </div>
   <div class="center-content">
     <button @click="leti_decrease" :disabled="isButtonHidden">--</button>
-    <span>{{ currentDate }}</span>
+    <span id="dateshow">{{ currentDate }}</span>
     <button @click="leti_increase" :disabled="isButtonHidden2">++</button>
   </div>
 </template>
@@ -142,17 +143,31 @@ export default {
           datasets: [{
             label: 'Radiation Data',
             data: dataValues,
-            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            backgroundColor: 'rgba(54, 162, 235, 1)',
             borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1
           }]
         },
-        options: {
+          options: {
           responsive: true,
           maintainAspectRatio: false,
           scales: {
+            x: {
+              grid: {
+            color: 'rgba(255, 255, 255, 1)' // 设置Y轴网格线的颜色，这里是半透明红色
+         },
+          ticks: {
+          color: 'rgba(255, 255, 255, 1)' // 设置Y轴刻度标签的颜色，这里是半透明红色
+         }
+        },
             y: {
-              beginAtZero: true
+              beginAtZero: true,
+              grid: {
+            color: 'rgba(255, 255, 255, 1)' // 设置Y轴网格线的颜色，这里是半透明红色
+          },
+          ticks: {
+        color: 'rgba(255, 255, 255, 1)' // 设置Y轴刻度标签的颜色，这里是半透明红色
+         }
             }
           }
         }
@@ -173,4 +188,10 @@ canvas {
   align-items: center;
   gap: 10px; /* 按钮和日期文本之间的间距 */
 }
+#dateshow{
+   color: aliceblue;
+}
+
 </style>
+
+
