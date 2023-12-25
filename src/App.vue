@@ -24,6 +24,14 @@ import analysis from "@/components/analysis.vue";
 </template>
 
 <style scoped>
+<<<<<<< HEAD
+=======
+main{
+      background-image: url("../../public/background6.jpg");
+      background-repeat: no-repeat center;
+      background-size: cover;
+}
+>>>>>>> 5fe5ef1 (first commit)
 header {
   line-height: 1.5;
 }
