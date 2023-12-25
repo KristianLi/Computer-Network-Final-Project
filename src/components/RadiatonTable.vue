@@ -4,7 +4,7 @@
   </div>
   <div class="center-content">
     <button @click="leti_decrease" :disabled="isButtonHidden">--</button>
-    <span class="current-date">{{ currentDate }}</span>
+    <span style="color: white;">{{ currentDate }}</span>
     <button @click="leti_increase" :disabled="isButtonHidden2">++</button>
   </div>
 </template>
