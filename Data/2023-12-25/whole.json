@@ -1,0 +1,560 @@
+{
+    "北京市": [
+        {
+            "Radiation_Data": "93 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "91 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "91 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "91 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "天津市": [
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "66 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "67 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "67 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "河北省": [
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "59 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "60 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "60 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "山西省": [
+        {
+            "Radiation_Data": "91 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "83 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "内蒙古自治区": [
+        {
+            "Radiation_Data": "108 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "101 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "103 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "103 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "辽宁省": [
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "67 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "67 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "67 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "吉林省": [
+        {
+            "Radiation_Data": "72 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "黑龙江省": [
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "上海市": [
+        {
+            "Radiation_Data": "67 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "63 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "江苏省": [
+        {
+            "Radiation_Data": "60 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "55 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "56 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "56 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "浙江省": [
+        {
+            "Radiation_Data": "90 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "83 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "安徽省": [
+        {
+            "Radiation_Data": "76 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "72 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "72 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "福建省": [
+        {
+            "Radiation_Data": "112 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "106 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "107 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "107 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "江西省": [
+        {
+            "Radiation_Data": "76 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "山东省": [
+        {
+            "Radiation_Data": "69 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "63 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "河南省": [
+        {
+            "Radiation_Data": "76 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "72 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "73 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "73 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "湖北省": [
+        {
+            "Radiation_Data": "81 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "76 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "湖南省": [
+        {
+            "Radiation_Data": "68 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "62 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "广东省": [
+        {
+            "Radiation_Data": "100 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "99 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "100 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "100 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "广西壮族自治区": [
+        {
+            "Radiation_Data": "78 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "75 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "海南省": [
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "64 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "重庆市": [
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "四川省": [
+        {
+            "Radiation_Data": "73 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "贵州省": [
+        {
+            "Radiation_Data": "85 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "80 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "83 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "83 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "云南省": [
+        {
+            "Radiation_Data": "87 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "91 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "92 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "92 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "西藏自治区": [
+        {
+            "Radiation_Data": "192 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "192 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "191 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "191 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "陕西省": [
+        {
+            "Radiation_Data": "77 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "72 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "72 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "甘肃省": [
+        {
+            "Radiation_Data": "98 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "96 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "95 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "95 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "青海省": [
+        {
+            "Radiation_Data": "121 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "120 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "119 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "119 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "宁夏回族自治区": [
+        {
+            "Radiation_Data": "87 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "84 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ],
+    "新疆维吾尔自治区": [
+        {
+            "Radiation_Data": "74 nGy/h",
+            "Time": "2023-12-22"
+        },
+        {
+            "Radiation_Data": "71 nGy/h",
+            "Time": "2023-12-23"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-24"
+        },
+        {
+            "Radiation_Data": "70 nGy/h",
+            "Time": "2023-12-25"
+        }
+    ]
+}
