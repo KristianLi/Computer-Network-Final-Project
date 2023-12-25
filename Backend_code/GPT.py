@@ -15,7 +15,7 @@ def read_json_files(folder_path):
 
     # 遍历文件夹中的所有文件
     for filename in os.listdir(folder_path):
-        if filename.endswith('.json'):
+        if filename.endswith('whole.json'):
             file_path = os.path.join(folder_path, filename)
 
             # 读取 JSON 文件
@@ -44,7 +44,7 @@ def chat_with_gpt(prompt, model="gpt-3.5-turbo"):
     :return: 模型的响应或错误信息。
     """
     # 在这里设置你的 API 密钥
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     try:
         # 使用 OpenAI ChatGPT API 发送提示
@@ -72,7 +72,7 @@ def save_response_to_json(response, file_name=f"../Data/{current_date}/analysis.
     with open(file_name, 'w', encoding='utf-8') as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-prompt = "以下是爬取到到某些地区到辐射值，请分析一下数据,研究不同地区的辐射情况，分析地理分布上的差异，评估环境和健康风险等问题，我要结论"
+prompt = "以下是爬取到的某些地区最近3天的辐射值，请分析一下数据,研究不同地区的辐射情况，分析地理分布上的差异，评估环境和健康风险，随时间变化等问题，我要结论"
 response = chat_with_gpt(prompt)
 print(response)
 save_response_to_json(response)
