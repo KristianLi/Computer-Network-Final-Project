@@ -7,7 +7,7 @@
 
 <script>
 import RadiationTable from './RadiatonTable.vue';
-import Analysis from './Analysis.vue';
+import Analysis from './analysis.vue';
 
 export default {
   components: {

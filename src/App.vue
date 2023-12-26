@@ -1,7 +1,7 @@
 <script setup>
-import RadiatonTable from "@/components/RadiatonTable.vue";
-import Chinamap from "@/components/Chinamap.vue";
-import analysis from "@/components/analysis.vue";
+import RadiatonTable from "./components/RadiatonTable.vue";
+import Chinamap from "./components/Chinamap.vue";
+import analysis from "./components/analysis.vue";
 import Sidebar from './components/Sidebar.vue';
 
 // 直接使用组件，无需导出
