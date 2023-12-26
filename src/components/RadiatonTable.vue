@@ -19,12 +19,12 @@ export default {
       i: 0,
       j: 0,
       k: 0,
-      c: 1,
+      c: 0,
       radiationData: [],
       currentDate: '',
       chart: null, // 用于保存图表实例的引用
       isButtonHidden: false, // 控制按钮显示和隐藏的状态
-      isButtonHidden2: false,
+      isButtonHidden2: true,
     };
   },
   created() {

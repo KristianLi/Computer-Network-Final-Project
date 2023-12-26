@@ -2,6 +2,7 @@
   <div class="sidebar">
     <router-link to="/">地图</router-link>
     <router-link to="/analysis">分析</router-link>
+    <router-link to="/predict">预测</router-link>
   </div>
 </template>
 
