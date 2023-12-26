@@ -34,17 +34,10 @@ if response.status_code == 200:
         os.makedirs(folder_path)  # 如果文件夹不存在，则创建文件夹
 
     file_path = f'{folder_path}/radiation_data2.json'
-    if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
-        with open(file_path, 'r', encoding='utf-8') as json_file:
-            existing_data = json.load(json_file)
-            existing_data.extend(data_list)
 
-        with open(file_path, 'w', encoding='utf-8') as json_file:
-            json.dump(existing_data, json_file, ensure_ascii=False, indent=4)
-            print(f"数据已追加到 {file_path} 文件")
-    else:
-        with open(file_path, 'w', encoding='utf-8') as json_file:
-            json.dump(data_list, json_file, ensure_ascii=False, indent=4)
-            print(f"数据已保存到 {file_path} 文件")
+    # Overwrite existing data if file exists
+    with open(file_path, 'w', encoding='utf-8') as json_file:
+        json.dump(data_list, json_file, ensure_ascii=False, indent=4)
+        print(f"数据已保存到 {file_path} 文件")
 else:
     print(f"无法访问该网站。状态码: {response.status_code}")
