@@ -28,7 +28,7 @@ def read_json_files(folder_path):
     return json_data
 
 # 示例：读取 'my_folder' 中的 JSON 文件
-folder_path = f'../Data/{current_date}/'  # 替换为你的文件夹路径
+folder_path = f'../Data/{current_date}/'
 json_files = read_json_files(folder_path)
 
 # 打印结果
@@ -44,7 +44,7 @@ def chat_with_gpt(prompt, model="gpt-3.5-turbo"):
     :return: 模型的响应或错误信息。
     """
     # 在这里设置你的 API 密钥
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     try:
         # 使用 OpenAI ChatGPT API 发送提示

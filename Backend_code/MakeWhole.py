@@ -16,20 +16,20 @@ def read_radiation_data(start_date, end_date, base_folder_path):
     all_data = {}
     for single_date in get_date_range(start_date, end_date):
         folder = single_date.strftime("%Y-%m-%d")
-        file_path = os.path.join(base_folder_path, folder, 're_data.json')
+        file_path = os.path.join(base_folder_path, folder, 'radiation_data2.json')
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding='utf-8') as file:
                 try:
                     # 加载当天的数据
                     daily_data = json.load(file)
                     for entry in daily_data:
-                        area = entry["name"]
+                        area = entry["Area"]
                         # 如果地区不在字典中，则添加它
                         if area not in all_data:
                             all_data[area] = []
                         # 添加辐射数据和时间
                         all_data[area].append({
-                            "Radiation_Data": entry["value"],
+                            "Radiation_Data": entry["Radiation_Data"],
                             "Time": entry["Time"]
                         })
                 except json.JSONDecodeError:
